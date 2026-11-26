@@ -157,8 +157,9 @@ p { margin: 0 0 1em; }
 .btn-dark:hover { background: var(--plum); }
 .btn-outline { border-color: currentColor; color: var(--ink); background: transparent; }
 .btn-outline:hover { background: var(--ink); color: #fff; border-color: var(--ink); }
-.section--night .btn-outline, .on-dark .btn-outline { color: #fff; }
-.section--night .btn-outline:hover, .on-dark .btn-outline:hover { background: #fff; color: var(--night); border-color: #fff; }
+.section--night .btn-outline, .on-dark .btn-outline, .ph .btn-outline { color: #fff; }
+.btn svg, .link-arrow svg { flex: none; }
+.section--night .btn-outline:hover, .on-dark .btn-outline:hover, .ph .btn-outline:hover { background: #fff; color: var(--night); border-color: #fff; }
 .btn-white { background: #fff; color: var(--red); }
 .btn-white:hover { background: var(--blush); }
 .btn-sm { min-height: 38px; padding: .45em 1em; font-size: .92rem; }
@@ -169,6 +170,7 @@ html[dir="rtl"] .btn .arrow { transform: scaleX(-1); }
 html[dir="rtl"] .btn:hover .arrow { transform: scaleX(-1) translateX(3px); }
 .link-arrow { font-weight: 700; color: var(--red); text-decoration: none; display: inline-flex; gap: .4em; align-items: center; }
 .link-arrow:hover { text-decoration: underline; }
+html[dir="rtl"] .link-arrow .arrow { transform: scaleX(-1); }
 
 /* ---------- badges / pills ---------- */
 .badge {
@@ -502,6 +504,11 @@ html[dir="rtl"] .search input { padding: 0 40px 0 14px; }
 .prose ul, .prose ol { padding-inline-start: 1.2em; }
 .prose li { margin-bottom: .4em; }
 .prose img { border-radius: var(--radius); margin: 1.4em 0; }
+.prose table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; margin: 1.4em 0; font-size: .95rem; -webkit-overflow-scrolling: touch; }
+.prose th, .prose td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: start; vertical-align: top; min-width: 8em; }
+.prose th { font-family: var(--f-sub); background: var(--line-2); }
+.btn { max-width: 100%; }
+@media (max-width: 560px) { .btn { white-space: normal; text-align: center; } }
 
 /* pillars */
 .pillars { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; border-top: 1px solid var(--line); }

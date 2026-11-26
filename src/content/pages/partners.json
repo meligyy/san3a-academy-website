@@ -1,25 +1,205 @@
 {
   "hero": {
-    "eyebrow": { "en": "For schools, universities & organisations", "ar": "للمدارس والجامعات والمؤسسات" },
-    "title": { "en": "Partner with San3a Academy", "ar": "شاركنا في صنعة أكاديمي" },
-    "lead": { "en": "We design and deliver hands-on learning with you — from a one-week bootcamp for your employees to a funded program that trains a whole governorate’s teachers.", "ar": "بنصمم وبننفّذ تعلّم عملي معاك — من معسكر أسبوع لموظفينك لحد برنامج ممول بيدرّب مدرسين محافظة كاملة." }
+    "eyebrow": {
+      "en": "For schools, universities & organisations",
+      "ar": "للمدارس والجامعات والمؤسسات"
+    },
+    "title": {
+      "en": "Partner with San3a Academy",
+      "ar": "شاركنا في صنعة أكاديمي"
+    },
+    "lead": {
+      "en": "We design and deliver hands-on learning with you — from a one-week bootcamp for your employees to a funded program that trains a whole governorate’s teachers.",
+      "ar": "بنصمم وبننفّذ تعلّم عملي معاك — من معسكر أسبوع لموظفينك لحد برنامج ممول بيدرّب مدرسين محافظة كاملة."
+    }
   },
   "offers": [
-    { "icon": "users", "en": "Custom programs & bootcamps", "ar": "برامج ومعسكرات مخصوصة", "den": "Maker, electronics, AI and design-thinking programs built around your learners, your goals and your timeline.", "dar": "برامج تصنيع وإلكترونيات وذكاء اصطناعي وتفكير تصميمي متفصّلة على متعلمينك وأهدافك وجدولك." },
-    { "icon": "book", "en": "Educator training", "ar": "تدريب المدرسين", "den": "Programs like EduMakers that help teachers and facilitators bring making and design thinking into the classroom.", "dar": "برامج زي EduMakers بتساعد المدرسين والميسرين يدخّلوا التصنيع والتفكير التصميمي في الفصل." },
-    { "icon": "tool", "en": "Makerspaces & labs", "ar": "معامل ومساحات تصنيع", "den": "With San3a Tech and Fab Lab Egypt we plan, equip and run makerspaces in schools, universities and communities.", "dar": "مع صنعة تك وفاب لاب إيچيبت بنخطط ونجهّز وندير مساحات تصنيع في المدارس والجامعات والمجتمعات." },
-    { "icon": "chip", "en": "Curricula & kits", "ar": "مناهج وأدوات تعليمية", "den": "Ready-to-teach curricula, STEM kits and guides tested in our own studios.", "dar": "مناهج جاهزة للتدريس وأدوات STEM وأدلة متجرّبة في ستوديوهاتنا." }
+    {
+      "icon": "users",
+      "en": "Custom programs & bootcamps",
+      "ar": "برامج ومعسكرات مخصوصة",
+      "den": "Maker, electronics, AI and design-thinking programs built around your learners, your goals and your timeline.",
+      "dar": "برامج تصنيع وإلكترونيات وذكاء اصطناعي وتفكير تصميمي متفصّلة على متعلمينك وأهدافك وجدولك."
+    },
+    {
+      "icon": "book",
+      "en": "Educator training",
+      "ar": "تدريب المدرسين",
+      "den": "Programs like EduMakers that help teachers and facilitators bring making and design thinking into the classroom.",
+      "dar": "برامج زي EduMakers بتساعد المدرسين والميسرين يدخّلوا التصنيع والتفكير التصميمي في الفصل."
+    },
+    {
+      "icon": "tool",
+      "en": "Makerspaces & labs",
+      "ar": "معامل ومساحات تصنيع",
+      "den": "With San3a Tech and Fab Lab Egypt we plan, equip and run makerspaces in schools, universities and communities.",
+      "dar": "مع صنعة تك وفاب لاب إيچيبت بنخطط ونجهّز وندير مساحات تصنيع في المدارس والجامعات والمجتمعات."
+    },
+    {
+      "icon": "chip",
+      "en": "Curricula & kits",
+      "ar": "مناهج وأدوات تعليمية",
+      "den": "Ready-to-teach curricula, STEM kits and guides tested in our own studios.",
+      "dar": "مناهج جاهزة للتدريس وأدوات STEM وأدلة متجرّبة في ستوديوهاتنا."
+    }
   ],
   "cases": [
-    { "image": "/images/photos/educators-celebrating.jpg", "tag": { "en": "Educators · Cairo & Aswan", "ar": "مدرسين · القاهرة وأسوان" }, "title": { "en": "EduMakers with the Drosos Foundation", "ar": "EduMakers مع مؤسسة دروسوس" }, "body": { "en": "51 teachers from Cairo and Aswan completed the first cohort: 166+ learning hours, 32 interactive labs and 130+ classroom experiments.", "ar": "٥١ مدرس ومدرسة من القاهرة وأسوان خلّصوا الدفعة الأولى: أكتر من ١٦٦ ساعة تعلّم، و٣٢ معمل تفاعلي، وأكتر من ١٣٠ تجربة في الفصول." } },
-    { "image": "/images/photos/learner-presenting.jpg", "tag": { "en": "Youth · University", "ar": "شباب · جامعة" }, "title": { "en": "Maker Diploma — UFE Edition", "ar": "دبلومة الميكر — نسخة الجامعة الفرنسية" }, "body": { "en": "In 2026 we brought the Maker Diploma to the French University in Egypt (UFE) in El Shorouk, graduating a full class on campus.", "ar": "في ٢٠٢٦ وصّلنا دبلومة الميكر للجامعة الفرنسية في مصر بالشروق، وخرّجنا دفعة كاملة في الحرم الجامعي." } },
-    { "image": "/images/photos/youth-maker.jpg", "tag": { "en": "Young women · 7 cities", "ar": "بنات · ٧ مدن" }, "title": { "en": "Girls Make", "ar": "Girls Make" }, "body": { "en": "A funded program for young women: 289 graduates across seven cities, with 89% more confident using CAD and 3D printing.", "ar": "برنامج ممول للبنات: ٢٨٩ خريجة في ٧ مدن، و٨٩٪ منهم بقوا أكثر ثقة في استخدام الـCAD والطباعة ثلاثية الأبعاد." } }
+    {
+      "image": "/images/photos/educators-celebrating.jpg",
+      "tag": {
+        "en": "Educators · Cairo & Aswan",
+        "ar": "مدرسين · القاهرة وأسوان"
+      },
+      "title": {
+        "en": "EduMakers with the Drosos Foundation",
+        "ar": "EduMakers مع مؤسسة دروسوس"
+      },
+      "body": {
+        "en": "51 teachers from Cairo and Aswan completed the first cohort: 166+ learning hours, 32 interactive labs and 130+ classroom experiments.",
+        "ar": "٥١ مدرس ومدرسة من القاهرة وأسوان خلّصوا الدفعة الأولى: أكتر من ١٦٦ ساعة تعلّم، و٣٢ معمل تفاعلي، وأكتر من ١٣٠ تجربة في الفصول."
+      }
+    },
+    {
+      "image": "/images/photos/learner-presenting.jpg",
+      "tag": {
+        "en": "Youth · University",
+        "ar": "شباب · جامعة"
+      },
+      "title": {
+        "en": "Maker Diploma — UFE Edition",
+        "ar": "دبلومة الميكر — نسخة الجامعة الفرنسية"
+      },
+      "body": {
+        "en": "In 2026 we brought the Maker Diploma to the French University in Egypt (UFE) in El Shorouk, graduating a full class on campus.",
+        "ar": "في ٢٠٢٦ وصّلنا دبلومة الميكر للجامعة الفرنسية في مصر بالشروق، وخرّجنا دفعة كاملة في الحرم الجامعي."
+      }
+    },
+    {
+      "image": "/images/photos/youth-maker.jpg",
+      "tag": {
+        "en": "Young women · 7 cities",
+        "ar": "بنات · ٧ مدن"
+      },
+      "title": {
+        "en": "Girls Make",
+        "ar": "Girls Make"
+      },
+      "body": {
+        "en": "A funded program for young women: 289 graduates across seven cities, with 89% more confident using CAD and 3D printing.",
+        "ar": "برنامج ممول للبنات: ٢٨٩ خريجة في ٧ مدن، و٨٩٪ منهم بقوا أكثر ثقة في استخدام الـCAD والطباعة ثلاثية الأبعاد."
+      }
+    }
   ],
   "steps": [
-    { "en": "Discover", "ar": "نفهم", "den": "We meet your team, learners and goals.", "dar": "بنقابل فريقك ومتعلمينك ونفهم أهدافك." },
-    { "en": "Co-design", "ar": "نصمم مع بعض", "den": "We shape the program, schedule, tools and success measures together.", "dar": "بنشكّل البرنامج والمواعيد والأدوات ومقاييس النجاح مع بعض." },
-    { "en": "Deliver", "ar": "ننفّذ", "den": "Our instructors and coordinators run it — in Cairo, on your site or hybrid.", "dar": "مدربينا ومنسقينا بينفّذوه — في القاهرة أو عندك أو هجين." },
-    { "en": "Measure & showcase", "ar": "نقيس ونعرض", "den": "Learners present what they built; you get an impact report.", "dar": "المتعلمين بيعرضوا اللي بنوه، وانت بتستلم تقرير أثر." }
+    {
+      "en": "Discover",
+      "ar": "نفهم",
+      "den": "We meet your team, learners and goals.",
+      "dar": "بنقابل فريقك ومتعلمينك ونفهم أهدافك."
+    },
+    {
+      "en": "Co-design",
+      "ar": "نصمم مع بعض",
+      "den": "We shape the program, schedule, tools and success measures together.",
+      "dar": "بنشكّل البرنامج والمواعيد والأدوات ومقاييس النجاح مع بعض."
+    },
+    {
+      "en": "Deliver",
+      "ar": "ننفّذ",
+      "den": "Our instructors and coordinators run it — in Cairo, on your site or hybrid.",
+      "dar": "مدربينا ومنسقينا بينفّذوه — في القاهرة أو عندك أو هجين."
+    },
+    {
+      "en": "Measure & showcase",
+      "ar": "نقيس ونعرض",
+      "den": "Learners present what they built; you get an impact report.",
+      "dar": "المتعلمين بيعرضوا اللي بنوه، وانت بتستلم تقرير أثر."
+    }
   ],
-  "list": []
+  "list": [
+    {
+      "name": "Chevron",
+      "role": {
+        "en": "Girls Make funder, 2023–2027",
+        "ar": "ممول Girls Make، ٢٠٢٣–٢٠٢٧"
+      }
+    },
+    {
+      "name": "Drosos Foundation",
+      "role": {
+        "en": "Nur Tech & EduMakers, Cairo and Aswan",
+        "ar": "نور تك وEduMakers، القاهرة وأسوان"
+      }
+    },
+    {
+      "name": "Ministry of Petroleum",
+      "role": {
+        "en": "Girls Make collaboration",
+        "ar": "شريك في Girls Make"
+      }
+    },
+    {
+      "name": "U.S. Embassy Cairo · American Center Cairo",
+      "role": {
+        "en": "Maker Diploma seats & Maker Faire Cairo",
+        "ar": "مقاعد دبلومة الميكر ومعرض ميكر فير القاهرة"
+      }
+    },
+    {
+      "name": "Orange Egypt · Orange Foundation",
+      "role": {
+        "en": "Maker Diploma seats & Solidarity Fab Labs",
+        "ar": "مقاعد دبلومة الميكر ومعامل التصنيع التضامنية"
+      }
+    },
+    {
+      "name": "Université Française d'Égypte (UFE)",
+      "role": {
+        "en": "Maker Diploma — UFE Edition 2026",
+        "ar": "دبلومة الميكر — نسخة الجامعة الفرنسية ٢٠٢٦"
+      }
+    },
+    {
+      "name": "SPRIX",
+      "role": {
+        "en": "SPRIX Young Innovators, 2026",
+        "ar": "مبتكرين SPRIX الصغار، ٢٠٢٦"
+      }
+    },
+    {
+      "name": "Union for the Mediterranean",
+      "role": {
+        "en": "Maker Diploma seats, 2024",
+        "ar": "مقاعد دبلومة الميكر، ٢٠٢٤"
+      }
+    },
+    {
+      "name": "INCO",
+      "role": {
+        "en": "Maker Diploma seats, 2024",
+        "ar": "مقاعد دبلومة الميكر، ٢٠٢٤"
+      }
+    },
+    {
+      "name": "Canada Fund for Local Initiatives",
+      "role": {
+        "en": "Femme Innovate, 2025",
+        "ar": "برنامج Femme Innovate، ٢٠٢٥"
+      }
+    },
+    {
+      "name": "Creativa Innovation Hubs",
+      "role": {
+        "en": "Regional delivery partner",
+        "ar": "شريك تنفيذ في المحافظات"
+      }
+    },
+    {
+      "name": "Fab Lab Egypt",
+      "role": {
+        "en": "Our makerspace and fabrication studio",
+        "ar": "المساحة والمعمل اللي بنصنع فيه"
+      }
+    }
+  ]
 }

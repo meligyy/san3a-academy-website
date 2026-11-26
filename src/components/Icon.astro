@@ -45,7 +45,7 @@ const aria = label ? { role: 'img', 'aria-label': label } : { 'aria-hidden': 'tr
     <g transform="translate(15 15) scale(.75)" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" set:html={body} />
   </svg>
 ) : isFilled ? (
-  <svg class={cls} style={style} viewBox="0 0 24 24" fill="currentColor" {...aria} set:html={body} />
+  <svg class={cls} style={style} width="1.15em" height="1.15em" viewBox="0 0 24 24" fill="currentColor" {...aria} set:html={body} />
 ) : (
-  <svg class={cls} style={style} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" {...aria} set:html={body} />
+  <svg class={cls} style={style} width="1.15em" height="1.15em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" {...aria} set:html={body} />
 )}

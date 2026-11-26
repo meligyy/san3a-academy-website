@@ -83,7 +83,7 @@ const mail = `mailto:${site.email}?subject=${encodeURIComponent(ar ? 'شراكة
   {P.list.length > 0 && (
     <section class="section section--alt section--tight">
       <div class="container">
-        <h2 class="h-lg">{ar ? 'شركاء وداعمين' : 'Partners, funders & clients'}</h2>
+        <h2 class="h-lg">{ar ? 'شركاء وداعمين' : 'Partners & funders'}</h2>
         <div class="logo-wall mt-2">{P.list.map((p) => <span class="partner">{p.name}<small>{t(p.role, lang)}</small></span>)}</div>
       </div>
     </section>
