@@ -7,7 +7,7 @@ import LiveTicker from '../components/LiveTicker.astro';
 import StatsBand from '../components/StatsBand.astro';
 import CtaBand from '../components/CtaBand.astro';
 import PostCard from '../components/PostCard.astro';
-import { url, lp, t } from '../lib/url.js';
+import { url, lp, t, fmtDate } from '../lib/url.js';
 import { s } from '../i18n/ui.js';
 import { featuredPrograms, programsFor, posts, news } from '../lib/content.js';
 import home from '../content/pages/home.json';
@@ -181,7 +181,7 @@ const logoPartners = (partners.list || []).filter((p) => p.home !== false).slice
             <a class="ncard" href={lp(lang, `/news/${n.slug}/`)}>
               <img src={url(n.image || '/images/photos/cohort-group.jpg')} alt="" loading="lazy" width="640" height="360" />
               <div class="nb">
-                <time datetime={n.date}>{new Date(n.date).toLocaleDateString(lang === 'ar' ? 'ar-EG' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</time>
+                <time datetime={n.date}>{fmtDate(n.date, lang)}</time>
                 <h3>{t(n.title, lang)}</h3>
                 <p>{t(n.summary, lang)}</p>
               </div>

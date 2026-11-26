@@ -1,0 +1,25 @@
+{
+  "slug": "maker-diploma-class-of-2026-graduates-ufe",
+  "published": true,
+  "date": "2026-10-22",
+  "kind": "event",
+  "eventDate": "2026-10-22",
+  "image": "/images/photos/showcase-day.jpg",
+  "title": {
+    "en": "Maker Diploma Class of 2026 graduates at the French University in Egypt",
+    "ar": "دبلومة الميكر: تخرّج دفعة ٢٠٢٦ في الجامعة الفرنسية في مصر"
+  },
+  "summary": {
+    "en": "The UFE Edition of the Maker Diploma celebrated its graduates with a project exhibition, talks and prizes.",
+    "ar": "نسخة الجامعة الفرنسية من دبلومة الميكر احتفلت بخريجيها بمعرض مشاريع وندوات وجوايز."
+  },
+  "body": {
+    "en": "<p>On Thursday 22 October 2026, the Summer 2026 cohort of the Maker Diploma — the UFE Edition, run with the Université Française d’Égypte — graduated on the university campus. The ceremony featured an exhibition of 22 project tables, talks and a panel discussion, certificates, prize awards and networking with partners and alumni.</p><p>Each graduate presented a working prototype they designed, fabricated and programmed during the diploma.</p>",
+    "ar": "<p>يوم الخميس ٢٢ أكتوبر ٢٠٢٦، دفعة صيف ٢٠٢٦ من دبلومة الميكر — نسخة الجامعة الفرنسية في مصر — اتخرجت في حرم الجامعة. الحفل كان فيه معرض لـ٢٢ ترابيزة مشاريع، وندوات وحلقة نقاش، وشهادات وجوايز، وتواصل مع الشركاء والخريجين.</p><p>كل خريج عرض نموذج شغّال صممه وصنعه وبرمجه بنفسه خلال الدبلومة.</p>"
+  },
+  "link": "/programs/maker-diploma/",
+  "linkLabel": {
+    "en": "About the Maker Diploma",
+    "ar": "عن دبلومة الميكر"
+  }
+}

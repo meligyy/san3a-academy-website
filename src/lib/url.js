@@ -33,3 +33,11 @@ export function num(n, lang, arabicDigits = false) {
   if (lang === 'ar' && arabicDigits) return s.replace(/[0-9]/g, (d) => AR_DIGITS[+d]);
   return s;
 }
+
+// Date label: full date for YYYY-MM-DD, month + year for YYYY-MM (when the exact day isn't known).
+export const fmtDate = (d, lang) => {
+  if (!d) return '';
+  const s = String(d);
+  const monthOnly = /^\d{4}-\d{2}$/.test(s);
+  return new Date(monthOnly ? s + '-01' : s).toLocaleDateString(lang === 'ar' ? 'ar-EG' : 'en-GB', monthOnly ? { month: 'long', year: 'numeric' } : { day: 'numeric', month: 'long', year: 'numeric' });
+};

@@ -1,13 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
-import { url, lp, t } from '../lib/url.js';
+import { url, lp, t, fmtDate } from '../lib/url.js';
 import { s } from '../i18n/ui.js';
 import { news } from '../lib/content.js';
 interface Props { lang: 'en' | 'ar' }
 const { lang } = Astro.props;
 const L = s(lang);
 const ar = lang === 'ar';
-const fmt = (d) => new Date(d).toLocaleDateString(ar ? 'ar-EG' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+const fmt = (d) => fmtDate(d, ar ? 'ar' : 'en');
 ---
 <Base lang={lang} title={L.nav_news} description={ar ? 'آخر أخبار وفعاليات صنعة أكاديمي.' : 'The latest news and events from San3a Academy.'} path="/news/">
   <section class="section" style="padding-bottom:24px">

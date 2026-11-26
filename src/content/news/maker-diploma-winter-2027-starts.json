@@ -1,0 +1,25 @@
+{
+  "slug": "maker-diploma-winter-2027-starts",
+  "published": true,
+  "date": "2026-11-26",
+  "kind": "event",
+  "eventDate": "2026-12-14",
+  "image": "/images/photos/cohort-group.jpg",
+  "title": {
+    "en": "Maker Diploma Winter 2027 starts on 14 December",
+    "ar": "دبلومة الميكر دفعة شتاء ٢٠٢٧ تبدأ ١٤ ديسمبر"
+  },
+  "summary": {
+    "en": "The new cohort opens with a bootcamp week, then 11 weeks of building — from an idea to a working prototype.",
+    "ar": "الدفعة الجديدة بتبدأ بأسبوع معسكر، وبعده ١١ أسبوع بناء — من الفكرة لنموذج شغّال."
+  },
+  "body": {
+    "en": "<p>The Winter 2027 cohort of the Maker Diploma begins on Monday 14 December 2026 with a bootcamp week — one online session and two days in the lab at Fab Lab Egypt in Maadi. Eleven weeks of hands-on modules follow: smart device fundamentals, CAD with laser cutting and 3D printing, electricity and circuits, microcontroller programming and device communication, ending with a capstone project and a final evaluation in March 2027.</p><p>No prior technical experience is needed. Seats are limited, and applicants go through a short interview before acceptance.</p>",
+    "ar": "<p>دفعة شتاء ٢٠٢٧ من دبلومة الميكر بتبدأ يوم الاتنين ١٤ ديسمبر ٢٠٢٦ بأسبوع معسكر — سيشن أونلاين ويومين في المعمل في فاب لاب إيجيبت في المعادي. بعدها ١١ أسبوع من الوحدات العملية: أساسيات الأجهزة الذكية، والتصميم بالكمبيوتر مع القطع بالليزر والطباعة ثلاثية الأبعاد، والكهرباء والدوائر، وبرمجة المتحكمات الدقيقة واتصال الأجهزة، وفي الآخر مشروع التخرج والتقييم النهائي في مارس ٢٠٢٧.</p><p>مش محتاج خبرة تقنية سابقة. الأماكن محدودة، والمتقدمين بيعملوا مقابلة قصيرة قبل القبول.</p>"
+  },
+  "link": "/programs/maker-diploma/",
+  "linkLabel": {
+    "en": "Apply to the Maker Diploma",
+    "ar": "قدّم في دبلومة الميكر"
+  }
+}
