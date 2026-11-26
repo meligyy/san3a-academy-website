@@ -1,0 +1,122 @@
+{
+  "slug": "physical-ai-bootcamp",
+  "order": 5,
+  "published": true,
+  "featured": true,
+  "audience": "youth",
+  "type": "bootcamp",
+  "format": "hybrid",
+  "status": "open",
+  "commercial": true,
+  "liveKey": "physical-ai-bootcamp",
+  "image": "/images/photos/showcase-day.jpg",
+  "tally": {
+    "form": "bootcamps",
+    "product": "الذكاء الاصطناعي التطبيقي: استكشف تطبيفات الذكاء الاصطناعي الملموسة خلف الشاشات (Physical AI Bootcamp)"
+  },
+  "related": [
+    "iot-explorers-bootcamp",
+    "esp32-for-beginners",
+    "maker-diploma"
+  ],
+  "en": {
+    "title": "Physical AI Bootcamp",
+    "short": "Explore AI beyond the screen: build devices that sense, decide and act in the physical world.",
+    "seoTitle": "Physical AI Bootcamp — applied AI & robotics course in Cairo",
+    "seoDescription": "Explore physical AI in Cairo: combine sensors, cameras, machine-learning models and microcontrollers to build devices that see, decide and act. Hands-on bootcamp.",
+    "tagline": "When artificial intelligence leaves the screen.",
+    "summary": "Most AI lives in apps. Physical AI lives in things. In this hands-on bootcamp you combine sensors, cameras, machine-learning models and microcontrollers to build devices that recognise, decide and respond — and you leave with a working applied-AI prototype.",
+    "imageAlt": "Young makers testing interactive prototypes at a San3a Academy showcase",
+    "level": "Beginner-friendly",
+    "location": "Fab Lab Egypt, Maadi, Cairo",
+    "learn": [
+      "What physical (embodied) AI is and where it is used",
+      "Collect data from sensors and cameras",
+      "Train and use simple machine-learning models",
+      "Run AI on small devices and trigger real-world actions",
+      "Prototype an applied-AI solution and present it"
+    ],
+    "skills": [
+      "Applied AI",
+      "Machine learning",
+      "Computer vision",
+      "Sensors",
+      "Microcontrollers",
+      "Prototyping"
+    ],
+    "whoFor": [
+      "Students and graduates curious about AI beyond coding",
+      "Engineers who want to connect AI to hardware",
+      "Designers and innovators prototyping smart products"
+    ],
+    "applyTitle": "Register for the Physical AI Bootcamp",
+    "faq": [
+      {
+        "q": "Do I need experience?",
+        "a": "No prior experience is needed for most of our bootcamps — just curiosity and the will to build. Our team will confirm the right level when they contact you."
+      },
+      {
+        "q": "How do I register and pay?",
+        "a": "Fill in the short form on this page. Our team contacts you on WhatsApp within hours with the next round’s dates, fees and payment options."
+      },
+      {
+        "q": "Where does it take place?",
+        "a": "At Fab Lab Egypt / San3a HQ in Maadi, Cairo, with some content online depending on the round."
+      },
+      {
+        "q": "Will I get a certificate?",
+        "a": "Yes, you receive a San3a Academy certificate of completion when you finish the program and its project."
+      }
+    ]
+  },
+  "ar": {
+    "title": "معسكر الذكاء الاصطناعي التطبيقي (Physical AI)",
+    "short": "استكشف الذكاء الاصطناعي خارج الشاشة: ابني أجهزة بتحس وبتقرر وبتتحرك في العالم الحقيقي.",
+    "seoTitle": "معسكر الذكاء الاصطناعي التطبيقي Physical AI — كورس ذكاء اصطناعي وروبوتات في القاهرة",
+    "seoDescription": "استكشف الذكاء الاصطناعي التطبيقي في القاهرة: حساسات وكاميرات ونماذج تعلم آلي وميكروكنترولر علشان تبني أجهزة بتشوف وتقرر وتتصرف.",
+    "tagline": "لما الذكاء الاصطناعي يخرج من الشاشة.",
+    "summary": "أغلب الذكاء الاصطناعي عايش في تطبيقات. الذكاء الاصطناعي التطبيقي عايش في الأجهزة. في المعسكر العملي ده هتجمع بين الحساسات والكاميرات ونماذج التعلم الآلي والميكروكنترولر علشان تبني أجهزة بتتعرف وبتقرر وبتستجيب — وتخرج بنموذج ذكاء اصطناعي تطبيقي شغّال.",
+    "imageAlt": "شباب بيجرّبوا نماذج تفاعلية في معرض صنعة أكاديمي",
+    "level": "مناسب للمبتدئين",
+    "location": "فاب لاب إيچيبت، المعادي، القاهرة",
+    "learn": [
+      "يعني إيه ذكاء اصطناعي تطبيقي (Physical AI) وبيتستخدم فين",
+      "تجمع بيانات من الحساسات والكاميرات",
+      "تدرّب وتستخدم نماذج تعلم آلي بسيطة",
+      "تشغّل الذكاء الاصطناعي على أجهزة صغيرة وتتحكم في أفعال حقيقية",
+      "تعمل نموذج لحل بالذكاء الاصطناعي وتعرضه"
+    ],
+    "skills": [
+      "الذكاء الاصطناعي التطبيقي",
+      "التعلم الآلي",
+      "الرؤية بالكمبيوتر",
+      "الحساسات",
+      "الميكروكنترولر",
+      "النماذج الأولية"
+    ],
+    "whoFor": [
+      "طلبة وخريجين عندهم فضول للذكاء الاصطناعي أبعد من البرمجة",
+      "مهندسين عايزين يربطوا الذكاء الاصطناعي بالهاردوير",
+      "مصممين ومبتكرين بيعملوا نماذج لمنتجات ذكية"
+    ],
+    "applyTitle": "سجّل في معسكر الذكاء الاصطناعي التطبيقي",
+    "faq": [
+      {
+        "q": "محتاج خبرة قبل كده؟",
+        "a": "أغلب معسكراتنا مش محتاجة خبرة مسبقة — محتاج بس فضول ورغبة إنك تبني. فريقنا هيأكد معاك المستوى المناسب لما يتواصل معاك."
+      },
+      {
+        "q": "أسجّل وأدفع إزاي؟",
+        "a": "املأ الاستمارة القصيرة في الصفحة دي. فريقنا هيتواصل معاك على واتساب خلال ساعات بمواعيد الدفعة الجاية والرسوم وطرق الدفع."
+      },
+      {
+        "q": "البرنامج بيتعمل فين؟",
+        "a": "في فاب لاب إيچيبت / مقر صنعة بالمعادي، القاهرة، وجزء من المحتوى أونلاين حسب الدفعة."
+      },
+      {
+        "q": "هاخد شهادة؟",
+        "a": "أيوه، بتاخد شهادة إتمام من صنعة أكاديمي لما تخلّص البرنامج ومشروعه."
+      }
+    ]
+  }
+}

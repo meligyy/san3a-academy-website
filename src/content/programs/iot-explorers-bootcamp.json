@@ -1,0 +1,122 @@
+{
+  "slug": "iot-explorers-bootcamp",
+  "order": 4,
+  "published": true,
+  "featured": true,
+  "audience": "youth",
+  "type": "bootcamp",
+  "format": "hybrid",
+  "status": "open",
+  "commercial": true,
+  "liveKey": "iot-explorers-bootcamp",
+  "image": "/images/photos/output-greenhouse.jpg",
+  "tally": {
+    "form": "bootcamps",
+    "product": "Iot Explorers Bootcamp - معسكر انترنت الأشياء "
+  },
+  "related": [
+    "esp32-for-beginners",
+    "physical-ai-bootcamp",
+    "maker-diploma"
+  ],
+  "en": {
+    "title": "IoT Explorers Bootcamp",
+    "short": "A hands-on Internet of Things bootcamp: connect sensors to the cloud and build a smart, connected prototype.",
+    "seoTitle": "IoT Explorers Bootcamp — Internet of Things course in Cairo",
+    "seoDescription": "Hands-on Internet of Things bootcamp in Cairo: sensors, microcontrollers, Wi-Fi and dashboards. Build a connected smart prototype. No experience needed.",
+    "tagline": "Make everyday things smart — and connected.",
+    "summary": "Learn how connected devices work by building one. You wire sensors to a microcontroller, send their data over Wi-Fi, and display and control it from a dashboard or your phone — ending with an IoT prototype that solves a real problem.",
+    "imageAlt": "A smart greenhouse prototype with an early-warning system built by San3a learners",
+    "level": "Beginner-friendly",
+    "location": "Fab Lab Egypt, Maadi, Cairo",
+    "learn": [
+      "How IoT systems work: sensors, microcontrollers, networks and the cloud",
+      "Read sensors and control outputs with a microcontroller",
+      "Send data over Wi-Fi and visualise it on a dashboard",
+      "Control devices remotely from your phone",
+      "Design and present a connected prototype"
+    ],
+    "skills": [
+      "IoT",
+      "ESP32",
+      "Sensors",
+      "Wi-Fi",
+      "Dashboards",
+      "Prototyping"
+    ],
+    "whoFor": [
+      "Students and fresh graduates exploring IoT careers",
+      "Engineers and technicians who want hands-on IoT skills",
+      "Makers and entrepreneurs prototyping smart products"
+    ],
+    "applyTitle": "Register for the IoT Explorers Bootcamp",
+    "faq": [
+      {
+        "q": "Do I need experience?",
+        "a": "No prior experience is needed for most of our bootcamps — just curiosity and the will to build. Our team will confirm the right level when they contact you."
+      },
+      {
+        "q": "How do I register and pay?",
+        "a": "Fill in the short form on this page. Our team contacts you on WhatsApp within hours with the next round’s dates, fees and payment options."
+      },
+      {
+        "q": "Where does it take place?",
+        "a": "At Fab Lab Egypt / San3a HQ in Maadi, Cairo, with some content online depending on the round."
+      },
+      {
+        "q": "Will I get a certificate?",
+        "a": "Yes, you receive a San3a Academy certificate of completion when you finish the program and its project."
+      }
+    ]
+  },
+  "ar": {
+    "title": "معسكر إنترنت الأشياء (IoT Explorers)",
+    "short": "معسكر عملي في إنترنت الأشياء: وصّل الحساسات بالسحابة وابني نموذج ذكي متصل.",
+    "seoTitle": "معسكر إنترنت الأشياء IoT Explorers — كورس انترنت الأشياء في القاهرة",
+    "seoDescription": "معسكر عملي في إنترنت الأشياء في القاهرة: حساسات وميكروكنترولر وواي فاي ولوحات متابعة. ابني نموذج ذكي متصل. مش محتاج خبرة.",
+    "tagline": "خلّي الحاجات اللي حواليك ذكية — ومتصلة.",
+    "summary": "اتعلم الأجهزة المتصلة بتشتغل إزاي وانت بتبني واحد. هتوصّل حساسات بميكروكنترولر، وتبعت بياناتها على الواي فاي، وتعرضها وتتحكم فيها من لوحة متابعة أو من موبايلك — وتخلص بنموذج إنترنت أشياء بيحل مشكلة حقيقية.",
+    "imageAlt": "نموذج صوبة ذكية بنظام إنذار مبكر من تصميم متعلمي صنعة",
+    "level": "مناسب للمبتدئين",
+    "location": "فاب لاب إيچيبت، المعادي، القاهرة",
+    "learn": [
+      "إزاي أنظمة إنترنت الأشياء بتشتغل: حساسات وميكروكنترولر وشبكات وسحابة",
+      "تقرا الحساسات وتتحكم في المخرجات بالميكروكنترولر",
+      "تبعت البيانات على الواي فاي وتعرضها على لوحة متابعة",
+      "تتحكم في الأجهزة عن بُعد من موبايلك",
+      "تصمم وتعرض نموذج متصل"
+    ],
+    "skills": [
+      "إنترنت الأشياء",
+      "ESP32",
+      "الحساسات",
+      "Wi-Fi",
+      "لوحات المتابعة",
+      "النماذج الأولية"
+    ],
+    "whoFor": [
+      "طلبة وخريجين بيستكشفوا وظائف إنترنت الأشياء",
+      "مهندسين وفنيين عايزين مهارات IoT عملية",
+      "صُنّاع ورواد أعمال بيعملوا نماذج لمنتجات ذكية"
+    ],
+    "applyTitle": "سجّل في معسكر إنترنت الأشياء",
+    "faq": [
+      {
+        "q": "محتاج خبرة قبل كده؟",
+        "a": "أغلب معسكراتنا مش محتاجة خبرة مسبقة — محتاج بس فضول ورغبة إنك تبني. فريقنا هيأكد معاك المستوى المناسب لما يتواصل معاك."
+      },
+      {
+        "q": "أسجّل وأدفع إزاي؟",
+        "a": "املأ الاستمارة القصيرة في الصفحة دي. فريقنا هيتواصل معاك على واتساب خلال ساعات بمواعيد الدفعة الجاية والرسوم وطرق الدفع."
+      },
+      {
+        "q": "البرنامج بيتعمل فين؟",
+        "a": "في فاب لاب إيچيبت / مقر صنعة بالمعادي، القاهرة، وجزء من المحتوى أونلاين حسب الدفعة."
+      },
+      {
+        "q": "هاخد شهادة؟",
+        "a": "أيوه، بتاخد شهادة إتمام من صنعة أكاديمي لما تخلّص البرنامج ومشروعه."
+      }
+    ]
+  }
+}

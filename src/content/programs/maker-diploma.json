@@ -34,8 +34,8 @@
     "nextStart": "14 Dec 2026 · Winter 2027 cohort",
     "location": "Fab Lab Egypt, Maadi, Cairo + online",
     "schedule": "Mon 6 PM online lecture · Wed 6 PM session · Sat 12 PM in the lab",
-    "price": "Early-bird pricing & installments",
-    "priceNote": "Fees are shared after your interview. Pay in installments, choose to own or rent your kit, and save with early booking.",
+    "price": "From 18,000 EGP",
+    "priceNote": "Current offer: students from 18,000 EGP, professionals from 21,500 EGP. Pay in installments and choose to own or rent your kit; final fees are confirmed after your interview.",
     "ctaLabel": "Apply to the Maker Diploma",
     "overviewTitle": "From an idea in your head to a device in your hands",
     "overview": "<p>Real learning isn’t about memorising textbooks — it’s hands-on, a little messy and fuelled by curiosity. The Maker Diploma bridges theory and real-world building, alongside a community of people who share the same drive.</p><p>Each week combines an online lecture, a guided session and a Saturday lab day on the machines at Fab Lab Egypt. You document everything in your own Maker Journal — a public portfolio of what you designed, built and learned.</p>",
@@ -154,6 +154,7 @@
       "title": "Fees & ways to pay",
       "body": "Your seat is confirmed with a down payment after you are accepted.",
       "items": [
+        "Students’ seat from 18,000 EGP · professionals’ seat from 21,500 EGP (current offer)",
         "Early-bird pricing for early applicants",
         "Installments: down payment plus monthly payments, or via Sympl",
         "Own or rent your electronics kit",
@@ -196,7 +197,7 @@
       },
       {
         "q": "How much time does it take each week?",
-        "a": "Plan for about 20–25 hours a week: an online lecture on Monday, a session on Wednesday, a Saturday lab day in Maadi, plus weekly assignments. You also get lab access Sunday to Thursday for your projects."
+        "a": "Seats currently start from 18,000 EGP for students and 21,500 EGP for professionals. Final fees are confirmed after your interview, and you can pay in installments or through Sympl, and choose to own or rent your kit."
       },
       {
         "q": "When does the next cohort start?",
@@ -204,7 +205,7 @@
       },
       {
         "q": "How much does it cost? Can I pay in installments?",
-        "a": "Fees are shared after your interview. Early applicants get early-bird pricing, and you can pay in installments or through Sympl, and choose to own or rent your kit."
+        "a": "Seats currently start from 18,000 EGP for students and 21,500 EGP for professionals. Final fees are confirmed after your interview, and you can pay in installments or through Sympl, and choose to own or rent your kit."
       },
       {
         "q": "Will I get a certificate?",
@@ -229,8 +230,8 @@
     "nextStart": "١٤ ديسمبر ٢٠٢٦ · دفعة شتاء ٢٠٢٧",
     "location": "فاب لاب إيچيبت، المعادي + أونلاين",
     "schedule": "الإتنين ٦ م محاضرة أونلاين · الأربع ٦ م سيشن · السبت ١٢ ظ في المعمل",
-    "price": "خصم الحجز المبكر وتقسيط",
-    "priceNote": "الرسوم بنشاركها بعد المقابلة. تقدر تقسّط، وتختار تشتري أو تأجّر الكيت، وتوفّر مع الحجز المبكر.",
+    "price": "يبدأ من ١٨٬٠٠٠ جنيه",
+    "priceNote": "العرض الحالي: الطلاب من ١٨٬٠٠٠ جنيه، والمهنيين من ٢١٬٥٠٠ جنيه. تقدر تقسّط وتختار تشتري أو تأجّر الكيت، والرسوم النهائية بتتأكد بعد المقابلة.",
     "ctaLabel": "قدّم في دبلومة الميكر",
     "overviewTitle": "من فكرة في دماغك لجهاز في إيدك",
     "overview": "<p>التعلّم الحقيقي مش حفظ كتب — هو تجربة عملية، فيها شوية فوضى، ووقودها الفضول. دبلومة الميكر بتوصّل النظري بالتصنيع الحقيقي، وسط مجتمع ناس عندها نفس الشغف.</p><p>كل أسبوع فيه محاضرة أونلاين، وسيشن موجّه، ويوم سبت في المعمل على ماكينات فاب لاب إيچيبت. وبتوثّق كل حاجة في «جورنال الميكر» بتاعك — بورتفوليو عام باللي صممته وبنيته واتعلمته.</p>",
@@ -349,6 +350,7 @@
       "title": "الرسوم وطرق الدفع",
       "body": "مكانك بيتأكد بمقدّم بعد القبول.",
       "items": [
+        "مقعد الطلاب من ١٨٬٠٠٠ جنيه · مقعد المهنيين من ٢١٬٥٠٠ جنيه (العرض الحالي)",
         "أسعار حجز مبكر للمتقدمين بدري",
         "تقسيط: مقدّم وأقساط شهرية، أو عن طريق Sympl",
         "تشتري أو تأجّر كيت الإلكترونيات",
@@ -399,7 +401,7 @@
       },
       {
         "q": "التكلفة كام؟ ينفع أقسّط؟",
-        "a": "الرسوم بنشاركها بعد المقابلة. المتقدمين بدري بياخدوا سعر الحجز المبكر، وتقدر تقسّط أو تدفع عن طريق Sympl، وتختار تشتري أو تأجّر الكيت."
+        "a": "المقاعد حاليًا بتبدأ من ١٨٬٠٠٠ جنيه للطلاب و٢١٬٥٠٠ جنيه للمهنيين. الرسوم النهائية بتتأكد بعد المقابلة، وتقدر تقسّط أو تدفع عن طريق Sympl، وتختار تشتري أو تأجّر الكيت."
       },
       {
         "q": "هاخد شهادة؟",

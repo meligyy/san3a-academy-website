@@ -1,0 +1,122 @@
+{
+  "slug": "cad-digital-fabrication",
+  "order": 6,
+  "published": true,
+  "featured": false,
+  "audience": "youth",
+  "type": "course",
+  "format": "inperson",
+  "status": "open",
+  "commercial": true,
+  "liveKey": "cad-digital-fabrication",
+  "image": "/images/photos/output-smart-city.jpg",
+  "tally": {
+    "form": "bootcamps",
+    "product": "كورس أساسيات التصميم والتصنيع الرقمي - CAD & Digital Fabrication"
+  },
+  "related": [
+    "3d-print-to-jewelry",
+    "maker-diploma",
+    "esp32-for-beginners"
+  ],
+  "en": {
+    "title": "CAD & Digital Fabrication",
+    "short": "Learn computer-aided design and turn your designs into real objects with laser cutters and 3D printers.",
+    "seoTitle": "CAD & Digital Fabrication course — 3D design, laser cutting & 3D printing in Cairo",
+    "seoDescription": "Beginner CAD course in Cairo: design in 2D and 3D, then make it real with laser cutters and 3D printers at Fab Lab Egypt. No experience needed.",
+    "tagline": "From a sketch on paper to a product in your hands.",
+    "summary": "A beginner course in computer-aided design and digital fabrication. You learn to model in 2D and 3D, prepare files for the machines, and fabricate your own parts and products with the laser cutters and 3D printers at Fab Lab Egypt.",
+    "imageAlt": "A laser-cut smart-city model built by San3a learners",
+    "level": "Beginners",
+    "location": "Fab Lab Egypt, Maadi, Cairo",
+    "learn": [
+      "2D and 3D design fundamentals in CAD",
+      "Design for laser cutting: joints, kerf and tolerances",
+      "Design for 3D printing: supports, infill and orientation",
+      "Prepare and run files on the machines safely",
+      "Fabricate and assemble your own product"
+    ],
+    "skills": [
+      "CAD",
+      "2D design",
+      "3D modelling",
+      "Laser cutting",
+      "3D printing",
+      "Digital fabrication"
+    ],
+    "whoFor": [
+      "Designers, architects and engineers who want to make what they design",
+      "Students preparing graduation or portfolio projects",
+      "Makers, crafters and small-business owners"
+    ],
+    "applyTitle": "Register for CAD & Digital Fabrication",
+    "faq": [
+      {
+        "q": "Do I need experience?",
+        "a": "No prior experience is needed for most of our bootcamps — just curiosity and the will to build. Our team will confirm the right level when they contact you."
+      },
+      {
+        "q": "How do I register and pay?",
+        "a": "Fill in the short form on this page. Our team contacts you on WhatsApp within hours with the next round’s dates, fees and payment options."
+      },
+      {
+        "q": "Where does it take place?",
+        "a": "At Fab Lab Egypt / San3a HQ in Maadi, Cairo, with some content online depending on the round."
+      },
+      {
+        "q": "Will I get a certificate?",
+        "a": "Yes, you receive a San3a Academy certificate of completion when you finish the program and its project."
+      }
+    ]
+  },
+  "ar": {
+    "title": "أساسيات التصميم والتصنيع الرقمي (CAD)",
+    "short": "اتعلم التصميم بالكمبيوتر وحوّل تصميماتك لحاجات حقيقية بالقص بالليزر والطابعات ثلاثية الأبعاد.",
+    "seoTitle": "كورس CAD والتصنيع الرقمي — تصميم ثلاثي الأبعاد وقص بالليزر وطباعة ثلاثية الأبعاد في القاهرة",
+    "seoDescription": "كورس CAD للمبتدئين في القاهرة: صمم ٢D و٣D وحوّل تصميمك لحقيقة بالليزر والطابعات ثلاثية الأبعاد في فاب لاب إيچيبت. مش محتاج خبرة.",
+    "tagline": "من اسكتش على ورقة لمنتج في إيدك.",
+    "summary": "كورس للمبتدئين في التصميم بمساعدة الكمبيوتر والتصنيع الرقمي. هتتعلم تصمم ثنائي وثلاثي الأبعاد، وتجهّز الملفات للماكينات، وتصنّع قطعك ومنتجاتك بنفسك على ليزر كاتر وطابعات فاب لاب إيچيبت.",
+    "imageAlt": "مجسم مدينة ذكية مقصوص بالليزر من تصميم متعلمي صنعة",
+    "level": "مبتدئين",
+    "location": "فاب لاب إيچيبت، المعادي، القاهرة",
+    "learn": [
+      "أساسيات التصميم ثنائي وثلاثي الأبعاد بالـCAD",
+      "التصميم للقص بالليزر: الوصلات والسماحيات",
+      "التصميم للطباعة ثلاثية الأبعاد: الدعامات والحشو والاتجاه",
+      "تجهيز وتشغيل الملفات على الماكينات بأمان",
+      "تصنيع وتجميع منتجك بنفسك"
+    ],
+    "skills": [
+      "CAD",
+      "التصميم ثنائي الأبعاد",
+      "النمذجة ثلاثية الأبعاد",
+      "القص بالليزر",
+      "الطباعة ثلاثية الأبعاد",
+      "التصنيع الرقمي"
+    ],
+    "whoFor": [
+      "مصممين ومعماريين ومهندسين عايزين يصنعوا اللي بيصمموه",
+      "طلبة بيجهزوا مشاريع تخرج أو بورتفوليو",
+      "صُنّاع وحرفيين وأصحاب مشاريع صغيرة"
+    ],
+    "applyTitle": "سجّل في كورس CAD والتصنيع الرقمي",
+    "faq": [
+      {
+        "q": "محتاج خبرة قبل كده؟",
+        "a": "أغلب معسكراتنا مش محتاجة خبرة مسبقة — محتاج بس فضول ورغبة إنك تبني. فريقنا هيأكد معاك المستوى المناسب لما يتواصل معاك."
+      },
+      {
+        "q": "أسجّل وأدفع إزاي؟",
+        "a": "املأ الاستمارة القصيرة في الصفحة دي. فريقنا هيتواصل معاك على واتساب خلال ساعات بمواعيد الدفعة الجاية والرسوم وطرق الدفع."
+      },
+      {
+        "q": "البرنامج بيتعمل فين؟",
+        "a": "في فاب لاب إيچيبت / مقر صنعة بالمعادي، القاهرة، وجزء من المحتوى أونلاين حسب الدفعة."
+      },
+      {
+        "q": "هاخد شهادة؟",
+        "a": "أيوه، بتاخد شهادة إتمام من صنعة أكاديمي لما تخلّص البرنامج ومشروعه."
+      }
+    ]
+  }
+}

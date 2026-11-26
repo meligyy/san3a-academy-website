@@ -1,0 +1,101 @@
+{
+  "slug": "design-thinking-bootcamp",
+  "order": 11,
+  "published": true,
+  "featured": false,
+  "audience": "educators",
+  "type": "bootcamp",
+  "format": "hybrid",
+  "status": "soon",
+  "commercial": true,
+  "liveKey": "design-thinking-bootcamp",
+  "image": "/images/photos/educators.jpg",
+  "related": [
+    "edumakers",
+    "learning-studios"
+  ],
+  "en": {
+    "title": "Design Thinking Bootcamp",
+    "short": "A hands-on bootcamp in design thinking for STEAM educators and facilitators — turn students’ questions into real projects.",
+    "seoTitle": "Design Thinking Bootcamp for teachers & STEAM educators in Egypt",
+    "seoDescription": "A hybrid design-thinking bootcamp for teachers and STEAM facilitators: empathise, define, ideate, prototype and test — with ready-to-use classroom activities.",
+    "tagline": "A practical method to turn curiosity into projects that solve real problems.",
+    "summary": "Design thinking gives educators a repeatable way to run projects that start from real people and real problems. In this hybrid bootcamp you practise every stage yourself, then leave with activities, templates and assessment ideas for your classroom or learning space.",
+    "imageAlt": "Educators engaged and laughing during a San3a Academy session",
+    "level": "Educators & facilitators",
+    "location": "Hybrid · Cairo + online",
+    "nextStart": "Relaunching soon — register your interest",
+    "learn": [
+      "The five stages: empathise, define, ideate, prototype, test",
+      "Run design challenges with large and mixed-ability classes",
+      "Low-cost prototyping materials and techniques",
+      "Assess process, collaboration and creativity",
+      "Connect design projects to the curriculum"
+    ],
+    "skills": [
+      "Design thinking",
+      "STEAM pedagogy",
+      "Facilitation",
+      "Prototyping",
+      "Project-based learning"
+    ],
+    "whoFor": [
+      "Teachers in public, private and international schools",
+      "STEAM facilitators in NGOs and learning centres",
+      "School leaders building innovation programs"
+    ],
+    "applyTitle": "Register your interest",
+    "faq": [
+      {
+        "q": "Do I need experience?",
+        "a": "No prior experience is needed for most of our bootcamps — just curiosity and the will to build. Our team will confirm the right level when they contact you."
+      },
+      {
+        "q": "How do I register and pay?",
+        "a": "Fill in the short form on this page. Our team contacts you on WhatsApp within hours with the next round’s dates, fees and payment options."
+      }
+    ]
+  },
+  "ar": {
+    "title": "معسكر التفكير التصميمي",
+    "short": "معسكر عملي في التفكير التصميمي لمعلمي وميسّري STEAM — حوّل أسئلة طلابك لمشاريع حقيقية.",
+    "seoTitle": "معسكر التفكير التصميمي للمعلمين وميسّري STEAM في مصر",
+    "seoDescription": "معسكر هجين في التفكير التصميمي للمعلمين وميسّري STEAM: التعاطف والتعريف والأفكار والنماذج والاختبار — مع أنشطة جاهزة للفصل.",
+    "tagline": "طريقة عملية تحوّل الفضول لمشاريع بتحل مشاكل حقيقية.",
+    "summary": "التفكير التصميمي بيدّي المعلمين طريقة متكررة لإدارة مشاريع بتبدأ من ناس حقيقيين ومشاكل حقيقية. في المعسكر الهجين ده هتمارس كل مرحلة بنفسك، وتخرج بأنشطة وقوالب وأفكار للتقييم لفصلك أو مساحة التعلم بتاعتك.",
+    "imageAlt": "معلمات متفاعلات وبيضحكوا في جلسة من جلسات صنعة أكاديمي",
+    "level": "معلمين وميسّرين",
+    "location": "هجين · القاهرة + أونلاين",
+    "nextStart": "قريبًا — سجّل اهتمامك",
+    "learn": [
+      "المراحل الخمسة: التعاطف والتعريف وتوليد الأفكار والنمذجة والاختبار",
+      "إدارة تحديات تصميم مع فصول كبيرة ومستويات مختلفة",
+      "خامات وأساليب نمذجة قليلة التكلفة",
+      "تقييم العملية والتعاون والإبداع",
+      "ربط مشاريع التصميم بالمنهج"
+    ],
+    "skills": [
+      "التفكير التصميمي",
+      "طرق تدريس STEAM",
+      "التيسير",
+      "النماذج الأولية",
+      "التعلم بالمشاريع"
+    ],
+    "whoFor": [
+      "مدرسين في المدارس الحكومية والخاصة والدولية",
+      "ميسّري STEAM في الجمعيات ومراكز التعلم",
+      "قيادات مدرسية بتبني برامج ابتكار"
+    ],
+    "applyTitle": "سجّل اهتمامك",
+    "faq": [
+      {
+        "q": "محتاج خبرة قبل كده؟",
+        "a": "أغلب معسكراتنا مش محتاجة خبرة مسبقة — محتاج بس فضول ورغبة إنك تبني. فريقنا هيأكد معاك المستوى المناسب لما يتواصل معاك."
+      },
+      {
+        "q": "أسجّل وأدفع إزاي؟",
+        "a": "املأ الاستمارة القصيرة في الصفحة دي. فريقنا هيتواصل معاك على واتساب خلال ساعات بمواعيد الدفعة الجاية والرسوم وطرق الدفع."
+      }
+    ]
+  }
+}

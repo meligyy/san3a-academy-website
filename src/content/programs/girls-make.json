@@ -11,22 +11,28 @@
   "commercial": false,
   "liveKey": "girls-make",
   "image": "/images/photos/youth-maker.jpg",
-  "tally": { "form": "girlsMake" },
-  "related": ["maker-diploma", "cad-digital-fabrication", "learning-studios"],
+  "tally": {
+    "form": "girlsMake"
+  },
+  "related": [
+    "maker-diploma",
+    "cad-digital-fabrication",
+    "learning-studios"
+  ],
   "en": {
     "title": "Girls Make",
-    "short": "A free 12-week summer program for girls aged 14–18 in seven governorates: design, build and code real solutions with your team.",
+    "short": "A free 11-week summer program for girls in Grades 8–11 at government schools in seven governorates: design, build and code real solutions with your team.",
     "seoTitle": "Girls Make — free STEM & making program for girls 14–18 in Egypt",
-    "seoDescription": "Girls Make is a fully funded 12-week summer program for girls aged 14–18 in 7 governorates: 3D design, laser cutting, Arduino, coding and design thinking.",
+    "seoDescription": "Girls Make is a fully funded 11-week summer program for girls in Grades 8–11 in 7 governorates: 3D design, laser cutting, Arduino, coding and design thinking.",
     "tagline": "Any curious girl can apply — no coding or engineering experience needed.",
     "summary": "A fully funded program where teenage girls learn digital fabrication, electronics, programming and design thinking, then work in teams to build solutions to real challenges in their communities. 289 young women have graduated across seven cities.",
     "imageAlt": "A Girls Make participant presenting her project",
-    "duration": "12 weeks · summer",
+    "duration": "11 weeks · June–September 2027",
     "level": "Girls aged 14–18 (Grades 8–11)",
     "location": "Cairo, Alexandria, Zagazig, Mansoura, Ismailia, Assiut & Aswan",
     "nextStart": "Summer 2027 · applications open",
     "price": "Fully funded",
-    "priceNote": "Free for every participant, thanks to Chevron. A small refundable commitment fee may apply to secure your seat.",
+    "priceNote": "Free for every participant, sponsored by Chevron with the Ministry of Petroleum. Girls who are finally accepted pay a 1,000 EGP commitment deposit, refunded in full when they graduate.",
     "ctaLabel": "Apply for Girls Make",
     "overviewTitle": "Build your confidence by building real things",
     "overview": "<p>Girls Make is for curious girls — not only future coders. Over a summer you learn the tools makers use, then team up with other girls to explore a real problem in your community and build a working solution you are proud of.</p><p>It is designed with families in mind: trusted local hubs, female mentors and a safe, supportive environment from the first session to the final showcase.</p>",
@@ -37,70 +43,164 @@
       "Design thinking: from a community problem to a tested prototype",
       "Teamwork, presentation and the maker mindset"
     ],
-    "skills": ["TinkerCAD", "3D printing", "Laser cutting", "Arduino", "mBlock", "Design thinking", "Teamwork", "Public speaking"],
+    "skills": [
+      "TinkerCAD",
+      "3D printing",
+      "Laser cutting",
+      "Arduino",
+      "mBlock",
+      "Design thinking",
+      "Teamwork",
+      "Public speaking"
+    ],
     "outcomes": [
-      { "n": "289", "label": "graduates out of 300 participants — 96% completion" },
-      { "n": "89%", "label": "more confident using CAD and 3D printing" },
-      { "n": "90%", "label": "built teamwork and communication skills" },
-      { "n": "70%", "label": "more interested in STEM careers" }
+      {
+        "n": "289",
+        "label": "graduates out of 300 participants — 96% completion"
+      },
+      {
+        "n": "89%",
+        "label": "more confident using CAD and 3D printing"
+      },
+      {
+        "n": "90%",
+        "label": "built teamwork and communication skills"
+      },
+      {
+        "n": "70%",
+        "label": "more interested in STEM careers"
+      }
     ],
     "outcomesSource": "San3a Academy Profile, July 2026",
     "syllabusTitle": "Five strands, one team project",
-    "syllabusLead": "Weekly hands-on sessions at your local hub, ending with a team showcase.",
+    "syllabusLead": "100+ hands-on activities over 11 weeks at your local hub, ending with a team showcase.",
     "modules": [
-      { "n": 1, "title": "Digital fabrication & 3D design", "summary": "Model objects in TinkerCAD, then make them real with laser cutters and 3D printers." },
-      { "n": 2, "title": "Electronics & physical computing", "summary": "Circuits, sensors and Arduino — make your designs light up, move and sense." },
-      { "n": 3, "title": "Programming & logic", "summary": "Think like a programmer with mBlock: sequences, conditions, loops and events." },
-      { "n": 4, "title": "Design thinking & innovation", "summary": "Interview your community, define a real problem, ideate, prototype and test." },
-      { "n": 5, "title": "Maker mindset & professional skills", "summary": "Teamwork, communication, presenting your project and believing in your ideas." }
+      {
+        "n": 1,
+        "title": "Digital fabrication & 3D design",
+        "summary": "Model objects in TinkerCAD, then make them real with laser cutters and 3D printers."
+      },
+      {
+        "n": 2,
+        "title": "Electronics & physical computing",
+        "summary": "Circuits, sensors and Arduino — make your designs light up, move and sense."
+      },
+      {
+        "n": 3,
+        "title": "Programming & logic",
+        "summary": "Think like a programmer with mBlock: sequences, conditions, loops and events."
+      },
+      {
+        "n": 4,
+        "title": "Design thinking & innovation",
+        "summary": "Interview your community, define a real problem, ideate, prototype and test."
+      },
+      {
+        "n": 5,
+        "title": "Maker mindset & professional skills",
+        "summary": "Teamwork, communication, presenting your project and believing in your ideas."
+      }
     ],
     "projectsTitle": "What you’ll build",
     "projects": [
-      { "title": "Your first 3D-printed design", "body": "From a sketch to an object you can hold — designed by you in TinkerCAD." },
-      { "title": "A smart, interactive gadget", "body": "Sensors, lights and code on an Arduino, inside a laser-cut enclosure." },
-      { "title": "A team solution for your community", "body": "A working prototype that tackles a real challenge, presented at the final showcase." }
+      {
+        "title": "Your first 3D-printed design",
+        "body": "From a sketch to an object you can hold — designed by you in TinkerCAD."
+      },
+      {
+        "title": "A smart, interactive gadget",
+        "body": "Sensors, lights and code on an Arduino, inside a laser-cut enclosure."
+      },
+      {
+        "title": "A team solution for your community",
+        "body": "A working prototype that tackles a real challenge, presented at the final showcase."
+      }
     ],
     "whoFor": [
-      "Girls aged 14–18 (Grades 8–11) who are curious about technology",
+      "Girls in Grades 8–11 (2nd preparatory to 2nd secondary) in the school year starting September 2027",
+      "Students at government schools (private, international, STEM and applied-technology schools are not included)",
       "Living in Cairo, Alexandria, Sharqia (Zagazig), Dakahlia (Mansoura), Ismailia, Assiut or Aswan",
       "No coding, engineering or art experience needed"
     ],
     "requirements": [
+      "Full attendance: 3 days a week, 11 am–4 pm, June to September 2027",
+      "A refundable 1,000 EGP commitment deposit after final acceptance",
       "Signed parental consent",
-      "Full attendance through the summer",
       "Curiosity and willingness to work in a team"
     ],
-    "fees": { "title": "Fully funded by Chevron", "body": "Girls Make is free for every accepted participant. Materials, machines and mentors are covered.", "items": ["No tuition fees", "Materials and fabrication included", "Female mentors and trusted local hubs", "Certificate at the final showcase"] },
-    "testimonial": { "quote": "It was honestly one of the best journeys I’ve ever been part of — full of creativity, teamwork and new challenges. I gained new skills, built confidence, and learned how to turn ideas into real solutions.", "name": "Malak I.", "role": "Girls Make 2025 participant" },
+    "fees": {
+      "title": "Fully funded by Chevron",
+      "body": "Girls Make is free for every accepted participant. Materials, machines and mentors are covered.",
+      "items": [
+        "No tuition fees",
+        "Materials and fabrication included",
+        "Female mentors and trusted local hubs",
+        "Refundable 1,000 EGP commitment deposit",
+        "Certificate at the final showcase"
+      ]
+    },
+    "testimonial": {
+      "quote": "It was honestly one of the best journeys I’ve ever been part of — full of creativity, teamwork and new challenges. I gained new skills, built confidence, and learned how to turn ideas into real solutions.",
+      "name": "Malak I.",
+      "role": "Girls Make 2025 participant"
+    },
     "applyTitle": "Apply for Girls Make",
     "applyLead": "The application takes a few minutes. Our team reviews every application and contacts shortlisted girls and their families.",
     "applySteps": [
-      { "title": "Apply online", "body": "Tell us about yourself and why you want to join." },
-      { "title": "Screening & interview", "body": "We get to know shortlisted applicants and their families." },
-      { "title": "Welcome to your hub", "body": "Accepted girls join their local hub for the summer." }
+      {
+        "title": "Apply online",
+        "body": "Fill in the form yourself — we want to hear your ideas in your own words."
+      },
+      {
+        "title": "Interview",
+        "body": "We meet shortlisted girls and their families after the deadline."
+      },
+      {
+        "title": "Bootcamp",
+        "body": "A short hands-on bootcamp before the final selection."
+      },
+      {
+        "title": "Join your hub",
+        "body": "Accepted girls confirm their seat with a refundable deposit and start in June."
+      }
     ],
     "faq": [
-      { "q": "Do I need to know coding or engineering?", "a": "No. Any curious girl aged 14–18 can apply. We teach everything from the basics." },
-      { "q": "How much does it cost?", "a": "Nothing — Girls Make is fully funded by Chevron. A small refundable commitment fee may be requested to secure your seat." },
-      { "q": "Where does it take place?", "a": "At partner hubs in Cairo, Alexandria, Zagazig, Mansoura, Ismailia, Assiut and Aswan. Locations are confirmed with each new round." },
-      { "q": "Is it safe for my daughter?", "a": "Yes. Sessions run at trusted partner hubs with trained female mentors, and we ask for signed parental consent for every participant." },
-      { "q": "What happens at the end?", "a": "Teams present their projects at a final showcase and graduates receive a certificate." }
+      {
+        "q": "Do I need to know coding or engineering?",
+        "a": "No. Any curious girl in Grades 8–11 at a government school in the seven governorates can apply. We teach everything from the basics."
+      },
+      {
+        "q": "How much does it cost?",
+        "a": "Nothing — Girls Make is fully funded by Chevron. Girls who are finally accepted (after the application, interview and bootcamp) pay a 1,000 EGP commitment deposit that is refunded in full when they graduate."
+      },
+      {
+        "q": "Where does it take place?",
+        "a": "At partner hubs in Cairo, Alexandria, Zagazig, Mansoura, Ismailia, Assiut and Aswan. Locations are confirmed with each new round."
+      },
+      {
+        "q": "Is it safe for my daughter?",
+        "a": "Yes. Sessions run at trusted partner hubs with trained female mentors, and we ask for signed parental consent for every participant."
+      },
+      {
+        "q": "What happens at the end?",
+        "a": "Teams present their projects at a final showcase and graduates receive a certificate."
+      }
     ]
   },
   "ar": {
     "title": "Girls Make",
-    "short": "برنامج صيفي مجاني ١٢ أسبوع للبنات من ١٤ لـ ١٨ سنة في ٧ محافظات: صممي وابني وبرمجي حلول حقيقية مع فريقك.",
+    "short": "برنامج صيفي مجاني ١١ أسبوع لبنات المدارس الحكومية من تانية إعدادي لتانية ثانوي في ٧ محافظات: صممي وابني وبرمجي حلول حقيقية مع فريقك.",
     "seoTitle": "Girls Make — برنامج STEM وتصنيع مجاني للبنات من ١٤ لـ ١٨ سنة في مصر",
     "seoDescription": "Girls Make برنامج صيفي ممول بالكامل ١٢ أسبوع للبنات من ١٤ لـ ١٨ سنة في ٧ محافظات: تصميم ثلاثي الأبعاد، قص بالليزر، Arduino، برمجة وتفكير تصميمي.",
     "tagline": "أي بنت عندها فضول تقدر تقدّم — مش محتاجة خبرة في البرمجة أو الهندسة.",
     "summary": "برنامج ممول بالكامل بتتعلم فيه البنات التصنيع الرقمي والإلكترونيات والبرمجة والتفكير التصميمي، وبعدها بيشتغلوا في فرق علشان يبنوا حلول لتحديات حقيقية في مجتمعاتهم. اتخرّج منه ٢٨٩ بنت في ٧ مدن.",
     "imageAlt": "مشاركة في Girls Make بتعرض مشروعها",
-    "duration": "١٢ أسبوع · في الصيف",
+    "duration": "١١ أسبوع · يونيو–سبتمبر ٢٠٢٧",
     "level": "بنات من ١٤ لـ ١٨ سنة (من تانية إعدادي لتانية ثانوي)",
     "location": "القاهرة، الإسكندرية، الزقازيق، المنصورة، الإسماعيلية، أسيوط وأسوان",
     "nextStart": "صيف ٢٠٢٧ · التقديم مفتوح",
     "price": "ممول بالكامل",
-    "priceNote": "مجاني لكل المشاركات بدعم من شيفرون. ممكن يُطلب مبلغ التزام بسيط بيترد علشان تأكيد المكان.",
+    "priceNote": "مجاني لكل المشاركات برعاية شيفرون وبالتعاون مع وزارة البترول. البنات المقبولات نهائيًا بيدفعوا مبلغ التزام ١٠٠٠ جنيه بيترد بالكامل مع التخرج.",
     "ctaLabel": "قدّمي في Girls Make",
     "overviewTitle": "ابني ثقتك وانتي بتبني حاجات حقيقية",
     "overview": "<p>Girls Make لكل بنت عندها فضول — مش بس اللي عايزة تبقى مبرمجة. في الصيف هتتعلمي الأدوات اللي الصُّنّاع بيستخدموها، وبعدها هتشتغلي مع بنات تانيين على مشكلة حقيقية في مجتمعك وتبنوا حل شغّال تفتخري بيه.</p><p>البرنامج متصمم وفي باله الأسرة: مراكز محلية موثوقة، ومنتورز بنات، وبيئة آمنة وداعمة من أول سيشن لحد العرض النهائي.</p>",
@@ -111,54 +211,148 @@
       "التفكير التصميمي: من مشكلة في المجتمع لنموذج متجرّب",
       "العمل الجماعي والعرض وعقلية الصانع"
     ],
-    "skills": ["TinkerCAD", "الطباعة ثلاثية الأبعاد", "القص بالليزر", "Arduino", "mBlock", "التفكير التصميمي", "العمل الجماعي", "العرض والتقديم"],
+    "skills": [
+      "TinkerCAD",
+      "الطباعة ثلاثية الأبعاد",
+      "القص بالليزر",
+      "Arduino",
+      "mBlock",
+      "التفكير التصميمي",
+      "العمل الجماعي",
+      "العرض والتقديم"
+    ],
     "outcomes": [
-      { "n": "289", "label": "خريجة من ٣٠٠ مشاركة — نسبة إتمام ٩٦٪" },
-      { "n": "89%", "label": "بقوا أكثر ثقة في الـCAD والطباعة ثلاثية الأبعاد" },
-      { "n": "90%", "label": "طوّروا مهارات العمل الجماعي والتواصل" },
-      { "n": "70%", "label": "زاد اهتمامهم بمجالات STEM" }
+      {
+        "n": "289",
+        "label": "خريجة من ٣٠٠ مشاركة — نسبة إتمام ٩٦٪"
+      },
+      {
+        "n": "89%",
+        "label": "بقوا أكثر ثقة في الـCAD والطباعة ثلاثية الأبعاد"
+      },
+      {
+        "n": "90%",
+        "label": "طوّروا مهارات العمل الجماعي والتواصل"
+      },
+      {
+        "n": "70%",
+        "label": "زاد اهتمامهم بمجالات STEM"
+      }
     ],
     "outcomesSource": "ملف صنعة أكاديمي، يوليو ٢٠٢٦",
     "syllabusTitle": "٥ محاور ومشروع فريق واحد",
-    "syllabusLead": "سيشنز عملية كل أسبوع في المركز القريب منك، وفي الآخر عرض لمشروع الفريق.",
+    "syllabusLead": "أكتر من ١٠٠ نشاط عملي على مدار ١١ أسبوع في مركزك المحلي، وفي الآخر عرض نهائي لمشروع الفريق.",
     "modules": [
-      { "n": 1, "title": "التصنيع الرقمي والتصميم ثلاثي الأبعاد", "summary": "صممي مجسمات على TinkerCAD، وحوّليها لحقيقة بالليزر والطابعات ثلاثية الأبعاد." },
-      { "n": 2, "title": "الإلكترونيات والحوسبة الفيزيائية", "summary": "دوائر وحساسات وArduino — خلّي تصميماتك تنوّر وتتحرك وتحس." },
-      { "n": 3, "title": "البرمجة والمنطق", "summary": "فكّري زي المبرمجين بـmBlock: تسلسل وشروط وتكرار وأحداث." },
-      { "n": 4, "title": "التفكير التصميمي والابتكار", "summary": "اسألي مجتمعك، وحددي مشكلة حقيقية، وطلّعي أفكار، واعملي نموذج وجرّبيه." },
-      { "n": 5, "title": "عقلية الصانع والمهارات المهنية", "summary": "العمل الجماعي والتواصل وعرض مشروعك والثقة في أفكارك." }
+      {
+        "n": 1,
+        "title": "التصنيع الرقمي والتصميم ثلاثي الأبعاد",
+        "summary": "صممي مجسمات على TinkerCAD، وحوّليها لحقيقة بالليزر والطابعات ثلاثية الأبعاد."
+      },
+      {
+        "n": 2,
+        "title": "الإلكترونيات والحوسبة الفيزيائية",
+        "summary": "دوائر وحساسات وArduino — خلّي تصميماتك تنوّر وتتحرك وتحس."
+      },
+      {
+        "n": 3,
+        "title": "البرمجة والمنطق",
+        "summary": "فكّري زي المبرمجين بـmBlock: تسلسل وشروط وتكرار وأحداث."
+      },
+      {
+        "n": 4,
+        "title": "التفكير التصميمي والابتكار",
+        "summary": "اسألي مجتمعك، وحددي مشكلة حقيقية، وطلّعي أفكار، واعملي نموذج وجرّبيه."
+      },
+      {
+        "n": 5,
+        "title": "عقلية الصانع والمهارات المهنية",
+        "summary": "العمل الجماعي والتواصل وعرض مشروعك والثقة في أفكارك."
+      }
     ],
     "projectsTitle": "هتبني إيه",
     "projects": [
-      { "title": "أول تصميم ليكي مطبوع ثلاثي الأبعاد", "body": "من اسكتش لمجسم تمسكيه بإيدك — من تصميمك على TinkerCAD." },
-      { "title": "جهاز ذكي تفاعلي", "body": "حساسات وإضاءة وبرمجة على Arduino، جوه علبة مقصوصة بالليزر." },
-      { "title": "حل جماعي لمجتمعك", "body": "نموذج شغّال بيتعامل مع تحدي حقيقي، بتعرضوه في العرض النهائي." }
+      {
+        "title": "أول تصميم ليكي مطبوع ثلاثي الأبعاد",
+        "body": "من اسكتش لمجسم تمسكيه بإيدك — من تصميمك على TinkerCAD."
+      },
+      {
+        "title": "جهاز ذكي تفاعلي",
+        "body": "حساسات وإضاءة وبرمجة على Arduino، جوه علبة مقصوصة بالليزر."
+      },
+      {
+        "title": "حل جماعي لمجتمعك",
+        "body": "نموذج شغّال بيتعامل مع تحدي حقيقي، بتعرضوه في العرض النهائي."
+      }
     ],
     "whoFor": [
-      "بنات من ١٤ لـ ١٨ سنة عندهم فضول للتكنولوجيا",
+      "بنات من تانية إعدادي لتانية ثانوي (في العام الدراسي اللي بيبدأ سبتمبر ٢٠٢٧)",
+      "طالبات المدارس الحكومية والرسمية (المدارس الخاصة والدولية ومدارس STEM والتطبيقية مش مشمولة)",
       "مقيمات في القاهرة أو الإسكندرية أو الشرقية (الزقازيق) أو الدقهلية (المنصورة) أو الإسماعيلية أو أسيوط أو أسوان",
       "مش محتاجة خبرة في البرمجة أو الهندسة أو الفن"
     ],
     "requirements": [
+      "حضور كامل: ٣ أيام في الأسبوع من ١١ الصبح لـ ٤ العصر، من يونيو لسبتمبر ٢٠٢٧",
+      "مبلغ التزام ١٠٠٠ جنيه بيترد بالكامل، بيتدفع بعد القبول النهائي",
       "موافقة موقّعة من ولي الأمر",
-      "حضور كامل طول فترة البرنامج",
       "فضول واستعداد للشغل في فريق"
     ],
-    "fees": { "title": "ممول بالكامل من شيفرون", "body": "Girls Make مجاني لكل مشاركة مقبولة. الخامات والماكينات والمنتورز كلها متغطية.", "items": ["من غير مصاريف دراسية", "الخامات والتصنيع مشمولين", "منتورز بنات ومراكز محلية موثوقة", "شهادة في العرض النهائي"] },
-    "testimonial": { "quote": "بصراحة كانت من أحلى الرحلات اللي شاركت فيها — مليانة إبداع وشغل جماعي وتحديات جديدة. اكتسبت مهارات جديدة، وبنيت ثقتي، واتعلمت أحوّل الأفكار لحلول حقيقية.", "name": "ملك إ.", "role": "مشاركة في Girls Make ٢٠٢٥" },
+    "fees": {
+      "title": "ممول بالكامل من شيفرون",
+      "body": "Girls Make مجاني لكل مشاركة مقبولة. الخامات والماكينات والمنتورز كلها متغطية.",
+      "items": [
+        "من غير مصاريف دراسية",
+        "الخامات والتصنيع مشمولين",
+        "منتورز بنات ومراكز محلية موثوقة",
+        "مبلغ التزام ١٠٠٠ جنيه بيترد",
+        "شهادة في العرض النهائي"
+      ]
+    },
+    "testimonial": {
+      "quote": "بصراحة كانت من أحلى الرحلات اللي شاركت فيها — مليانة إبداع وشغل جماعي وتحديات جديدة. اكتسبت مهارات جديدة، وبنيت ثقتي، واتعلمت أحوّل الأفكار لحلول حقيقية.",
+      "name": "ملك إ.",
+      "role": "مشاركة في Girls Make ٢٠٢٥"
+    },
     "applyTitle": "قدّمي في Girls Make",
     "applyLead": "الاستمارة بتاخد دقايق. فريقنا بيراجع كل طلب وبيتواصل مع البنات اللي اتقبلوا مبدئيًا وأسرهم.",
     "applySteps": [
-      { "title": "قدّمي أونلاين", "body": "احكيلنا عن نفسك وليه عايزة تنضمي." },
-      { "title": "الفرز والمقابلة", "body": "بنتعرف على المتقدمات المرشحات وأسرهم." },
-      { "title": "أهلًا بيكي في المركز", "body": "البنات المقبولين بينضموا لمركزهم المحلي طول الصيف." }
+      {
+        "title": "قدّمي أونلاين",
+        "body": "املي الاستمارة بنفسك — عايزين نسمع أفكارك بكلامك انتي."
+      },
+      {
+        "title": "المقابلة",
+        "body": "بنقابل المرشحات وأسرهم بعد آخر ميعاد للتقديم."
+      },
+      {
+        "title": "المعسكر",
+        "body": "معسكر عملي قصير قبل الاختيار النهائي."
+      },
+      {
+        "title": "انضمي لمركزك",
+        "body": "المقبولات بيأكدوا مكانهم بمبلغ التزام بيترد ويبدأوا في يونيو."
+      }
     ],
     "faq": [
-      { "q": "لازم أعرف برمجة أو هندسة؟", "a": "لأ. أي بنت عندها فضول من ١٤ لـ ١٨ سنة تقدر تقدّم. بنعلّم كل حاجة من الأساسيات." },
-      { "q": "التكلفة كام؟", "a": "ولا حاجة — Girls Make ممول بالكامل من شيفرون. ممكن يُطلب مبلغ التزام بسيط بيترد علشان تأكيد المكان." },
-      { "q": "البرنامج بيتعمل فين؟", "a": "في مراكز شريكة في القاهرة والإسكندرية والزقازيق والمنصورة والإسماعيلية وأسيوط وأسوان. الأماكن بتتأكد مع كل دورة جديدة." },
-      { "q": "البرنامج آمن لبنتي؟", "a": "أيوه. السيشنز في مراكز شريكة موثوقة مع منتورز بنات مدرّبين، وبنطلب موافقة موقّعة من ولي الأمر لكل مشاركة." },
-      { "q": "إيه اللي بيحصل في الآخر؟", "a": "الفرق بتعرض مشاريعها في عرض نهائي، والخريجات بياخدوا شهادة." }
+      {
+        "q": "لازم أعرف برمجة أو هندسة؟",
+        "a": "لأ. أي بنت عندها فضول من تانية إعدادي لتانية ثانوي في مدرسة حكومية في المحافظات السبعة تقدر تقدّم. بنعلّم كل حاجة من الأساسيات."
+      },
+      {
+        "q": "التكلفة كام؟",
+        "a": "ولا حاجة — Girls Make ممول بالكامل من شيفرون. البنات المقبولات نهائيًا (بعد الاستمارة والمقابلة والمعسكر) بيدفعوا مبلغ التزام ١٠٠٠ جنيه بيترد بالكامل مع التخرج."
+      },
+      {
+        "q": "البرنامج بيتعمل فين؟",
+        "a": "في مراكز شريكة في القاهرة والإسكندرية والزقازيق والمنصورة والإسماعيلية وأسيوط وأسوان. الأماكن بتتأكد مع كل دورة جديدة."
+      },
+      {
+        "q": "البرنامج آمن لبنتي؟",
+        "a": "أيوه. السيشنز في مراكز شريكة موثوقة مع منتورز بنات مدرّبين، وبنطلب موافقة موقّعة من ولي الأمر لكل مشاركة."
+      },
+      {
+        "q": "إيه اللي بيحصل في الآخر؟",
+        "a": "الفرق بتعرض مشاريعها في عرض نهائي، والخريجات بياخدوا شهادة."
+      }
     ]
   }
 }

@@ -11,8 +11,14 @@
   "commercial": false,
   "liveKey": "edumakers",
   "image": "/images/photos/educators-celebrating.jpg",
-  "tally": { "form": "eduMakers" },
-  "related": ["design-thinking-bootcamp", "maker-diploma", "learning-studios"],
+  "tally": {
+    "form": "eduMakers"
+  },
+  "related": [
+    "design-thinking-bootcamp",
+    "maker-diploma",
+    "learning-studios"
+  ],
   "en": {
     "title": "EduMakers Diploma",
     "short": "A funded diploma for teachers and science facilitators in Cairo and Aswan: bring making, experiments and design thinking into your classroom.",
@@ -21,12 +27,12 @@
     "tagline": "Training teachers to bring making and design thinking into their classrooms.",
     "summary": "A hands-on diploma that helps educators turn science lessons into experiences students can touch, build and question. Teachers learn by doing — through interactive labs, classroom experiments and integrated projects they take straight back to school.",
     "imageAlt": "Teachers celebrating at the EduMakers graduation",
-    "duration": "About 13 weeks",
-    "level": "Teachers & science facilitators",
+    "duration": "~13-week summer diploma + 6-month fellowship",
+    "level": "Teachers, facilitators & education students (20–50)",
     "location": "Cairo & Aswan",
     "nextStart": "New round · applications open",
     "price": "Fully funded",
-    "priceNote": "Funded for selected teachers through the Nur Tech program, supported by the Drosos Foundation.",
+    "priceNote": "Free through Nur Tech, supported by the Drosos Foundation. Accepted participants pay an 800 EGP commitment fee, refunded in full when they complete the program.",
     "ctaLabel": "Apply to EduMakers",
     "overviewTitle": "Make your classroom a place where students make",
     "overview": "<p>EduMakers respects your expertise and your constraints. You work with low-cost materials and lesson designs that fit real class sizes and timetables, and you practise every activity yourself before you teach it.</p><p>The program is part of Nur Tech, a multi-year initiative with the Drosos Foundation to grow a community of maker educators in Cairo and Aswan.</p>",
@@ -38,32 +44,94 @@
       "Assess learning through what students make",
       "Lead integrated projects with your school community"
     ],
-    "skills": ["STEAM pedagogy", "Classroom experiments", "Design thinking", "Project-based learning", "Low-cost prototyping", "Facilitation"],
+    "skills": [
+      "STEAM pedagogy",
+      "Classroom experiments",
+      "Design thinking",
+      "Project-based learning",
+      "Low-cost prototyping",
+      "Facilitation"
+    ],
     "outcomes": [
-      { "n": "51", "label": "teachers graduated in the first cohort" },
-      { "n": "166+", "label": "learning hours" },
-      { "n": "32", "label": "interactive labs" },
-      { "n": "130+", "label": "classroom experiments" }
+      {
+        "n": "51",
+        "label": "teachers graduated in the first cohort"
+      },
+      {
+        "n": "166+",
+        "label": "learning hours"
+      },
+      {
+        "n": "32",
+        "label": "interactive labs"
+      },
+      {
+        "n": "130+",
+        "label": "classroom experiments"
+      }
     ],
     "outcomesSource": "EduMakers first cohort, Cairo & Aswan, October 2026",
     "whoFor": [
-      "Science and STEM teachers in public, private and community schools",
-      "Science facilitators and educators in NGOs and learning centres",
-      "Educators in Cairo and Aswan (each round announces its target areas)"
+      "School teachers of any subject — science, maths, computing, arts, STEAM, languages — with priority for government and community schools (limited places for private schools)",
+      "Science communicators and informal educators",
+      "Staff of NGOs, community centres and learning spaces",
+      "University students aged 20+ in education, science, specific education or engineering who want to teach"
     ],
     "requirements": [
-      "Currently teaching or facilitating learners",
-      "Commitment to attend the full program",
-      "Willingness to try new activities with your students"
+      "Aged 20–50 and living in Cairo or Aswan, with regular access to the innovation centre",
+      "20–25 hours a week during the summer diploma",
+      "A laptop is preferred — a limited number can be provided, and not having one does not affect your chances",
+      "A reliable internet connection",
+      "An 800 EGP commitment fee after final acceptance, refunded in full on completion"
     ],
-    "fees": { "title": "Funded by the Drosos Foundation", "body": "Selected teachers join EduMakers free of charge through the Nur Tech program.", "items": ["No tuition fees", "Lab materials included", "Certificate of completion", "Ready-to-use activities for your classroom"] },
+    "fees": {
+      "title": "Funded by the Drosos Foundation",
+      "body": "EduMakers is a full scholarship through Nur Tech. An 800 EGP commitment fee is collected after final acceptance and refunded in full when you complete the program.",
+      "items": [
+        "No tuition fees",
+        "Lab materials included",
+        "6-month applied fellowship with free use of the fabrication centre",
+        "Ready-to-use activities for your classroom",
+        "Certificate of completion"
+      ]
+    },
     "applyTitle": "Apply to EduMakers",
     "applyLead": "Fill in the application (in Arabic). Our team reviews applications and contacts selected teachers with the schedule.",
     "faq": [
-      { "q": "Who can apply to EduMakers?", "a": "Teachers and science facilitators, especially in Cairo and Aswan. Each round announces its target governorates and eligibility in the application form." },
-      { "q": "Is it free?", "a": "Yes. EduMakers is funded for selected teachers through Nur Tech, supported by the Drosos Foundation." },
-      { "q": "Will I get a certificate?", "a": "Yes. Teachers who complete the program receive an EduMakers certificate at the graduation ceremony." },
-      { "q": "Can you train teachers at our school?", "a": "Yes — we design custom teacher training and makerspace programs for schools and organisations. See Partner with us." }
+      {
+        "q": "Who can apply to EduMakers?",
+        "a": "Teachers of any subject, science communicators, informal educators, NGO and community-centre staff, and university students aged 20+ in related faculties — aged 20–50 and living in Cairo or Aswan. Government and community schools get priority."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Yes. EduMakers is a full scholarship through Nur Tech, supported by the Drosos Foundation. Accepted participants pay an 800 EGP commitment fee that is refunded in full on completion."
+      },
+      {
+        "q": "Will I get a certificate?",
+        "a": "Yes. Teachers who complete the program receive an EduMakers certificate at the graduation ceremony."
+      },
+      {
+        "q": "Can you train teachers at our school?",
+        "a": "Yes — we design custom teacher training and makerspace programs for schools and organisations. See Partner with us."
+      }
+    ],
+    "applySteps": [
+      {
+        "title": "Read the requirements",
+        "body": "Check the schedule and eligibility, and have any training or competition certificates ready."
+      },
+      {
+        "title": "Apply online",
+        "body": "Tell us about your teaching, your school and your goals."
+      },
+      {
+        "title": "Selection",
+        "body": "Our team reviews applications and contacts shortlisted educators."
+      },
+      {
+        "title": "Diploma, then fellowship",
+        "body": "About 13 weeks of intensive training, then six months applying it with your students."
+      }
     ]
   },
   "ar": {
@@ -74,12 +142,12 @@
     "tagline": "بندرّب المدرسين يدخّلوا التصنيع والتفكير التصميمي في فصولهم.",
     "summary": "دبلومة عملية بتساعد المعلمين يحوّلوا دروس العلوم لتجارب الطلاب يلمسوها ويبنوها ويسألوا عنها. المدرسين بيتعلموا بالممارسة — من خلال معامل تفاعلية وتجارب في الفصول ومشاريع متكاملة بيرجعوا بيها على طول للمدرسة.",
     "imageAlt": "مدرسات بيحتفلوا في تخرج EduMakers",
-    "duration": "حوالي ١٣ أسبوع",
-    "level": "المدرسين وميسّري العلوم",
+    "duration": "دبلومة صيفية ~١٣ أسبوع + زمالة ٦ شهور",
+    "level": "مدرسين وميسّرين وطلاب كليات التربية (٢٠–٥٠ سنة)",
     "location": "القاهرة وأسوان",
     "nextStart": "دورة جديدة · التقديم مفتوح",
     "price": "ممول بالكامل",
-    "priceNote": "ممول للمدرسين المختارين من خلال برنامج نور تك، بدعم من مؤسسة دروسوس.",
+    "priceNote": "مجانية من خلال برنامج نور تك بدعم من مؤسسة دروسوس. المقبولين بيدفعوا رسوم التزام ٨٠٠ جنيه بتترد بالكامل بعد إتمام البرنامج.",
     "ctaLabel": "قدّم في EduMakers",
     "overviewTitle": "خلّي فصلك مكان الطلاب بيصنعوا فيه",
     "overview": "<p>EduMakers بيحترم خبرتك وظروفك. هتشتغل بخامات قليلة التكلفة ودروس مناسبة لأعداد الفصول والجداول الحقيقية، وهتجرّب كل نشاط بنفسك قبل ما تدرّسه.</p><p>البرنامج جزء من نور تك، مبادرة متعددة السنوات مع مؤسسة دروسوس لبناء مجتمع من المعلمين الصُّنّاع في القاهرة وأسوان.</p>",
@@ -91,32 +159,94 @@
       "تقيّم التعلّم من خلال اللي الطلاب بيصنعوه",
       "تقود مشاريع متكاملة مع مجتمع مدرستك"
     ],
-    "skills": ["طرق تدريس STEAM", "تجارب الفصل", "التفكير التصميمي", "التعلم بالمشاريع", "نماذج قليلة التكلفة", "التيسير"],
+    "skills": [
+      "طرق تدريس STEAM",
+      "تجارب الفصل",
+      "التفكير التصميمي",
+      "التعلم بالمشاريع",
+      "نماذج قليلة التكلفة",
+      "التيسير"
+    ],
     "outcomes": [
-      { "n": "51", "label": "مدرس ومدرسة اتخرجوا في أول دفعة" },
-      { "n": "166+", "label": "ساعة تعلّم" },
-      { "n": "32", "label": "معمل تفاعلي" },
-      { "n": "130+", "label": "تجربة في الفصول" }
+      {
+        "n": "51",
+        "label": "مدرس ومدرسة اتخرجوا في أول دفعة"
+      },
+      {
+        "n": "166+",
+        "label": "ساعة تعلّم"
+      },
+      {
+        "n": "32",
+        "label": "معمل تفاعلي"
+      },
+      {
+        "n": "130+",
+        "label": "تجربة في الفصول"
+      }
     ],
     "outcomesSource": "أول دفعة EduMakers، القاهرة وأسوان، أكتوبر ٢٠٢٦",
     "whoFor": [
-      "مدرسين العلوم وSTEM في المدارس الحكومية والخاصة والمجتمعية",
-      "ميسّري العلوم والمعلمين في الجمعيات ومراكز التعلّم",
-      "معلمين في القاهرة وأسوان (كل دورة بتعلن المناطق المستهدفة)"
+      "مدرسين المدارس في كل المواد — علوم، رياضيات، كمبيوتر، فنون، STEAM، لغات — مع أولوية للمدارس الحكومية والمجتمعية (وعدد محدود للمدارس الخاصة)",
+      "ميسّري العلوم والمعلمين غير النظاميين",
+      "العاملين في الجمعيات والمراكز المجتمعية ومساحات التعلّم",
+      "طلاب الجامعات من ٢٠ سنة في كليات التربية والعلوم والتربية النوعية والهندسة المهتمين بالتدريس"
     ],
     "requirements": [
-      "إنك بتدرّس أو بتيسّر لمتعلمين حاليًا",
-      "التزام بحضور البرنامج كامل",
-      "استعداد تجرّب أنشطة جديدة مع طلابك"
+      "السن من ٢٠ لـ ٥٠ سنة والإقامة في القاهرة أو أسوان مع سهولة الوصول لمركز الابتكار",
+      "٢٠–٢٥ ساعة في الأسبوع خلال الدبلومة الصيفية",
+      "يُفضّل لابتوب شخصي — في عدد محدود من الأجهزة، وعدم وجوده مش بيقلل فرصك",
+      "اتصال كويس بالإنترنت",
+      "رسوم التزام ٨٠٠ جنيه بعد القبول النهائي، بتترد بالكامل بعد الإتمام"
     ],
-    "fees": { "title": "ممول من مؤسسة دروسوس", "body": "المدرسين المختارين بينضموا لـEduMakers مجانًا من خلال برنامج نور تك.", "items": ["من غير مصاريف دراسية", "خامات المعامل مشمولة", "شهادة إتمام", "أنشطة جاهزة تطبقها في فصلك"] },
+    "fees": {
+      "title": "ممول من مؤسسة دروسوس",
+      "body": "EduMakers منحة كاملة من خلال نور تك. رسوم الالتزام ٨٠٠ جنيه بتتحصّل بعد القبول النهائي وبتترد بالكامل بعد إتمام البرنامج.",
+      "items": [
+        "من غير مصاريف دراسية",
+        "خامات المعامل مشمولة",
+        "زمالة تطبيقية ٦ شهور مع استخدام مجاني لمركز التصنيع الرقمي",
+        "أنشطة جاهزة تطبقها في فصلك",
+        "شهادة إتمام"
+      ]
+    },
     "applyTitle": "قدّم في EduMakers",
     "applyLead": "املأ استمارة التقديم. فريقنا بيراجع الطلبات وبيتواصل مع المدرسين المختارين بالمواعيد.",
     "faq": [
-      { "q": "مين يقدر يقدّم في EduMakers؟", "a": "المدرسين وميسّري العلوم، خصوصًا في القاهرة وأسوان. كل دورة بتعلن المحافظات المستهدفة وشروط التقديم في الاستمارة." },
-      { "q": "البرنامج مجاني؟", "a": "أيوه. EduMakers ممول للمدرسين المختارين من خلال نور تك، بدعم من مؤسسة دروسوس." },
-      { "q": "هاخد شهادة؟", "a": "أيوه. المدرسين اللي بيكمّلوا البرنامج بياخدوا شهادة EduMakers في حفل التخرج." },
-      { "q": "ممكن تدرّبوا مدرسين مدرستنا؟", "a": "أيوه — بنصمم تدريب مدرسين وبرامج معامل تصنيع مخصوصة للمدارس والمؤسسات. شوف صفحة «شاركنا»." }
+      {
+        "q": "مين يقدر يقدّم في EduMakers؟",
+        "a": "مدرسين كل المواد، وميسّري العلوم، والمعلمين غير النظاميين، والعاملين في الجمعيات والمراكز المجتمعية، وطلاب الكليات المرتبطة من ٢٠ سنة — من سن ٢٠ لـ ٥٠ ومقيمين في القاهرة أو أسوان. الأولوية للمدارس الحكومية والمجتمعية."
+      },
+      {
+        "q": "البرنامج مجاني؟",
+        "a": "أيوه. EduMakers منحة كاملة من خلال نور تك بدعم من مؤسسة دروسوس. المقبولين بيدفعوا رسوم التزام ٨٠٠ جنيه بتترد بالكامل بعد الإتمام."
+      },
+      {
+        "q": "هاخد شهادة؟",
+        "a": "أيوه. المدرسين اللي بيكمّلوا البرنامج بياخدوا شهادة EduMakers في حفل التخرج."
+      },
+      {
+        "q": "ممكن تدرّبوا مدرسين مدرستنا؟",
+        "a": "أيوه — بنصمم تدريب مدرسين وبرامج معامل تصنيع مخصوصة للمدارس والمؤسسات. شوف صفحة «شاركنا»."
+      }
+    ],
+    "applySteps": [
+      {
+        "title": "اقرأ المتطلبات",
+        "body": "راجع الجدول وشروط التقديم، وجهّز شهادات التدريبات أو المسابقات لو موجودة."
+      },
+      {
+        "title": "قدّم أونلاين",
+        "body": "احكيلنا عن تدريسك ومدرستك وأهدافك."
+      },
+      {
+        "title": "الاختيار",
+        "body": "فريقنا بيراجع الاستمارات وبيتواصل مع المرشحين."
+      },
+      {
+        "title": "الدبلومة ثم الزمالة",
+        "body": "حوالي ١٣ أسبوع تدريب مكثف، وبعدها ٦ شهور تطبيق مع طلابك."
+      }
     ]
   }
 }

@@ -1,0 +1,103 @@
+{
+  "slug": "3d-print-to-jewelry",
+  "order": 7,
+  "published": true,
+  "featured": false,
+  "audience": "youth",
+  "type": "workshop",
+  "format": "inperson",
+  "status": "open",
+  "commercial": true,
+  "liveKey": "3d-print-to-jewelry",
+  "image": "/images/blog/from-3d-print-to-jewelry.jpg",
+  "tally": {
+    "form": "bootcamps",
+    "product": "From 3D Print to Jewelry - من طباعة النموذج لسبك قطعة حُلي في يومين : ورشة بالتعاون مع فاب لاب مصر ومصمم المجوهرات زيد دعبس"
+  },
+  "related": [
+    "cad-digital-fabrication",
+    "maker-diploma"
+  ],
+  "en": {
+    "title": "From 3D Print to Jewelry",
+    "short": "A 2-day workshop with Fab Lab Egypt and jewelry designer Zaid De3bs: from a 3D-printed model to a cast jewelry piece.",
+    "seoTitle": "From 3D Print to Jewelry — 2-day jewelry design & casting workshop in Cairo",
+    "seoDescription": "Design a jewelry piece in CAD, 3D-print the model and follow it to casting in a 2-day workshop with Fab Lab Egypt and jewelry designer Zaid De3bs in Maadi.",
+    "tagline": "Where digital fabrication meets one of Egypt’s oldest crafts.",
+    "summary": "In two days you design a jewelry piece on the computer, 3D-print its model and follow it through to casting — guided by jewelry designer and Maker Diploma alumnus Zaid De3bs, in collaboration with Fab Lab Egypt.",
+    "imageAlt": "Illustration of a ring with a diamond-shaped gem in San3a Academy colours",
+    "duration": "2 days",
+    "level": "Open to beginners",
+    "location": "Fab Lab Egypt, Maadi, Cairo",
+    "learn": [
+      "Sketch and design a jewelry piece in CAD",
+      "Prepare and 3D-print a casting-ready model",
+      "Understand the casting process from model to metal",
+      "Finishing and presenting your piece"
+    ],
+    "skills": [
+      "Jewelry design",
+      "CAD",
+      "3D printing",
+      "Casting",
+      "Finishing"
+    ],
+    "whoFor": [
+      "Jewelry makers and designers who want to add digital tools",
+      "Artists and crafters curious about 3D printing",
+      "Small-business owners developing product lines"
+    ],
+    "applyTitle": "Book your seat in the workshop",
+    "faq": [
+      {
+        "q": "Do I need experience?",
+        "a": "No prior experience is needed for most of our bootcamps — just curiosity and the will to build. Our team will confirm the right level when they contact you."
+      },
+      {
+        "q": "How do I register and pay?",
+        "a": "Fill in the short form on this page. Our team contacts you on WhatsApp within hours with the next round’s dates, fees and payment options."
+      }
+    ]
+  },
+  "ar": {
+    "title": "من الطباعة ثلاثية الأبعاد للمجوهرات",
+    "short": "ورشة يومين مع فاب لاب إيچيبت ومصمم المجوهرات زيد دعبس: من نموذج مطبوع ثلاثي الأبعاد لقطعة حُلي مسبوكة.",
+    "seoTitle": "من الطباعة ثلاثية الأبعاد للمجوهرات — ورشة تصميم وسبك مجوهرات يومين في القاهرة",
+    "seoDescription": "صمم قطعة حُلي على الكمبيوتر، واطبع النموذج ثلاثي الأبعاد وتابعه لحد السبك في ورشة يومين مع فاب لاب إيچيبت ومصمم المجوهرات زيد دعبس بالمعادي.",
+    "tagline": "لما التصنيع الرقمي يقابل واحدة من أقدم الحِرف المصرية.",
+    "summary": "في يومين هتصمم قطعة حُلي على الكمبيوتر، وتطبع نموذجها ثلاثي الأبعاد، وتتابعها لحد السبك — مع مصمم المجوهرات وخريج دبلومة الميكر زيد دعبس، بالتعاون مع فاب لاب إيچيبت.",
+    "imageAlt": "رسم لخاتم بفص على شكل معيّن بألوان صنعة أكاديمي",
+    "duration": "يومين",
+    "level": "مناسبة للمبتدئين",
+    "location": "فاب لاب إيچيبت، المعادي، القاهرة",
+    "learn": [
+      "ترسم وتصمم قطعة حُلي بالـCAD",
+      "تجهّز وتطبع نموذج جاهز للسبك",
+      "تفهم عملية السبك من النموذج للمعدن",
+      "التشطيب وعرض قطعتك"
+    ],
+    "skills": [
+      "تصميم المجوهرات",
+      "CAD",
+      "الطباعة ثلاثية الأبعاد",
+      "السبك",
+      "التشطيب"
+    ],
+    "whoFor": [
+      "صُنّاع ومصممين مجوهرات عايزين يضيفوا أدوات رقمية",
+      "فنانين وحرفيين عندهم فضول للطباعة ثلاثية الأبعاد",
+      "أصحاب مشاريع صغيرة بيطوّروا منتجاتهم"
+    ],
+    "applyTitle": "احجز مكانك في الورشة",
+    "faq": [
+      {
+        "q": "محتاج خبرة قبل كده؟",
+        "a": "أغلب معسكراتنا مش محتاجة خبرة مسبقة — محتاج بس فضول ورغبة إنك تبني. فريقنا هيأكد معاك المستوى المناسب لما يتواصل معاك."
+      },
+      {
+        "q": "أسجّل وأدفع إزاي؟",
+        "a": "املأ الاستمارة القصيرة في الصفحة دي. فريقنا هيتواصل معاك على واتساب خلال ساعات بمواعيد الدفعة الجاية والرسوم وطرق الدفع."
+      }
+    ]
+  }
+}

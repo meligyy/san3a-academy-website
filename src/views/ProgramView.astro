@@ -17,6 +17,7 @@ const { lang, program: p } = Astro.props;
 const L = s(lang);
 const c = p[lang] || p.en;
 const formId = p.tally ? (site.tally[p.tally.form] || p.tally.form) : null;
+const interestHref = `mailto:${site.email}?subject=${encodeURIComponent((lang === 'ar' ? 'تسجيل اهتمام: ' : 'Register interest: ') + (p[lang] || p.en).title)}`;
 const path = `/programs/${p.slug}/`;
 const related = programs.filter((x) => x.slug !== p.slug && (x.audience === p.audience || (p.related || []).includes(x.slug))).slice(0, 3);
 const has = (a) => Array.isArray(a) && a.length > 0;
@@ -79,7 +80,8 @@ const courseSchema = {
           <div class="ph-cta">
             {formId && <a class="btn btn-primary btn-lg" href="#apply" data-track="apply_click">{c.ctaLabel || L.apply_now} <Icon name="arrow" class="arrow" /></a>}
             {wa && <a class="btn btn-outline btn-lg" href={wa} target="_blank" rel="noopener"><Icon name="whatsapp" style="width:20px;height:20px" />{L.talk_whatsapp}</a>}
-            {!wa && <a class="btn btn-outline btn-lg" href="#syllabus">{L.syllabus}</a>}
+            {!formId && <a class="btn btn-primary btn-lg" href={interestHref} data-track="interest_click">{c.applyTitle || (lang === 'ar' ? 'سجّل اهتمامك' : 'Register your interest')} <Icon name="arrow" class="arrow" /></a>}
+            {!wa && formId && c.modules && <a class="btn btn-outline btn-lg" href="#syllabus">{L.syllabus}</a>}
           </div>
           {p.commercial && <LiveStrip slug={p.liveKey || p.slug} lang={lang} dark nextRound={p.nextRound} />}
         </div>
