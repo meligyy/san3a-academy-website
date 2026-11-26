@@ -1,0 +1,7 @@
+---
+import V from '../../../views/BlogPostView.astro';
+import { posts } from '../../../lib/content.js';
+export function getStaticPaths() { return posts('ar').map((post) => ({ params: { slug: post.slug }, props: { post } })); }
+const { post } = Astro.props;
+---
+<V lang="ar" post={post} />

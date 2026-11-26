@@ -1,0 +1,148 @@
+{
+  "kids": {
+    "image": "/images/photos/studios-group.jpg",
+    "liveKey": "learning-studios",
+    "gallery": ["/images/photos/kid-coding-piano.jpg", "/images/photos/kids-building.jpg", "/images/photos/kids-studio.jpg"],
+    "en": {
+      "title": "Studios for kids who love to build",
+      "seoTitle": "Coding, robotics & making for kids in Cairo",
+      "lead": "Project-based studios for children from Grade 1 to Grade 6. Kids learn coding, electronics and digital fabrication by turning their own ideas into real projects — no experience needed.",
+      "cta": "Find a studio",
+      "whyTitle": "What your child gains",
+      "whyLead": "Technical skills, yes — and the habits that matter for every future job.",
+      "why": [
+        { "t": "Builds with their hands", "d": "Every session ends with something your child made — a game controller, a moving robot, a lit-up model." },
+        { "t": "Thinks like an engineer", "d": "Problem-solving, critical thinking and creativity grow with every project." },
+        { "t": "Grows in confidence", "d": "Children present their projects to family and friends at the end of each studio." },
+        { "t": "Learns safely", "d": "Small groups, trained facilitators and age-appropriate tools in our Maadi studios." }
+      ],
+      "programsTitle": "Studios & programs for kids",
+      "faq": [
+        { "q": "What ages are the studios for?", "a": "Our Learning Studios are for children from Grade 1 to Grade 6, grouped by age (for example Grades 1–3 and Grades 4–6)." },
+        { "q": "Does my child need any experience?", "a": "No. Studios start from zero; our team recommends the right studio based on your child’s age and interests." },
+        { "q": "Where do the studios take place?", "a": "At San3a HQ in Maadi, Cairo. We also run programs with schools and community partners." },
+        { "q": "How do I book a place?", "a": "Fill in the short registration form. Our team will call you within hours with the schedule, fees and the studio that fits your child." }
+      ],
+      "ctaTitle": "Give your child a head start in making",
+      "ctaText": "Register in two minutes — we’ll recommend the right studio and share the schedule and fees."
+    },
+    "ar": {
+      "title": "ستوديوهات للأطفال اللي بيحبوا يبنوا",
+      "seoTitle": "برمجة وروبوتات وتصنيع للأطفال في القاهرة",
+      "lead": "ستوديوهات قائمة على المشاريع للأطفال من أولى لستة ابتدائي. أولادكم بيتعلموا البرمجة والإلكترونيات والتصنيع الرقمي وهم بيحوّلوا أفكارهم لمشاريع حقيقية — من غير خبرة مسبقة.",
+      "cta": "اختار الستوديو",
+      "whyTitle": "طفلك هيكسب إيه",
+      "whyLead": "مهارات تقنية أكيد — وكمان العادات اللي بتفرق في أي شغل في المستقبل.",
+      "why": [
+        { "t": "بيبني بإيده", "d": "كل جلسة بتخلص بحاجة طفلك عملها — دراع ألعاب، روبوت بيتحرك، أو مجسم بينوّر." },
+        { "t": "بيفكر زي المهندسين", "d": "حل المشكلات والتفكير النقدي والإبداع بيكبروا مع كل مشروع." },
+        { "t": "ثقته بتزيد", "d": "الأطفال بيعرضوا مشاريعهم لأهاليهم وأصحابهم في آخر كل ستوديو." },
+        { "t": "بيتعلم في أمان", "d": "مجموعات صغيرة، وميسّرين مدرّبين، وأدوات مناسبة للسن في ستوديوهاتنا بالمعادي." }
+      ],
+      "programsTitle": "ستوديوهات وبرامج الأطفال",
+      "faq": [
+        { "q": "الستوديوهات لأي سن؟", "a": "ستوديوهات التعلّم للأطفال من أولى لستة ابتدائي، ومقسّمة حسب السن (مثلًا من أولى لتالتة ومن رابعة لستة)." },
+        { "q": "طفلي محتاج خبرة قبل كده؟", "a": "لأ. الستوديوهات بتبدأ من الصفر، وفريقنا بيرشّح الستوديو المناسب حسب سن طفلك واهتماماته." },
+        { "q": "الستوديوهات فين؟", "a": "في مقر صنعة بالمعادي، القاهرة. وكمان بننفّذ برامج مع مدارس وشركاء مجتمعيين." },
+        { "q": "أحجز مكان إزاي؟", "a": "املأ استمارة التسجيل القصيرة، وفريقنا هيكلّمك خلال ساعات بالجدول والأسعار والستوديو المناسب لطفلك." }
+      ],
+      "ctaTitle": "ادّي طفلك بداية قوية في التصنيع",
+      "ctaText": "سجّل في دقيقتين — وهنرشّحلك الستوديو المناسب ونبعتلك المواعيد والأسعار."
+    }
+  },
+  "youth": {
+    "image": "/images/photos/youth-robot.jpg",
+    "liveKey": "bootcamps-all",
+    "gallery": ["/images/photos/showcase-day.jpg", "/images/photos/youth-maker.jpg", "/images/photos/learner-presenting.jpg"],
+    "en": {
+      "title": "Build real projects. Get hired for what you can make.",
+      "seoTitle": "Maker Diploma & tech bootcamps for students and graduates in Egypt",
+      "lead": "For students, fresh graduates and career shifters. Our diploma and bootcamps in electronics, IoT, Physical AI, CAD and digital fabrication are 100% hands-on — you leave with a working prototype and a portfolio.",
+      "cta": "Explore youth programs",
+      "whyTitle": "Why learn with San3a Academy",
+      "why": [
+        { "t": "100% hands-on", "d": "Every program is project-based. You build, test and present a real device — not slides." },
+        { "t": "Industry tools", "d": "3D printers, laser cutters, ESP32 and microcontrollers at Fab Lab Egypt’s machines in Maadi." },
+        { "t": "Outcomes that count", "d": "42% of Maker Diploma graduates say it helped them find a better job." },
+        { "t": "A community for life", "d": "Showcases, alumni events and Maker Faire Cairo keep you connected after you graduate." }
+      ],
+      "programsTitle": "Diploma, bootcamps & courses",
+      "faq": [
+        { "q": "Do I need an engineering background?", "a": "No for most programs. Bootcamps and courses start from the basics; the Maker Diploma welcomes all backgrounds and selects participants through an application and interview." },
+        { "q": "Where do programs take place?", "a": "Most run at San3a HQ / Fab Lab Egypt in Maadi, Cairo, some in hybrid format. We also run editions with universities such as UFE." },
+        { "q": "Will I get a certificate?", "a": "Yes. Graduates receive a San3a Academy certificate of completion; Maker Diploma certificates can be verified online." },
+        { "q": "How do I pay or get funding?", "a": "Fees and any discounts or scholarships are shared by our team after you register. Some programs, like Girls Make, are fully funded." }
+      ],
+      "ctaTitle": "Your next project starts here",
+      "ctaText": "Apply in two minutes — our team will reply on WhatsApp with dates and fees."
+    },
+    "ar": {
+      "title": "ابني مشاريع حقيقية. واشتغل باللي تقدر تصنعه.",
+      "seoTitle": "دبلومة الميكر ومعسكرات التكنولوجيا للطلبة والخريجين في مصر",
+      "lead": "للطلبة والخريجين الجداد واللي عايزين يغيّروا مسارهم. الدبلومة والمعسكرات في الإلكترونيات وإنترنت الأشياء والذكاء الاصطناعي التطبيقي والـCAD والتصنيع الرقمي عملية ١٠٠٪ — هتخرج بنموذج شغّال وبورتفوليو.",
+      "cta": "استكشف برامج الشباب",
+      "whyTitle": "ليه تتعلّم في صنعة أكاديمي",
+      "why": [
+        { "t": "عملي ١٠٠٪", "d": "كل برنامج قائم على المشاريع. هتبني وتجرّب وتعرض جهاز حقيقي — مش سلايدات." },
+        { "t": "أدوات الصناعة", "d": "طابعات ثلاثية الأبعاد، ليزر كاتر، ESP32 وميكروكنترولر على ماكينات فاب لاب إيچيبت في المعادي." },
+        { "t": "نتايج بتفرق", "d": "٤٢٪ من خريجي دبلومة الميكر قالوا إنها ساعدتهم يلاقوا شغل أفضل." },
+        { "t": "مجتمع بيفضل معاك", "d": "المعارض وفعاليات الخريجين وميكر فير القاهرة بيخلّوك متصل بعد التخرج." }
+      ],
+      "programsTitle": "الدبلومة والمعسكرات والكورسات",
+      "faq": [
+        { "q": "لازم أكون مهندس؟", "a": "لأ في أغلب البرامج. المعسكرات والكورسات بتبدأ من الأساسيات، ودبلومة الميكر مفتوحة لكل الخلفيات وبنختار المشاركين من خلال استمارة ومقابلة." },
+        { "q": "البرامج بتتعمل فين؟", "a": "أغلبها في مقر صنعة / فاب لاب إيچيبت في المعادي، وبعضها هجين. وكمان بنعمل نسخ مع جامعات زي الجامعة الفرنسية." },
+        { "q": "هاخد شهادة؟", "a": "أيوه. الخريجين بياخدوا شهادة إتمام من صنعة أكاديمي، وشهادات دبلومة الميكر ممكن التحقق منها أونلاين." },
+        { "q": "الدفع والمنح إزاي؟", "a": "الرسوم وأي خصومات أو منح فريقنا بيبعتها بعد التسجيل. وفي برامج ممولة بالكامل زي Girls Make." }
+      ],
+      "ctaTitle": "مشروعك الجاي بيبدأ هنا",
+      "ctaText": "قدّم في دقيقتين — وفريقنا هيرد عليك على واتساب بالمواعيد والرسوم."
+    }
+  },
+  "educators": {
+    "image": "/images/photos/educators.jpg",
+    "gallery": ["/images/photos/educators-celebrating.jpg", "/images/photos/instructor-learner.jpg", "/images/photos/output-greenhouse.jpg"],
+    "en": {
+      "title": "Bring making into your classroom",
+      "seoTitle": "Teacher training in STEAM, making & design thinking — EduMakers",
+      "lead": "Training for teachers, science facilitators and schools. Learn to design hands-on STEAM lessons, run classroom experiments and use design thinking with your students — in Cairo, Aswan and with your school.",
+      "cta": "Explore educator programs",
+      "whyTitle": "Built for real classrooms",
+      "why": [
+        { "t": "Respects your constraints", "d": "Low-cost materials and lesson designs that work with real class sizes and timetables." },
+        { "t": "Learn by doing", "d": "You build the same projects your students will — labs, experiments and integrated projects." },
+        { "t": "Design thinking", "d": "A practical method to turn students’ questions into projects that solve real problems." },
+        { "t": "A network of educators", "d": "Join teachers from Cairo and Aswan who share lessons, tools and results." }
+      ],
+      "programsTitle": "Programs for educators & schools",
+      "faq": [
+        { "q": "Who can join EduMakers?", "a": "Teachers and science facilitators, especially in public and community schools. Each round announces its target governorates and eligibility in the application form." },
+        { "q": "Is it funded?", "a": "The first EduMakers cohort was funded by the Drosos Foundation. Check the program page for the current round." },
+        { "q": "Can you train our whole school?", "a": "Yes — we design custom teacher training and makerspace programs for schools and organisations. See Partner with us." }
+      ],
+      "ctaTitle": "Make your classroom a makerspace",
+      "ctaText": "Join EduMakers or bring a custom training to your school."
+    },
+    "ar": {
+      "title": "دخّل التصنيع في فصلك",
+      "seoTitle": "تدريب المدرسين على STEAM والتصنيع والتفكير التصميمي — EduMakers",
+      "lead": "تدريب للمدرسين وميسّري العلوم والمدارس. اتعلم تصمم دروس STEAM عملية، وتعمل تجارب في الفصل، وتستخدم التفكير التصميمي مع طلابك — في القاهرة وأسوان ومع مدرستك.",
+      "cta": "استكشف برامج المدرسين",
+      "whyTitle": "متصمم لفصول حقيقية",
+      "why": [
+        { "t": "بيحترم ظروفك", "d": "خامات قليلة التكلفة ودروس بتشتغل مع أعداد الفصول والجداول الحقيقية." },
+        { "t": "اتعلّم بالممارسة", "d": "هتبني نفس المشاريع اللي طلابك هيعملوها — معامل وتجارب ومشاريع متكاملة." },
+        { "t": "التفكير التصميمي", "d": "طريقة عملية تحوّل أسئلة الطلاب لمشاريع بتحل مشاكل حقيقية." },
+        { "t": "شبكة مدرسين", "d": "انضم لمدرسين من القاهرة وأسوان بيشاركوا الدروس والأدوات والنتايج." }
+      ],
+      "programsTitle": "برامج المدرسين والمدارس",
+      "faq": [
+        { "q": "مين يقدر يشترك في EduMakers؟", "a": "المدرسين وميسّري العلوم، خصوصًا في المدارس الحكومية والمجتمعية. كل دورة بتعلن المحافظات المستهدفة وشروط التقديم في الاستمارة." },
+        { "q": "البرنامج ممول؟", "a": "أول دفعة من EduMakers كانت بتمويل من مؤسسة دروسوس. شوف صفحة البرنامج للدورة الحالية." },
+        { "q": "ممكن تدرّبوا المدرسة كلها؟", "a": "أيوه — بنصمم تدريب مدرسين وبرامج معامل تصنيع مخصوصة للمدارس والمؤسسات. شوف صفحة «شاركنا»." }
+      ],
+      "ctaTitle": "خلّي فصلك مساحة تصنيع",
+      "ctaText": "انضم لـEduMakers أو خلّي تدريب مخصوص يوصل لمدرستك."
+    }
+  }
+}

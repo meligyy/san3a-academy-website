@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "source": "seed: Tally form analytics (aggregate counts only). Replaced hourly by GitHub Actions once LIVE_API_URL is set.",
+  "generatedAt": "2026-11-26T13:40:00.000Z",
+  "totals": { "d7": 139, "d30": 861, "lastSignupAt": null, "governorates30": null, "daily": null },
+  "products": {
+    "bootcamps-all": { "d7": 131, "d30": 603, "lastSignupAt": null, "governorates30": null,
+      "daily": [18, 28, 28, 28, 19, 20, 14, 18, 12, 22, 17, 15, 30, 16] },
+    "learning-studios": { "d7": null, "d30": 210, "lastSignupAt": null, "governorates30": null,
+      "daily": [12, 11, 3, 6, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0] },
+    "maker-diploma": { "d7": null, "d30": 23, "lastSignupAt": null, "governorates30": null, "daily": null },
+    "girls-make": { "d7": 6, "d30": 25, "lastSignupAt": null, "governorates30": null, "daily": null }
+  }
+}

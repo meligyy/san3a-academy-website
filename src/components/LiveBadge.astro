@@ -1,0 +1,10 @@
+---
+import { s } from '../i18n/ui.js';
+interface Props { slug: string; lang: 'en' | 'ar'; field?: 'd30' | 'd7' }
+const { slug, lang, field = 'd30' } = Astro.props;
+const L = s(lang);
+---
+<span class="live-badge" data-live-badge data-live-key={slug} data-f={field} hidden>
+  <span class="live-dot" aria-hidden="true"></span>
+  <span><b data-v></b> {field === 'd7' ? L.live_week : L.live_month}</span>
+</span>

@@ -1,0 +1,19 @@
+{
+  "slug": "ebram-gadelrb",
+  "published": true,
+  "order": 1,
+  "audience": "youth",
+  "program": "maker-diploma",
+  "name": {
+    "en": "Ebram Gadelrb",
+    "ar": "إبرام جاد الرب"
+  },
+  "role": {
+    "en": "Engineer & business owner · Maker Diploma graduate",
+    "ar": "مهندس وصاحب بيزنس · خريج دبلومة الميكر"
+  },
+  "quote": {
+    "en": "It wasn’t just about learning to design, code, or solder — it was about learning to think differently. The Maker Diploma taught me how to turn curiosity into action, how to see every failure as a prototype for something better, and how to approach problems with creativity instead of fear.",
+    "ar": "ماكانتش مجرد إني أتعلم أصمم وأبرمج وألحّم — كانت إني أتعلم أفكر بطريقة مختلفة. دبلومة الميكر علّمتني أحوّل الفضول لفعل، وأشوف كل فشل كنموذج أولي لحاجة أحسن، وأواجه المشاكل بالإبداع بدل الخوف."
+  }
+}

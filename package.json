@@ -1,0 +1,19 @@
+{
+  "name": "san3a-academy-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "San3a Academy public website — multi-page, bilingual (EN/AR), built with Astro and deployed to GitHub Pages by GitHub Actions.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check:links": "node scripts/check-links.mjs"
+  },
+  "dependencies": {
+    "astro": "5.13.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

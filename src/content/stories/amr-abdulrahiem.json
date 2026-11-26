@@ -1,0 +1,19 @@
+{
+  "slug": "amr-abdulrahiem",
+  "published": true,
+  "order": 4,
+  "audience": "youth",
+  "program": "maker-diploma",
+  "name": {
+    "en": "Amr Abdulrahiem",
+    "ar": "عمرو عبد الرحيم"
+  },
+  "role": {
+    "en": "Fab Lab Manager, Creativa Hub Sohag · Maker Diploma graduate",
+    "ar": "مدير فاب لاب، مركز إبداع مصر الرقمية بسوهاج · خريج دبلومة الميكر"
+  },
+  "quote": {
+    "en": "It didn’t just teach me how to make things; it taught me that I could build my own path — and create a space where others could go through that same transformation.",
+    "ar": "ماعلّمتنيش بس إزاي أصنع حاجات؛ علّمتني إني أقدر أبني طريقي بنفسي — وأعمل مساحة يعدّي فيها غيري بنفس التحوّل ده."
+  }
+}

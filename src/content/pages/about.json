@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "eyebrow": { "en": "About San3a Academy", "ar": "عن صنعة أكاديمي" },
+    "title": { "en": "We exist to turn potential into possibility.", "ar": "إحنا موجودين عشان نحوّل الإمكانيات لفرص حقيقية." },
+    "lead": { "en": "San3a Academy is a maker-centered learning academy that helps people learn by making. Through hands-on projects and maker technologies we help children, youth, adults and educators build practical skills, digital fluency and the creative confidence to turn ideas into real solutions.", "ar": "صنعة أكاديمي أكاديمية تعليمية قائمة على التصنيع، بتساعد الناس يتعلموا وهم بيصنعوا. من خلال مشاريع عملية وتكنولوجيا التصنيع، بنساعد الأطفال والشباب والكبار والمدرسين يبنوا مهارات عملية وطلاقة رقمية وثقة إبداعية تخليهم يحوّلوا أفكارهم لحلول حقيقية." }
+  },
+  "vision": { "en": "A regional hub for human-centered, tech-enabled learning that empowers people to innovate and create impact.", "ar": "مركز إقليمي للتعلّم المتمركز حول الإنسان والمدعوم بالتكنولوجيا، بيمكّن الناس يبتكروا ويصنعوا أثر." },
+  "mission": { "en": "Bridging education and human potential through inclusive, hands-on learning that builds skills, confidence and digital fluency.", "ar": "نسد الفجوة بين التعليم وإمكانيات الإنسان من خلال تعلّم عملي وشامل بيبني المهارات والثقة والطلاقة الرقمية." },
+  "manifestoQuote": { "en": "We don’t just teach people how to use technology. We help people become capable of shaping what technology can make possible.", "ar": "إحنا مش بس بنعلّم الناس يستخدموا التكنولوجيا. إحنا بنساعدهم يبقوا قادرين يشكّلوا اللي التكنولوجيا تقدر تعمله." },
+  "principles": [
+    { "en": "We design, we don’t deliver.", "ar": "بنصمّم، مش بنلقّن.", "den": "Every learning experience is intentionally designed — not assembled from what already exists.", "dar": "كل تجربة تعلّم متصممة بقصد — مش متجمّعة من حاجات موجودة." },
+    { "en": "We learn by making.", "ar": "بنتعلّم بالتصنيع.", "den": "Making is not just a teaching technique or a technical skill. It is a way of knowing.", "dar": "التصنيع مش مجرد أسلوب تدريس أو مهارة تقنية. ده طريقة للفهم." },
+    { "en": "We build capability.", "ar": "بنبني القدرة.", "den": "The goal is not to know more. It is to be able to do more — and keep becoming capable of more.", "dar": "الهدف مش إنك تعرف أكتر. الهدف إنك تقدر تعمل أكتر — وتفضل تكبر قدرتك." },
+    { "en": "We prototype education.", "ar": "بنعمل نماذج أولية للتعليم.", "den": "We apply the maker mindset to education itself. Every experience is a prototype; every iteration a chance to learn.", "dar": "بنطبّق عقلية الصانع على التعليم نفسه. كل تجربة نموذج أولي، وكل تحسين فرصة نتعلّم." },
+    { "en": "We learn with people.", "ar": "بنتعلّم مع الناس.", "den": "Community isn’t something that happens after learning. It is part of the learning experience.", "dar": "المجتمع مش حاجة بتيجي بعد التعلّم. هو جزء من تجربة التعلّم." },
+    { "en": "We stay connected to the world.", "ar": "بنفضل متصلين بالعالم.", "den": "We bring the real world into learning, and take learning back into the real world.", "dar": "بندخّل العالم الحقيقي في التعلّم، وبنرجّع التعلّم للعالم الحقيقي." }
+  ],
+  "timeline": [
+    { "y": "2012", "en": "Fab Lab Egypt opens in Cairo — one of the region’s first community makerspaces.", "ar": "افتتاح فاب لاب إيچيبت في القاهرة — من أوائل مساحات التصنيع المجتمعية في المنطقة." },
+    { "y": "2014", "en": "The Maker Diploma begins (first called “Osta Lab”), free to the public.", "ar": "بداية دبلومة الميكر (اسمها الأول «أُسطى لاب») مجانًا للجمهور." },
+    { "y": "2015", "en": "The first Maker Faire Cairo — now held every year.", "ar": "أول ميكر فير القاهرة — وبيتعمل كل سنة من وقتها." },
+    { "y": "2016", "en": "San3a Tech is founded as a social enterprise; San3a Academy appears as an education brand.", "ar": "تأسيس صنعة تك كمؤسسة اجتماعية، وظهور صنعة أكاديمي كعلامة تعليمية." },
+    { "y": "2020", "en": "A dedicated education team redesigns our programs.", "ar": "فريق تعليمي متخصص بيعيد تصميم برامجنا." },
+    { "y": "2022", "en": "Girls Make launches for young women in STEM.", "ar": "إطلاق برنامج Girls Make للبنات في مجالات STEM." },
+    { "y": "2023", "en": "San3a Academy becomes its own brand with its own programs and business model.", "ar": "صنعة أكاديمي بقت علامة مستقلة ببرامجها ونموذج عملها." },
+    { "y": "2026", "en": "1,000+ alumni, EduMakers for teachers in Cairo and Aswan, and new bootcamps in IoT, ESP32 and Physical AI.", "ar": "أكتر من ١٬٠٠٠ خريج، وبرنامج EduMakers للمدرسين في القاهرة وأسوان، ومعسكرات جديدة في إنترنت الأشياء وESP32 والذكاء الاصطناعي التطبيقي." }
+  ],
+  "ecosystem": [
+    { "name": "San3a Academy", "ar": "صنعة أكاديمي", "en": "Structured, hands-on learning for kids, youth and educators.", "dar": "تعلّم عملي ومنظم للأطفال والشباب والمدرسين.", "self": true },
+    { "name": "Fab Lab Egypt", "ar": "فاب لاب إيچيبت", "en": "The open makerspace and fabrication studio where our learners build — since 2012.", "dar": "مساحة التصنيع المفتوحة واستوديو التصنيع اللي متعلمينا بيبنوا فيه — من ٢٠١٢.", "url": "https://fablabegypt.com" },
+    { "name": "Maker Faire Cairo", "ar": "ميكر فير القاهرة", "en": "A yearly family festival of making and invention, held since 2015.", "dar": "مهرجان سنوي للعائلات عن التصنيع والاختراع، بيتعمل من ٢٠١٥." }
+  ],
+  "team": [
+    { "name": "Omar Essafty", "nameAr": "عمر الصفتي", "role": { "en": "Co-founder & CEO, San3a Tech", "ar": "شريك مؤسس والرئيس التنفيذي، صنعة تك" } },
+    { "name": "Lamiaa Nail", "nameAr": "لمياء نائل", "role": { "en": "Education Manager & Acting GM — and a Maker Diploma alumna", "ar": "مديرة التعليم والمديرة العامة بالإنابة — وخريجة دبلومة الميكر" } },
+    { "name": "Raguia Hassan", "nameAr": "راجية حسن", "role": { "en": "Acting Programs Manager", "ar": "مديرة البرامج بالإنابة" } },
+    { "name": "Ahmed Ibrahim", "nameAr": "أحمد إبراهيم", "role": { "en": "Education Lead", "ar": "قائد فريق التعليم" } },
+    { "name": "Ahmad Saeed", "nameAr": "أحمد سعيد", "role": { "en": "Technical Development Manager", "ar": "مدير التطوير التقني" } }
+  ],
+  "teamNote": { "en": "Our core team of 10+ full-timers works with 40+ project-based instructors and coordinators — many of them our own alumni.", "ar": "فريقنا الأساسي (أكتر من ١٠ متفرغين) بيشتغل مع أكتر من ٤٠ مدرب ومنسق على مستوى المشاريع — وكتير منهم خريجين من برامجنا." }
+}

@@ -1,0 +1,11 @@
+---
+import { s } from '../i18n/ui.js';
+interface Props { lang: 'en' | 'ar'; dark?: boolean }
+const { lang, dark = false } = Astro.props;
+const L = s(lang);
+---
+<div class={`live-ticker ${dark ? 'on-dark' : ''}`} data-live-ticker hidden aria-live="polite">
+  <span class="live-tag"><span class="live-dot" aria-hidden="true"></span>{L.live}</span>
+  <span><b data-v="d30"></b> {L.live_ticker}</span>
+  <span class="muted" data-wrap="d7">· <b data-v="d7"></b> {L.live_ticker_week}</span>
+</div>

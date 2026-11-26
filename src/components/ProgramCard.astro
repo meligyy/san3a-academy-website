@@ -1,0 +1,36 @@
+---
+import Icon from './Icon.astro';
+import LiveBadge from './LiveBadge.astro';
+import { url, lp } from '../lib/url.js';
+import { s } from '../i18n/ui.js';
+
+interface Props { program: any; lang: 'en' | 'ar'; headingLevel?: 'h2' | 'h3' }
+const { program: p, lang, headingLevel = 'h3' } = Astro.props;
+const L = s(lang);
+const c = p[lang] || p.en;
+const H = headingLevel;
+const statusKey = `status_${p.status || 'open'}`;
+const badgeClass = { open: 'badge--open', rolling: 'badge--open', soon: 'badge--soon', closed: 'badge--closed', waitlist: 'badge--waitlist' }[p.status || 'open'] || '';
+const search = [p.en?.title, p.ar?.title, p.en?.short, p.ar?.short, ...(p.en?.skills || []), ...(p.ar?.skills || []), p.audience, p.type].filter(Boolean).join(' ').toLowerCase();
+---
+<a class="pcard" href={lp(lang, `/programs/${p.slug}/`)} data-audience={p.audience} data-type={p.type} data-format={p.format} data-cost={p.funded ? 'funded' : 'paid'} data-search={search} data-card>
+  <div class="pcard-media">
+    <img src={url(p.image || '/images/photos/instructor-demo.jpg')} alt={c.imageAlt || ''} loading="lazy" width="800" height="500" />
+    <div class="badges">
+      <span class={`badge ${badgeClass}`}>{L[statusKey] || L.status_open}</span>
+      {p.funded && <span class="badge badge--red">{lang === 'ar' ? 'ممول بالكامل' : 'Fully funded'}</span>}
+    </div>
+  </div>
+  <div class="pcard-bar" data-audience={p.audience}></div>
+  <div class="pcard-body">
+    <span class="pcard-kicker">{L[`audience_${p.audience}`]} · {L[`type_${p.type}`] || p.type}</span>
+    <H>{c.title}</H>
+    <p>{c.short}</p>
+    {p.commercial && <LiveBadge slug={p.liveKey || p.slug} lang={lang} />}
+    <div class="pcard-meta">
+      {c.duration && <span><Icon name="clock" />{c.duration}</span>}
+      {p.format && <span><Icon name="laptop" />{L[`format_${p.format}`]}</span>}
+      {c.level && <span><Icon name="level" />{c.level}</span>}
+    </div>
+  </div>
+</a>

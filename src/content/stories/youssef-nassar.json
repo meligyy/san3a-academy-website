@@ -1,0 +1,19 @@
+{
+  "slug": "youssef-nassar",
+  "published": true,
+  "order": 16,
+  "audience": "youth",
+  "program": "maker-diploma",
+  "name": {
+    "en": "Youssef Nassar",
+    "ar": "يوسف نصار"
+  },
+  "role": {
+    "en": "Industrial designer · Maker Diploma graduate",
+    "ar": "مصمم منتجات صناعية · خريج دبلومة الميكر"
+  },
+  "story": {
+    "en": "Youssef placed 3rd globally at the Autodesk Designathon 2025, building on the CAD and prototyping skills he sharpened in the Maker Diploma.",
+    "ar": "يوسف حقق المركز التالت عالميًا في Autodesk Designathon ٢٠٢٥، معتمدًا على مهارات الـCAD والنماذج الأولية اللي طوّرها في دبلومة الميكر."
+  }
+}

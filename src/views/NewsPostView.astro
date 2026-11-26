@@ -1,0 +1,25 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { url, lp, t } from '../lib/url.js';
+import { s } from '../i18n/ui.js';
+interface Props { lang: 'en' | 'ar'; item: any }
+const { lang, item: n } = Astro.props;
+const L = s(lang);
+const ar = lang === 'ar';
+const fmt = (d) => new Date(d).toLocaleDateString(ar ? 'ar-EG' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+const schema = { '@context': 'https://schema.org', '@type': n.kind === 'event' ? 'Event' : 'NewsArticle', headline: t(n.title, lang), name: t(n.title, lang), datePublished: n.date, startDate: n.kind === 'event' ? (n.eventDate || n.date) : undefined, description: t(n.summary, lang) };
+---
+<Base lang={lang} title={t(n.title, lang)} description={t(n.summary, lang)} path={`/news/${n.slug}/`} image={n.image} type="article" schema={schema}>
+  <article class="section">
+    <div class="container" style="max-width:860px">
+      <nav class="breadcrumb" style="color:var(--ink-3)"><a style="color:var(--ink-2)" href={lp(lang, '/news/')}>{L.nav_news}</a></nav>
+      <time class="muted" datetime={n.date}>{fmt(n.date)}</time>
+      <h1 class="h-xl mt-1">{t(n.title, lang)}</h1>
+      <p class="lead">{t(n.summary, lang)}</p>
+      {n.image && <img class="rounded mt-3" style="width:100%;aspect-ratio:16/9;object-fit:cover" src={url(n.image)} alt="" />}
+      <div class="prose mt-3" set:html={t(n.body, lang)} />
+      {n.link && <a class="btn btn-primary mt-3" href={n.link.startsWith('/') ? lp(lang, n.link) : n.link}>{t(n.linkLabel, lang) || L.learn_more} <Icon name="arrow" class="arrow" /></a>}
+    </div>
+  </article>
+</Base>

@@ -1,0 +1,17 @@
+---
+// Embedded Tally application form. The Tally JS embed forwards this page's URL and query params
+// (utm_*, fbclid…) into the form's hidden fields automatically; `product` pre-selects the program
+// (the form's product question uses the `product` hidden field as its default answer).
+import { s } from '../i18n/ui.js';
+interface Props { formId: string; lang: 'en' | 'ar'; product?: string; title: string; height?: number }
+const { formId, lang, product, title, height = 640 } = Astro.props;
+const L = s(lang);
+const params = new URLSearchParams({ alignLeft: '1', hideTitle: '1', transparentBackground: '1', dynamicHeight: '1' });
+if (product) params.set('product', product);
+const src = `https://tally.so/embed/${formId}?${params.toString()}`;
+const direct = `https://tally.so/r/${formId}${product ? `?product=${encodeURIComponent(product)}` : ''}`;
+---
+<div class="tally-card">
+  <iframe data-tally-src={src} loading="lazy" width="100%" height={height} frameborder="0" marginheight="0" marginwidth="0" title={title}></iframe>
+  <p class="tally-fallback">{L.apply_fallback} <a href={direct} target="_blank" rel="noopener" data-tally-direct>{L.apply_fallback_link}</a></p>
+</div>

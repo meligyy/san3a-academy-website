@@ -1,0 +1,414 @@
+{
+  "slug": "maker-diploma",
+  "order": 1,
+  "published": true,
+  "featured": true,
+  "audience": "youth",
+  "type": "diploma",
+  "format": "hybrid",
+  "status": "open",
+  "commercial": true,
+  "liveKey": "maker-diploma",
+  "image": "/images/photos/learner-presenting.jpg",
+  "tally": {
+    "form": "makerDiploma"
+  },
+  "nextRound": {
+    "start": "2026-12-14"
+  },
+  "related": [
+    "esp32-for-beginners",
+    "cad-digital-fabrication",
+    "iot-explorers-bootcamp"
+  ],
+  "en": {
+    "title": "Maker Diploma",
+    "short": "Our flagship hybrid diploma: go from an idea to a working smart prototype in 3 months — no engineering degree needed.",
+    "seoTitle": "Maker Diploma — digital fabrication & electronics diploma in Cairo",
+    "seoDescription": "A 3-month hybrid diploma in CAD, laser cutting, 3D printing, electronics and ESP32 programming. Build a working smart prototype. Winter 2027 cohort starts 14 Dec.",
+    "tagline": "You don’t need to be an engineer to build things. Just bring your passion.",
+    "summary": "A professional development program that takes you from concept to working prototype. In 200+ hours across seven modules you learn to design in CAD, laser-cut and 3D-print parts, wire circuits and program a smart device — then build your own capstone that solves a local or personal need.",
+    "imageAlt": "A Maker Diploma learner presenting her project",
+    "duration": "3 months · 200+ hours",
+    "level": "No prior technical skills needed",
+    "nextStart": "14 Dec 2026 · Winter 2027 cohort",
+    "location": "Fab Lab Egypt, Maadi, Cairo + online",
+    "schedule": "Mon 6 PM online lecture · Wed 6 PM session · Sat 12 PM in the lab",
+    "price": "Early-bird pricing & installments",
+    "priceNote": "Fees are shared after your interview. Pay in installments, choose to own or rent your kit, and save with early booking.",
+    "ctaLabel": "Apply to the Maker Diploma",
+    "overviewTitle": "From an idea in your head to a device in your hands",
+    "overview": "<p>Real learning isn’t about memorising textbooks — it’s hands-on, a little messy and fuelled by curiosity. The Maker Diploma bridges theory and real-world building, alongside a community of people who share the same drive.</p><p>Each week combines an online lecture, a guided session and a Saturday lab day on the machines at Fab Lab Egypt. You document everything in your own Maker Journal — a public portfolio of what you designed, built and learned.</p>",
+    "learn": [
+      "Design parts in CAD (Fusion 360) for laser cutting and 3D printing",
+      "Fabricate enclosures in wood and acrylic, with joints and fasteners",
+      "Build and troubleshoot circuits with sensors, switches and a multimeter",
+      "Program the ESP32 in Arduino C — variables, loops, libraries, serial",
+      "Control your device wirelessly from a phone app over Bluetooth",
+      "Plan, build and present a capstone prototype with mentors"
+    ],
+    "skills": [
+      "Fusion 360",
+      "Laser cutting",
+      "3D printing",
+      "Electronics",
+      "ESP32",
+      "Arduino C",
+      "Bluetooth",
+      "Prototyping",
+      "Documentation"
+    ],
+    "outcomes": [
+      {
+        "n": "509",
+        "label": "graduates since 2015 — 44% women"
+      },
+      {
+        "n": "91%",
+        "label": "gained new technical skills"
+      },
+      {
+        "n": "42%",
+        "label": "found a better job"
+      },
+      {
+        "n": "13%",
+        "label": "started a business or personal project"
+      }
+    ],
+    "outcomesSource": "Maker Diploma graduate survey · San3a Academy Profile, July 2026",
+    "syllabusTitle": "7 modules, from cardboard to a smart device",
+    "syllabusLead": "A bootcamp week, eleven teaching weeks and a final showcase. Every module ends with something you made.",
+    "modules": [
+      {
+        "n": 0,
+        "title": "Boot Camp",
+        "meta": "Week 0",
+        "summary": "Program rules and toolchains for 3D printing and laser cutting, the building blocks of a smart device, and your first low-fidelity cardboard model with hand tools and recycled materials."
+      },
+      {
+        "n": 1,
+        "title": "Smart Device Fundamentals",
+        "meta": "Week 1 · design sourcing & planning",
+        "summary": "Open-source CAD libraries, the digital fabrication workflow, and choosing and evaluating your final project idea in a project proposal."
+      },
+      {
+        "n": 2,
+        "title": "CAD, Laser & 3D Printing",
+        "meta": "Weeks 2–3 · CAD for fabrication, assembly & enclosures",
+        "summary": "Fusion 360 sketches and extrusions for laser cutting, 3D features for printing, then joints, T-slots, brackets with M3 hardware, and boxy or free-form enclosures."
+      },
+      {
+        "n": 3,
+        "title": "Electricity & Circuits",
+        "meta": "Week 5 · circuit fundamentals",
+        "summary": "Single and multi-component circuits on breadboards, ESP32 control with code blocks, inputs such as sensors, switches and potentiometers, and troubleshooting with a multimeter."
+      },
+      {
+        "n": 4,
+        "title": "Microcontroller Programming",
+        "meta": "Weeks 6–7 · Arduino C & embedded systems",
+        "summary": "Arduino C on the ESP32: analog sensors, variables, loops, libraries for advanced hardware, the serial monitor and multi-system projects with mode switching."
+      },
+      {
+        "n": 5,
+        "title": "Device Communication",
+        "meta": "Week 8 · wireless communication & GUI",
+        "summary": "USB serial and Bluetooth communication, and a phone interface to control your smart circuit wirelessly."
+      },
+      {
+        "n": 6,
+        "title": "Capstone Project",
+        "meta": "Weeks 9–11 · final project",
+        "summary": "Plan tasks in a project tracker with mentors, source and test components, build through makeathons, and finish your Maker Journal and showcase."
+      }
+    ],
+    "projectsTitle": "What you’ll build",
+    "projects": [
+      {
+        "title": "A laser-cut and 3D-printed enclosure",
+        "body": "Design it in Fusion 360, fabricate it on Fab Lab Egypt’s machines and assemble it with real fasteners."
+      },
+      {
+        "title": "A smart, sensing circuit",
+        "body": "Read sensors and drive outputs with the ESP32, then control it from your phone over Bluetooth."
+      },
+      {
+        "title": "Your capstone prototype",
+        "body": "A working smart device that meets a personal need or a local challenge — from assistive tools to products for small crafts businesses."
+      }
+    ],
+    "whoFor": [
+      "University students and fresh graduates who want practical, portfolio-ready skills",
+      "Working professionals and career shifters — engineers, architects, product and industrial designers",
+      "Educators and STEM teachers who want to bring making into their classrooms",
+      "Artists, crafters, researchers and entrepreneurs who need to prototype ideas"
+    ],
+    "requirements": [
+      "Age 20+ with basic computer and internet skills",
+      "Around 20–25 hours a week, including Saturday lab sessions in Maadi",
+      "A laptop; lectures in Arabic, materials and documentation in English",
+      "No engineering degree or technical experience required"
+    ],
+    "fees": {
+      "title": "Fees & ways to pay",
+      "body": "Your seat is confirmed with a down payment after you are accepted.",
+      "items": [
+        "Early-bird pricing for early applicants",
+        "Installments: down payment plus monthly payments, or via Sympl",
+        "Own or rent your electronics kit",
+        "Referral codes from alumni",
+        "Occasional partner-funded and partial scholarship seats"
+      ]
+    },
+    "applyTitle": "How to join the Maker Diploma",
+    "applyLead": "Admission is selective because seats are limited. The application isn’t a test — it’s the start of a conversation.",
+    "applySteps": [
+      {
+        "title": "Apply online",
+        "body": "Tell us about your background, motivation and a first idea for your final project."
+      },
+      {
+        "title": "Screening",
+        "body": "We review every application for fit and weekly availability."
+      },
+      {
+        "title": "Interview",
+        "body": "A 45-minute conversation, online or on site, with a short live research task."
+      },
+      {
+        "title": "Take-home task",
+        "body": "A small research and documentation task, sent within 24 hours."
+      },
+      {
+        "title": "Acceptance",
+        "body": "You receive your acceptance email with the schedule and fees."
+      },
+      {
+        "title": "Secure your seat",
+        "body": "Seats are confirmed by down payment, first come first served — then a waitlist."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do I need to be an engineer?",
+        "a": "No. The Maker Diploma is designed for people from every background — designers, teachers, artists, researchers and career shifters. Many graduates had no technical experience."
+      },
+      {
+        "q": "How much time does it take each week?",
+        "a": "Plan for about 20–25 hours a week: an online lecture on Monday, a session on Wednesday, a Saturday lab day in Maadi, plus weekly assignments. You also get lab access Sunday to Thursday for your projects."
+      },
+      {
+        "q": "When does the next cohort start?",
+        "a": "The Winter 2027 cohort runs from 14 December 2026 to mid-March 2027. The Summer 2027 cohort opens applications in spring 2027 — you can request an early seat in the application form."
+      },
+      {
+        "q": "How much does it cost? Can I pay in installments?",
+        "a": "Fees are shared after your interview. Early applicants get early-bird pricing, and you can pay in installments or through Sympl, and choose to own or rent your kit."
+      },
+      {
+        "q": "Will I get a certificate?",
+        "a": "Yes. Graduates receive a San3a Academy Maker Diploma certificate of completion, which can be verified online."
+      },
+      {
+        "q": "What language is the program in?",
+        "a": "Sessions are in Arabic; slides, materials and your project documentation are in English."
+      }
+    ]
+  },
+  "ar": {
+    "title": "دبلومة الميكر",
+    "short": "الدبلومة الرئيسية بتاعتنا: من فكرة لنموذج ذكي شغّال في ٣ شهور — من غير ما تكون مهندس.",
+    "seoTitle": "دبلومة الميكر — دبلومة التصنيع الرقمي والإلكترونيات في القاهرة",
+    "seoDescription": "دبلومة هجينة ٣ شهور في الـCAD والقص بالليزر والطباعة ثلاثية الأبعاد والإلكترونيات وبرمجة ESP32. هتبني نموذج ذكي شغّال. دفعة شتاء ٢٠٢٧ تبدأ ١٤ ديسمبر.",
+    "tagline": "مش محتاج تبقى مهندس علشان تصنع. محتاج بس شغفك.",
+    "summary": "برنامج تطوير مهني بياخدك من الفكرة للنموذج الشغّال. في أكتر من ٢٠٠ ساعة و٧ وحدات هتتعلم التصميم بالـCAD، والقص بالليزر، والطباعة ثلاثية الأبعاد، وتوصيل الدوائر وبرمجة جهاز ذكي — وبعدها تبني مشروع تخرجك اللي بيحل احتياج شخصي أو مشكلة محلية.",
+    "imageAlt": "متعلمة في دبلومة الميكر بتعرض مشروعها",
+    "duration": "٣ شهور · أكتر من ٢٠٠ ساعة",
+    "level": "مش محتاج خبرة تقنية مسبقة",
+    "nextStart": "١٤ ديسمبر ٢٠٢٦ · دفعة شتاء ٢٠٢٧",
+    "location": "فاب لاب إيچيبت، المعادي + أونلاين",
+    "schedule": "الإتنين ٦ م محاضرة أونلاين · الأربع ٦ م سيشن · السبت ١٢ ظ في المعمل",
+    "price": "خصم الحجز المبكر وتقسيط",
+    "priceNote": "الرسوم بنشاركها بعد المقابلة. تقدر تقسّط، وتختار تشتري أو تأجّر الكيت، وتوفّر مع الحجز المبكر.",
+    "ctaLabel": "قدّم في دبلومة الميكر",
+    "overviewTitle": "من فكرة في دماغك لجهاز في إيدك",
+    "overview": "<p>التعلّم الحقيقي مش حفظ كتب — هو تجربة عملية، فيها شوية فوضى، ووقودها الفضول. دبلومة الميكر بتوصّل النظري بالتصنيع الحقيقي، وسط مجتمع ناس عندها نفس الشغف.</p><p>كل أسبوع فيه محاضرة أونلاين، وسيشن موجّه، ويوم سبت في المعمل على ماكينات فاب لاب إيچيبت. وبتوثّق كل حاجة في «جورنال الميكر» بتاعك — بورتفوليو عام باللي صممته وبنيته واتعلمته.</p>",
+    "learn": [
+      "تصمم قطع بالـCAD (Fusion 360) للقص بالليزر والطباعة ثلاثية الأبعاد",
+      "تصنّع علب وهياكل من الخشب والأكريليك بوصلات ومسامير",
+      "تبني دوائر بحساسات ومفاتيح وتكتشف الأعطال بالملتيميتر",
+      "تبرمج ESP32 بلغة Arduino C — متغيرات وحلقات ومكتبات وسيريال",
+      "تتحكم في جهازك من الموبايل لاسلكيًا عن طريق البلوتوث",
+      "تخطط وتبني وتعرض نموذج مشروع التخرج مع المنتورز"
+    ],
+    "skills": [
+      "Fusion 360",
+      "القص بالليزر",
+      "الطباعة ثلاثية الأبعاد",
+      "الإلكترونيات",
+      "ESP32",
+      "Arduino C",
+      "البلوتوث",
+      "النماذج الأولية",
+      "التوثيق"
+    ],
+    "outcomes": [
+      {
+        "n": "509",
+        "label": "خريج منذ ٢٠١٥ — ٤٤٪ سيدات"
+      },
+      {
+        "n": "91%",
+        "label": "اكتسبوا مهارات تقنية جديدة"
+      },
+      {
+        "n": "42%",
+        "label": "لقوا شغل أفضل"
+      },
+      {
+        "n": "13%",
+        "label": "بدأوا مشروع أو بيزنس خاص"
+      }
+    ],
+    "outcomesSource": "استبيان خريجي دبلومة الميكر · ملف صنعة أكاديمي، يوليو ٢٠٢٦",
+    "syllabusTitle": "٧ وحدات، من الكرتون لجهاز ذكي",
+    "syllabusLead": "أسبوع بوت كامب، و١١ أسبوع دراسة، وعرض نهائي. كل وحدة بتخلص بحاجة إنت عملتها.",
+    "modules": [
+      {
+        "n": 0,
+        "title": "البوت كامب",
+        "meta": "الأسبوع ٠",
+        "summary": "قواعد البرنامج وأدوات الطباعة ثلاثية الأبعاد والقص بالليزر، ومكونات أي جهاز ذكي، وأول نموذج كرتون بأدوات يدوية وخامات معاد تدويرها."
+      },
+      {
+        "n": 1,
+        "title": "أساسيات الأجهزة الذكية",
+        "meta": "الأسبوع ١ · البحث والتخطيط للتصميم",
+        "summary": "مكتبات CAD مفتوحة المصدر، ومراحل التصنيع الرقمي، واختيار فكرة مشروعك النهائي وتقييمها في مقترح مشروع."
+      },
+      {
+        "n": 2,
+        "title": "الـCAD والقص بالليزر والطباعة ثلاثية الأبعاد",
+        "meta": "الأسبوع ٢–٣ · CAD للتصنيع والتجميع والهياكل",
+        "summary": "رسومات وبثق في Fusion 360 للقص بالليزر، وتصميمات ثلاثية الأبعاد للطباعة، وبعدها الوصلات والـT-slot والزوايا بمسامير M3، وهياكل بأشكال مختلفة."
+      },
+      {
+        "n": 3,
+        "title": "الكهرباء والدوائر",
+        "meta": "الأسبوع ٥ · أساسيات الدوائر",
+        "summary": "دوائر بمكون واحد وأكتر على البريدبورد، والتحكم بـESP32 بالبرمجة بالبلوكات، ومدخلات زي الحساسات والمفاتيح، واكتشاف الأعطال بالملتيميتر."
+      },
+      {
+        "n": 4,
+        "title": "برمجة الميكروكنترولر",
+        "meta": "الأسبوع ٦–٧ · Arduino C والأنظمة المدمجة",
+        "summary": "Arduino C على ESP32: الحساسات التناظرية، والمتغيرات، والحلقات، والمكتبات، والسيريال مونيتور، ومشاريع متعددة الأنظمة بأوضاع تشغيل مختلفة."
+      },
+      {
+        "n": 5,
+        "title": "اتصال الأجهزة",
+        "meta": "الأسبوع ٨ · الاتصال اللاسلكي والواجهات",
+        "summary": "الاتصال عبر USB والبلوتوث، وواجهة على الموبايل تتحكم بيها في الدائرة الذكية لاسلكيًا."
+      },
+      {
+        "n": 6,
+        "title": "مشروع التخرج",
+        "meta": "الأسبوع ٩–١١ · المشروع النهائي",
+        "summary": "تخطيط المهام مع المنتورز، وتجهيز واختبار المكونات، والبناء في الميكاثونات، وإنهاء الجورنال والعرض النهائي."
+      }
+    ],
+    "projectsTitle": "هتبني إيه",
+    "projects": [
+      {
+        "title": "هيكل مقصوص بالليزر ومطبوع ثلاثي الأبعاد",
+        "body": "تصممه على Fusion 360، وتصنّعه على ماكينات فاب لاب إيچيبت، وتجمّعه بمسامير حقيقية."
+      },
+      {
+        "title": "دائرة ذكية بتحس",
+        "body": "تقرا الحساسات وتشغّل المخرجات بـESP32، وتتحكم فيها من موبايلك بالبلوتوث."
+      },
+      {
+        "title": "نموذج مشروع تخرجك",
+        "body": "جهاز ذكي شغّال بيلبي احتياج شخصي أو بيحل مشكلة محلية — من أدوات مساعدة لمنتجات لمشاريع الحِرف الصغيرة."
+      }
+    ],
+    "whoFor": [
+      "طلبة الجامعة والخريجين الجداد اللي عايزين مهارات عملية وبورتفوليو",
+      "الموظفين واللي عايزين يغيّروا مسارهم — مهندسين ومعماريين ومصممين منتجات",
+      "المدرسين ومعلمي STEM اللي عايزين يدخّلوا التصنيع في فصولهم",
+      "الفنانين والحرفيين والباحثين ورواد الأعمال اللي محتاجين يعملوا نماذج لأفكارهم"
+    ],
+    "requirements": [
+      "سن ٢٠ سنة فأكتر ومهارات كمبيوتر وإنترنت أساسية",
+      "حوالي ٢٠–٢٥ ساعة في الأسبوع، منها سيشنز السبت في معمل المعادي",
+      "لابتوب؛ المحاضرات بالعربي والماتريال والتوثيق بالإنجليزي",
+      "مش محتاج شهادة هندسة أو خبرة تقنية"
+    ],
+    "fees": {
+      "title": "الرسوم وطرق الدفع",
+      "body": "مكانك بيتأكد بمقدّم بعد القبول.",
+      "items": [
+        "أسعار حجز مبكر للمتقدمين بدري",
+        "تقسيط: مقدّم وأقساط شهرية، أو عن طريق Sympl",
+        "تشتري أو تأجّر كيت الإلكترونيات",
+        "أكواد ترشيح من الخريجين",
+        "أحيانًا مقاعد ممولة أو منح جزئية من شركائنا"
+      ]
+    },
+    "applyTitle": "إزاي تنضم لدبلومة الميكر",
+    "applyLead": "القبول انتقائي لأن الأماكن محدودة. الاستمارة مش امتحان — هي بداية تعارف بينا.",
+    "applySteps": [
+      {
+        "title": "قدّم أونلاين",
+        "body": "احكيلنا عن خلفيتك ودوافعك وأول فكرة لمشروعك النهائي."
+      },
+      {
+        "title": "الفرز",
+        "body": "بنراجع كل استمارة علشان نتأكد إن البرنامج مناسب ليك ووقتك يسمح."
+      },
+      {
+        "title": "المقابلة",
+        "body": "مقابلة ٤٥ دقيقة أونلاين أو في المقر، فيها مهمة بحث قصيرة."
+      },
+      {
+        "title": "مهمة منزلية",
+        "body": "مهمة بحث وتوثيق صغيرة بتوصلك خلال ٢٤ ساعة."
+      },
+      {
+        "title": "القبول",
+        "body": "بتوصلك رسالة القبول بالمواعيد والرسوم."
+      },
+      {
+        "title": "احجز مكانك",
+        "body": "الأماكن بتتأكد بالمقدّم بأسبقية الدفع — وبعدها قائمة انتظار."
+      }
+    ],
+    "faq": [
+      {
+        "q": "لازم أكون مهندس؟",
+        "a": "لأ. دبلومة الميكر متصممة لناس من كل الخلفيات — مصممين ومدرسين وفنانين وباحثين وناس بتغيّر مسارها. كتير من الخريجين ماكانش عندهم أي خبرة تقنية."
+      },
+      {
+        "q": "محتاج وقت قد إيه كل أسبوع؟",
+        "a": "خطط لحوالي ٢٠–٢٥ ساعة في الأسبوع: محاضرة أونلاين يوم الإتنين، وسيشن يوم الأربع، ويوم السبت في معمل المعادي، غير الواجبات الأسبوعية. وكمان المعمل متاح من الأحد للخميس لمشاريعك."
+      },
+      {
+        "q": "الدفعة الجاية بتبدأ امتى؟",
+        "a": "دفعة شتاء ٢٠٢٧ من ١٤ ديسمبر ٢٠٢٦ لحد منتصف مارس ٢٠٢٧. ودفعة صيف ٢٠٢٧ بتفتح التقديم في الربيع — وتقدر تطلب مكان مبكر من استمارة التقديم."
+      },
+      {
+        "q": "التكلفة كام؟ ينفع أقسّط؟",
+        "a": "الرسوم بنشاركها بعد المقابلة. المتقدمين بدري بياخدوا سعر الحجز المبكر، وتقدر تقسّط أو تدفع عن طريق Sympl، وتختار تشتري أو تأجّر الكيت."
+      },
+      {
+        "q": "هاخد شهادة؟",
+        "a": "أيوه. الخريجين بياخدوا شهادة إتمام دبلومة الميكر من صنعة أكاديمي، وممكن التحقق منها أونلاين."
+      },
+      {
+        "q": "البرنامج بأي لغة؟",
+        "a": "السيشنز بالعربي، والسلايدات والماتريال وتوثيق مشروعك بالإنجليزي."
+      }
+    ]
+  }
+}

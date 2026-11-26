@@ -1,0 +1,19 @@
+{
+  "slug": "alaa-mohyeldin",
+  "published": true,
+  "order": 5,
+  "audience": "educators",
+  "program": "maker-diploma",
+  "name": {
+    "en": "Alaa Mohyeldin",
+    "ar": "آلاء محيي الدين"
+  },
+  "role": {
+    "en": "Educator & researcher · built “Rolly”, a measuring tool for visually impaired students",
+    "ar": "مُعلّمة وباحثة · صممت «رولي» أداة قياس للطلاب ذوي الإعاقة البصرية"
+  },
+  "quote": {
+    "en": "Every idea can be transformed into something physical — a tangible tool that makes a real difference.",
+    "ar": "أي فكرة ممكن تتحوّل لحاجة ملموسة — أداة حقيقية بتعمل فرق حقيقي."
+  }
+}

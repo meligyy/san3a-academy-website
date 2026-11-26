@@ -1,0 +1,69 @@
+---
+import Icon from './Icon.astro';
+import { url, lp } from '../lib/url.js';
+import { s } from '../i18n/ui.js';
+import { site } from '../data/site.js';
+import { programs } from '../lib/content.js';
+
+interface Props { lang: 'en' | 'ar' }
+const { lang } = Astro.props;
+const L = s(lang);
+const year = new Date().getFullYear();
+const top = programs.filter((p) => p.featured).slice(0, 6);
+const socials = Object.entries(site.socials).filter(([, v]) => v);
+---
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src={url('/images/brand/logo-white.png')} alt="San3a Academy صنعة" width="200" height="112" loading="lazy" />
+      <p>{L.footer_tag}</p>
+      <p style="font-size:.9rem;color:#BFA9AF">{L.part_of}</p>
+      <div class="socials">
+        {socials.map(([k, v]) => (
+          <a href={v} rel="noopener" target="_blank" aria-label={k}><Icon name={k} /></a>
+        ))}
+      </div>
+    </div>
+    <div>
+      <h3>{L.nav_programs}</h3>
+      <ul>
+        {top.map((p) => <li><a href={lp(lang, `/programs/${p.slug}/`)}>{p[lang]?.title ?? p.en.title}</a></li>)}
+        <li><a href={lp(lang, '/programs/')}>{L.view_all_programs} →</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>{lang === 'ar' ? 'لمين' : 'Who it’s for'}</h3>
+      <ul>
+        <li><a href={lp(lang, '/kids/')}>{L.nav_kids}</a></li>
+        <li><a href={lp(lang, '/youth/')}>{L.nav_youth}</a></li>
+        <li><a href={lp(lang, '/educators/')}>{L.nav_educators}</a></li>
+        <li><a href={lp(lang, '/partners/')}>{L.nav_partners}</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>San3a Academy</h3>
+      <ul>
+        <li><a href={lp(lang, '/about/')}>{L.nav_about}</a></li>
+        <li><a href={lp(lang, '/impact/')}>{L.nav_impact}</a></li>
+        <li><a href={lp(lang, '/stories/')}>{L.nav_stories}</a></li>
+        <li><a href={lp(lang, '/news/')}>{L.nav_news}</a></li>
+        <li><a href={lp(lang, '/blog/')}>{L.nav_blog}</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>{L.contact_us}</h3>
+      <ul>
+        <li><a href={`mailto:${site.email}`} class="ltr">{site.email}</a></li>
+        {site.whatsapp && <li><a href={`https://wa.me/${site.whatsapp}`} rel="noopener" target="_blank">WhatsApp</a></li>}
+        <li><a href={site.mapUrl} rel="noopener" target="_blank">{site.address[lang]}</a></li>
+        <li><a href={lp(lang, '/contact/')}>{L.nav_contact}</a></li>
+        <li><a href={site.verifyCertificateUrl} rel="noopener" target="_blank">{L.verify_certificate}</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="stripe-edge" aria-hidden="true"></div>
+  <div class="container footer-bottom">
+    <span>© {year} San3a Academy · {L.rights}</span>
+    <span class="ltr">san3aacademy.com</span>
+  </div>
+</footer>

@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import Shapes from '../components/Shapes.astro';
+import { lp } from '../lib/url.js';
+---
+<Base lang="en" title="Page not found" path="/404/" noindex altPath={null}>
+  <section class="section">
+    <div class="container center" style="max-width:720px">
+      <Shapes variant="cluster" style="font-size:44px;color:var(--red)" />
+      <h1 class="display mt-3">404</h1>
+      <p class="lead" style="margin-inline:auto">The page you were looking for has moved or never existed. Let’s get you back to making.</p>
+      <p class="lead" lang="ar" dir="rtl" style="margin-inline:auto;font-family:var(--f-ar)">الصفحة اللي بتدور عليها اتنقلت أو مش موجودة. يلا نرجع للتصنيع.</p>
+      <div class="hero-cta" style="justify-content:center">
+        <a class="btn btn-primary btn-lg" href={lp('en', '/')}>Back to home</a>
+        <a class="btn btn-outline btn-lg" href={lp('ar', '/')} lang="ar">الرئيسية</a>
+      </div>
+    </div>
+  </section>
+</Base>

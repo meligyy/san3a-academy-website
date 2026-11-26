@@ -1,0 +1,58 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { url, lp } from '../lib/url.js';
+import { s } from '../i18n/ui.js';
+import { site } from '../data/site.js';
+import { programsFor } from '../lib/content.js';
+interface Props { lang: 'en' | 'ar' }
+const { lang } = Astro.props;
+const L = s(lang);
+const ar = lang === 'ar';
+const socials = Object.entries(site.socials).filter(([, v]) => v);
+const routes = [
+  { k: 'kids', t: ar ? 'ولي أمر وعايز تسجّل لطفلك؟' : 'A parent looking for a kids program?' },
+  { k: 'youth', t: ar ? 'طالب أو خريج وعايز تتعلّم مهارة جديدة؟' : 'A student or graduate looking to upskill?' },
+  { k: 'educators', t: ar ? 'مدرس أو ميسّر؟' : 'A teacher or facilitator?' },
+];
+---
+<Base lang={lang} title={L.contact_us} description={ar ? 'تواصل مع فريق صنعة أكاديمي.' : 'Get in touch with the San3a Academy team.'} path="/contact/">
+  <section class="section" style="padding-bottom:24px">
+    <div class="container">
+      <span class="eyebrow"><span class="diamond"></span>{L.contact_us}</span>
+      <h1 class="display" style="font-size:clamp(2.2rem,5vw,3.8rem)">{ar ? 'يلا نتكلم' : 'Let’s talk'}</h1>
+      <p class="lead">{ar ? 'أسرع طريقة للتسجيل هي استمارة البرنامج — فريقنا بيرد على واتساب خلال ساعات. لأي سؤال تاني، كلمنا هنا.' : 'The fastest way to join is the program’s application form — our team replies on WhatsApp within hours. For anything else, reach us here.'}</p>
+    </div>
+  </section>
+  <section class="section section--alt">
+    <div class="container grid grid-3">
+      <a class="card card-pad" style="text-decoration:none" href={`mailto:${site.email}`}>
+        <Icon name="mail" diamond style="width:48px;height:48px" /><h2 class="h-sm mt-2">{L.email_us}</h2><p class="ltr mb-0" style="color:var(--red);font-weight:700">{site.email}</p>
+      </a>
+      <a class="card card-pad" style="text-decoration:none" href={site.mapUrl} target="_blank" rel="noopener">
+        <Icon name="pin" diamond style="width:48px;height:48px" /><h2 class="h-sm mt-2">{L.location}</h2><p class="mb-0">{site.address[lang]}</p>
+      </a>
+      <div class="card card-pad">
+        <Icon name="globe" diamond style="width:48px;height:48px" /><h2 class="h-sm mt-2">{ar ? 'تابعنا' : 'Follow us'}</h2>
+        <div class="socials" style="margin-top:8px">{socials.map(([k, v]) => <a href={v} target="_blank" rel="noopener" aria-label={k} style="background:var(--night);color:#fff"><Icon name={k} /></a>)}</div>
+        {site.whatsapp && <a class="btn btn-primary mt-2" href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noopener"><Icon name="whatsapp" style="width:18px;height:18px" />WhatsApp</a>}
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <h2 class="h-lg">{ar ? 'عايز تقدّم؟ ابدأ من هنا' : 'Want to apply? Start here'}</h2>
+      <div class="grid grid-3 mt-3">
+        {routes.map((r) => (
+          <div class="card card-pad" data-audience={r.k} style="border-top:5px solid var(--accent)">
+            <h3 class="h-sm">{r.t}</h3>
+            <ul style="padding-inline-start:1.1em;margin:10px 0 0">
+              {programsFor(r.k).map((p) => <li><a href={lp(lang, `/programs/${p.slug}/#apply`)}>{(p[lang] || p.en).title}</a></li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+      <p class="muted mt-3">{ar ? 'للشراكات والمؤسسات:' : 'Partnerships & organisations:'} <a href={lp(lang, '/partners/')}>{L.nav_partners}</a> · {L.verify_certificate}: <a href={site.verifyCertificateUrl} target="_blank" rel="noopener">makerdiploma.com</a></p>
+    </div>
+  </section>
+</Base>

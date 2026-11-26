@@ -1,0 +1,13 @@
+---
+interface Props { eyebrow?: string; title: string; lead?: string; level?: 'h1' | 'h2'; center?: boolean; size?: 'xl' | 'lg' }
+const { eyebrow, title, lead, level = 'h2', center = false, size = 'xl' } = Astro.props;
+const H = level;
+---
+<div class="section-head" style={center ? 'justify-content:center;text-align:center' : ''}>
+  <div style={center ? 'margin-inline:auto' : ''}>
+    {eyebrow && <span class="eyebrow">{eyebrow}</span>}
+    <H class={size === 'xl' ? 'h-xl' : 'h-lg'}>{title}</H>
+    {lead && <p class="lead" style={center ? 'margin-inline:auto' : ''}>{lead}</p>}
+  </div>
+  <slot />
+</div>

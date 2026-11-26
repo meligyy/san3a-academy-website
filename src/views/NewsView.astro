@@ -1,0 +1,37 @@
+---
+import Base from '../layouts/Base.astro';
+import { url, lp, t } from '../lib/url.js';
+import { s } from '../i18n/ui.js';
+import { news } from '../lib/content.js';
+interface Props { lang: 'en' | 'ar' }
+const { lang } = Astro.props;
+const L = s(lang);
+const ar = lang === 'ar';
+const fmt = (d) => new Date(d).toLocaleDateString(ar ? 'ar-EG' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+<Base lang={lang} title={L.nav_news} description={ar ? 'آخر أخبار وفعاليات صنعة أكاديمي.' : 'The latest news and events from San3a Academy.'} path="/news/">
+  <section class="section" style="padding-bottom:24px">
+    <div class="container">
+      <span class="eyebrow"><span class="diamond"></span>{L.nav_news}</span>
+      <h1 class="display" style="font-size:clamp(2.2rem,5vw,3.8rem)">{L.nav_news}</h1>
+    </div>
+  </section>
+  <section class="section section--alt">
+    <div class="container">
+      {news.length === 0 && <p class="empty">{ar ? 'الأخبار قريبًا.' : 'News coming soon.'}</p>}
+      <div class="grid grid-3">
+        {news.map((n) => (
+          <a class="ncard" href={lp(lang, `/news/${n.slug}/`)}>
+            <img src={url(n.image || '/images/photos/cohort-group.jpg')} alt="" loading="lazy" width="640" height="360" />
+            <div class="nb">
+              <span class="pcard-kicker" style="color:var(--red)">{n.kind === 'event' ? (ar ? 'فعالية' : 'Event') : (ar ? 'خبر' : 'News')}</span>
+              <h3>{t(n.title, lang)}</h3>
+              <p>{t(n.summary, lang)}</p>
+              <time datetime={n.date}>{fmt(n.date)}</time>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>

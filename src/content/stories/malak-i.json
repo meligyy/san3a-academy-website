@@ -1,0 +1,19 @@
+{
+  "slug": "malak-i",
+  "published": true,
+  "order": 10,
+  "audience": "youth",
+  "program": "girls-make",
+  "name": {
+    "en": "Malak I.",
+    "ar": "ملك إ."
+  },
+  "role": {
+    "en": "Girls Make 2025 participant",
+    "ar": "مشاركة في Girls Make ٢٠٢٥"
+  },
+  "quote": {
+    "en": "It was honestly one of the best journeys I’ve ever been part of — full of creativity, teamwork and new challenges that helped me grow and learn so much about technology and innovation. I gained new skills, built confidence, and learned how to turn ideas into real solutions.",
+    "ar": "بصراحة كانت من أحلى الرحلات اللي شاركت فيها — مليانة إبداع وشغل جماعي وتحديات جديدة ساعدتني أكبر وأتعلم كتير عن التكنولوجيا والابتكار. اكتسبت مهارات جديدة، وبنيت ثقتي، واتعلمت أحوّل الأفكار لحلول حقيقية."
+  }
+}

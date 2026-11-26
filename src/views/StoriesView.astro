@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { url, lp, t } from '../lib/url.js';
+import { s } from '../i18n/ui.js';
+import { stories, getProgram } from '../lib/content.js';
+
+interface Props { lang: 'en' | 'ar' }
+const { lang } = Astro.props;
+const L = s(lang);
+const ar = lang === 'ar';
+---
+<Base lang={lang} title={L.nav_stories} description={ar ? 'قصص خريجين ومتعلمين من صنعة أكاديمي.' : 'Stories from San3a Academy learners and alumni.'} path="/stories/" image="/images/photos/learner-presenting.jpg">
+  <section class="page-hero" style={`--hero-img:url(${url('/images/photos/learner-presenting.jpg')})`}>
+    <div class="container">
+      <span class="eyebrow">{L.nav_stories}</span>
+      <h1 class="display" style="max-width:18ch">{ar ? 'المتعلمين بنوا إيه — وراحوا فين' : 'What they built — and where they went next'}</h1>
+      <p class="lead">{ar ? 'كل قصة هنا بدأت بفكرة، وبقت نموذج شغّال، وبعدها فرصة.' : 'Every story here started with an idea, became a working prototype, then an opportunity.'}</p>
+    </div>
+    <div class="stripe-edge" aria-hidden="true"></div>
+  </section>
+  <section class="section">
+    <div class="container">
+      {stories.length === 0 && <p class="empty">{ar ? 'القصص قريبًا.' : 'Stories coming soon.'}</p>}
+      <div class="grid grid-2">
+        {stories.map((x) => {
+          const pr = x.program ? getProgram(x.program) : null;
+          return (
+            <figure class="quote reveal" style="margin:0" data-audience={x.audience}>
+              <span class="bar-mark" aria-hidden="true" style="background:var(--accent)"></span>
+              {x.quote && <blockquote>“{t(x.quote, lang)}”</blockquote>}
+              {x.story && <p class={x.quote ? "muted" : "h-sm"} style={x.quote ? "" : "font-weight:700;color:var(--night)"}>{t(x.story, lang)}</p>}
+              <figcaption class="who-q">
+                <div><b>{t(x.name, lang)}</b><small>{t(x.role, lang)}</small></div>
+              </figcaption>
+              {pr && <a class="link-arrow mt-2" href={lp(lang, `/programs/${pr.slug}/`)}>{(pr[lang] || pr.en).title} <Icon name="arrow" class="arrow" /></a>}
+            </figure>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+  <section class="section section--tight">
+    <div class="container">
+      <CtaBand title={ar ? 'قصتك ممكن تبقى الجاية' : 'Your story could be next'}>
+        <a class="btn btn-white btn-lg" href={lp(lang, '/programs/')}>{L.explore_programs} <Icon name="arrow" class="arrow" /></a>
+      </CtaBand>
+    </div>
+  </section>
+</Base>

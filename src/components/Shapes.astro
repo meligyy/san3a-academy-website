@@ -1,0 +1,21 @@
+---
+// Brand "original shapes": X, diamonds, bar (max two per layout; the cluster counts as one).
+interface Props { variant?: 'cluster' | 'x' | 'diamonds' | 'bar'; class?: string; style?: string }
+const { variant = 'cluster', class: cls = '', style } = Astro.props;
+---
+{variant === 'cluster' && (
+  <span class={`shape-cluster ${cls}`} style={style} aria-hidden="true">
+    <svg viewBox="0 0 100 100"><path fill="currentColor" d="M14 0 50 36 86 0l14 14-36 36 36 36-14 14-36-36-36 36L0 86l36-36L0 14z"/></svg>
+    <svg viewBox="0 0 56 100"><path fill="currentColor" d="M28 0 52 24 28 48 4 24zM28 52l24 24-24 24L4 76z"/></svg>
+    <svg viewBox="0 0 46 100"><rect fill="currentColor" width="46" height="100"/></svg>
+  </span>
+)}
+{variant === 'x' && (
+  <svg class={cls} style={style} viewBox="0 0 100 100" aria-hidden="true"><path fill="currentColor" d="M14 0 50 36 86 0l14 14-36 36 36 36-14 14-36-36-36 36L0 86l36-36L0 14z"/></svg>
+)}
+{variant === 'diamonds' && (
+  <svg class={cls} style={style} viewBox="0 0 56 100" aria-hidden="true"><path fill="currentColor" d="M28 0 52 24 28 48 4 24zM28 52l24 24-24 24L4 76z"/></svg>
+)}
+{variant === 'bar' && (
+  <svg class={cls} style={style} viewBox="0 0 46 100" aria-hidden="true"><rect fill="currentColor" width="46" height="100"/></svg>
+)}

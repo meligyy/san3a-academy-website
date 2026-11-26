@@ -1,0 +1,19 @@
+{
+  "slug": "basmala-ibrahem",
+  "published": true,
+  "order": 2,
+  "audience": "youth",
+  "program": "maker-diploma",
+  "name": {
+    "en": "Basmala Ibrahem",
+    "ar": "بسملة إبراهيم"
+  },
+  "role": {
+    "en": "Architect & artist · Maker Diploma graduate",
+    "ar": "معمارية وفنانة · خريجة دبلومة الميكر"
+  },
+  "quote": {
+    "en": "My project is a smart planter inspired by Van Gogh’s painting — a fusion of IoT and sustainable design that monitors soil moisture and light and automates watering. The Maker Diploma has been an amazing opportunity to learn how to make a product from A to Z!",
+    "ar": "مشروعي أصيص ذكي مستوحى من لوحة لفان جوخ — بيجمع بين إنترنت الأشياء والتصميم المستدام، وبيقيس رطوبة التربة والإضاءة وبيسقي النبات أوتوماتيك. دبلومة الميكر كانت فرصة رائعة أتعلم إزاي أعمل منتج من الألف للياء!"
+  }
+}

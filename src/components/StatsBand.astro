@@ -1,0 +1,23 @@
+---
+import Shapes from './Shapes.astro';
+import { site } from '../data/site.js';
+interface Props { lang: 'en' | 'ar'; title?: string }
+const { lang, title } = Astro.props;
+---
+<section class="stripes" aria-label={title || (lang === 'ar' ? 'أثرنا بالأرقام' : 'Our impact in numbers')}>
+  <div class="container" style="padding-block:clamp(36px,5vw,56px)">
+    <div class="flex items-center gap-2" style="justify-content:space-between;margin-bottom:8px;flex-wrap:wrap">
+      <span class="eyebrow" style="color:#fff;margin:0">{title || (lang === 'ar' ? 'الدليل من برامجنا' : 'Proof from our own programs')}</span>
+      <Shapes variant="cluster" style="font-size:24px;color:#fff" />
+    </div>
+    <div class="stats">
+      {site.impact.map((i) => (
+        <div class="stat">
+          <div class="n ltr">{i.n}</div>
+          <div class="l">{i[lang]}</div>
+        </div>
+      ))}
+    </div>
+    <p style="margin:14px 0 0;font-size:.85rem;color:#F1DCE0">{site.impactSource[lang]}</p>
+  </div>
+</section>

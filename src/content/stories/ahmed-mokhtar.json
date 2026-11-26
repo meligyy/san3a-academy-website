@@ -1,0 +1,19 @@
+{
+  "slug": "ahmed-mokhtar",
+  "published": true,
+  "order": 9,
+  "audience": "youth",
+  "program": "maker-diploma",
+  "name": {
+    "en": "Ahmed Mokhtar",
+    "ar": "أحمد مختار"
+  },
+  "role": {
+    "en": "Architect & academic · Model-Making Lab, GUC",
+    "ar": "معماري وأكاديمي · معمل المجسمات بالجامعة الألمانية"
+  },
+  "quote": {
+    "en": "The diploma bridged the gap between my academic background and the practical side.",
+    "ar": "الدبلومة قفلت الفجوة بين خلفيتي الأكاديمية والجانب العملي."
+  }
+}

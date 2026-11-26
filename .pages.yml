@@ -1,0 +1,744 @@
+# Pages CMS configuration — https://pagescms.org
+# Open https://app.pagescms.org, sign in with GitHub, pick this repository.
+# Every save is a commit to `main`, and GitHub Actions rebuilds and redeploys the site automatically.
+
+media:
+  input: public/images
+  output: /images
+  categories:
+  - image
+content:
+- name: programs
+  label: Programs
+  type: collection
+  path: src/content/programs
+  format: json
+  view:
+    fields:
+    - slug
+    - audience
+    - type
+    - status
+    primary: slug
+    sort:
+    - slug
+  fields:
+  - name: slug
+    label: URL slug (e.g. esp32-for-beginners)
+    type: string
+    required: true
+  - name: order
+    label: Sort order
+    type: number
+  - name: published
+    label: Published
+    type: boolean
+    default: true
+  - name: featured
+    label: Featured on home page
+    type: boolean
+  - name: audience
+    label: Audience
+    type: select
+    options:
+      values:
+      - kids
+      - youth
+      - educators
+  - name: type
+    label: Type
+    type: select
+    options:
+      values:
+      - diploma
+      - bootcamp
+      - course
+      - workshop
+      - scholarship
+      - studio
+      - fellowship
+  - name: format
+    label: Format
+    type: select
+    options:
+      values:
+      - inperson
+      - hybrid
+      - online
+  - name: status
+    label: Status
+    type: select
+    options:
+      values:
+      - open
+      - rolling
+      - soon
+      - waitlist
+      - closed
+  - name: commercial
+    label: Paid product (shows live stats)
+    type: boolean
+  - name: funded
+    label: Fully funded / free
+    type: boolean
+  - name: liveKey
+    label: Live stats key (usually = slug)
+    type: string
+  - name: image
+    label: Hero image
+    type: image
+  - name: tally
+    label: Application form (Tally)
+    type: object
+    fields:
+    - name: form
+      label: Form key (bootcamps, makerDiploma, girlsMake, eduMakers, studios) or a Tally form id
+      type: string
+    - name: product
+      label: Pre-selected product (exact answer text in the form)
+      type: string
+  - name: nextRound
+    label: Next round (fallback when the live API has no data)
+    type: object
+    fields:
+    - name: start
+      label: Start date
+      type: date
+    - name: capacity
+      label: Seats
+      type: number
+    - name: seatsLeft
+      label: Seats left
+      type: number
+  - name: related
+    label: Related program slugs
+    type: string
+    list: true
+  - name: en
+    label: English
+    type: object
+    fields:
+    - name: title
+      type: string
+      required: true
+    - name: short
+      label: Card summary
+      type: text
+    - name: seoTitle
+      label: SEO title
+      type: string
+    - name: seoDescription
+      label: SEO description (≤ 158 chars)
+      type: text
+    - name: tagline
+      type: string
+    - name: summary
+      type: text
+    - name: imageAlt
+      label: Image description
+      type: string
+    - name: duration
+      type: string
+    - name: formatLabel
+      label: Format label override
+      type: string
+    - name: level
+      label: Level / age
+      type: string
+    - name: nextStart
+      label: Next start (text)
+      type: string
+    - name: location
+      type: string
+    - name: schedule
+      type: string
+    - name: language
+      type: string
+    - name: price
+      type: string
+    - name: priceNote
+      label: Price note
+      type: text
+    - name: ctaLabel
+      label: Apply button label
+      type: string
+    - name: overviewTitle
+      type: string
+    - name: overview
+      label: Overview (rich text)
+      type: rich-text
+    - name: learn
+      label: What you'll learn
+      type: string
+      list: true
+    - name: skills
+      label: Skills & tools
+      type: string
+      list: true
+    - name: outcomes
+      label: Outcome stats
+      type: object
+      list: true
+      fields:
+      - name: n
+        label: Number
+        type: string
+      - name: label
+        type: string
+    - name: outcomesSource
+      label: Outcomes source
+      type: string
+    - name: syllabusTitle
+      type: string
+    - name: syllabusLead
+      type: text
+    - name: modules
+      label: Syllabus modules
+      type: object
+      list: true
+      fields:
+      - name: n
+        label: Number
+        type: number
+      - name: title
+        type: string
+      - name: meta
+        label: Week / subtitle
+        type: string
+      - name: summary
+        type: text
+      - name: topics
+        type: string
+        list: true
+    - name: projectsTitle
+      type: string
+    - name: projects
+      type: object
+      list: true
+      fields:
+      - name: title
+        type: string
+      - name: body
+        type: text
+    - name: whoTitle
+      type: string
+    - name: whoFor
+      label: Who it's for
+      type: string
+      list: true
+    - name: requirements
+      label: What you need
+      type: string
+      list: true
+    - name: fees
+      type: object
+      fields:
+      - name: title
+        type: string
+      - name: body
+        type: text
+      - name: items
+        type: string
+        list: true
+    - name: testimonial
+      type: object
+      fields:
+      - name: quote
+        type: text
+      - name: name
+        type: string
+      - name: role
+        type: string
+    - name: applyTitle
+      type: string
+    - name: applyLead
+      type: text
+    - name: applySteps
+      label: How to apply (steps)
+      type: object
+      list: true
+      fields:
+      - name: title
+        type: string
+      - name: body
+        type: text
+    - name: faq
+      label: FAQ
+      type: object
+      list: true
+      fields:
+      - name: q
+        label: Question
+        type: string
+      - name: a
+        label: Answer
+        type: text
+  - name: ar
+    label: Arabic (العربية)
+    type: object
+    fields:
+    - name: title
+      type: string
+      required: true
+    - name: short
+      label: Card summary
+      type: text
+    - name: seoTitle
+      label: SEO title
+      type: string
+    - name: seoDescription
+      label: SEO description (≤ 158 chars)
+      type: text
+    - name: tagline
+      type: string
+    - name: summary
+      type: text
+    - name: imageAlt
+      label: Image description
+      type: string
+    - name: duration
+      type: string
+    - name: formatLabel
+      label: Format label override
+      type: string
+    - name: level
+      label: Level / age
+      type: string
+    - name: nextStart
+      label: Next start (text)
+      type: string
+    - name: location
+      type: string
+    - name: schedule
+      type: string
+    - name: language
+      type: string
+    - name: price
+      type: string
+    - name: priceNote
+      label: Price note
+      type: text
+    - name: ctaLabel
+      label: Apply button label
+      type: string
+    - name: overviewTitle
+      type: string
+    - name: overview
+      label: Overview (rich text)
+      type: rich-text
+    - name: learn
+      label: What you'll learn
+      type: string
+      list: true
+    - name: skills
+      label: Skills & tools
+      type: string
+      list: true
+    - name: outcomes
+      label: Outcome stats
+      type: object
+      list: true
+      fields:
+      - name: n
+        label: Number
+        type: string
+      - name: label
+        type: string
+    - name: outcomesSource
+      label: Outcomes source
+      type: string
+    - name: syllabusTitle
+      type: string
+    - name: syllabusLead
+      type: text
+    - name: modules
+      label: Syllabus modules
+      type: object
+      list: true
+      fields:
+      - name: n
+        label: Number
+        type: number
+      - name: title
+        type: string
+      - name: meta
+        label: Week / subtitle
+        type: string
+      - name: summary
+        type: text
+      - name: topics
+        type: string
+        list: true
+    - name: projectsTitle
+      type: string
+    - name: projects
+      type: object
+      list: true
+      fields:
+      - name: title
+        type: string
+      - name: body
+        type: text
+    - name: whoTitle
+      type: string
+    - name: whoFor
+      label: Who it's for
+      type: string
+      list: true
+    - name: requirements
+      label: What you need
+      type: string
+      list: true
+    - name: fees
+      type: object
+      fields:
+      - name: title
+        type: string
+      - name: body
+        type: text
+      - name: items
+        type: string
+        list: true
+    - name: testimonial
+      type: object
+      fields:
+      - name: quote
+        type: text
+      - name: name
+        type: string
+      - name: role
+        type: string
+    - name: applyTitle
+      type: string
+    - name: applyLead
+      type: text
+    - name: applySteps
+      label: How to apply (steps)
+      type: object
+      list: true
+      fields:
+      - name: title
+        type: string
+      - name: body
+        type: text
+    - name: faq
+      label: FAQ
+      type: object
+      list: true
+      fields:
+      - name: q
+        label: Question
+        type: string
+      - name: a
+        label: Answer
+        type: text
+- name: blog-en
+  label: Blog — English
+  type: collection
+  path: src/content/blog/en
+  format: yaml-frontmatter
+  filename: '{fields.slug}.md'
+  view:
+    fields:
+    - title
+    - category
+    - date
+    primary: title
+    sort:
+    - date
+    default:
+      sort: date
+      order: desc
+  fields:
+  - name: title
+    type: string
+    required: true
+  - name: description
+    label: Meta description (140–158 chars)
+    type: text
+    required: true
+  - name: slug
+    type: string
+    required: true
+  - name: date
+    type: date
+    required: true
+  - name: updated
+    type: date
+  - name: category
+    type: select
+    options:
+      values:
+      - electronics
+      - ai
+      - fabrication
+      - careers
+      - kids
+      - educators
+      - community
+  - name: cover
+    label: Cover image (1600×900)
+    type: image
+  - name: coverAlt
+    label: Cover description
+    type: string
+  - name: keywords
+    type: string
+    list: true
+  - name: author
+    type: string
+  - name: program
+    label: Related program slug
+    type: string
+  - name: related
+    label: Related post slugs
+    type: string
+    list: true
+  - name: featured
+    type: boolean
+  - name: draft
+    type: boolean
+  - name: faq
+    type: object
+    list: true
+    fields:
+    - name: q
+      label: Question
+      type: string
+    - name: a
+      label: Answer
+      type: text
+  - name: body
+    label: Article
+    type: rich-text
+- name: blog-ar
+  label: Blog — Arabic (المدونة)
+  type: collection
+  path: src/content/blog/ar
+  format: yaml-frontmatter
+  filename: '{fields.slug}.md'
+  view:
+    fields:
+    - title
+    - category
+    - date
+    primary: title
+    sort:
+    - date
+    default:
+      sort: date
+      order: desc
+  fields:
+  - name: title
+    type: string
+    required: true
+  - name: description
+    label: Meta description (140–158 chars)
+    type: text
+    required: true
+  - name: slug
+    type: string
+    required: true
+  - name: date
+    type: date
+    required: true
+  - name: updated
+    type: date
+  - name: category
+    type: select
+    options:
+      values:
+      - electronics
+      - ai
+      - fabrication
+      - careers
+      - kids
+      - educators
+      - community
+  - name: cover
+    label: Cover image (1600×900)
+    type: image
+  - name: coverAlt
+    label: Cover description
+    type: string
+  - name: keywords
+    type: string
+    list: true
+  - name: author
+    type: string
+  - name: program
+    label: Related program slug
+    type: string
+  - name: related
+    label: Related post slugs
+    type: string
+    list: true
+  - name: featured
+    type: boolean
+  - name: draft
+    type: boolean
+  - name: faq
+    type: object
+    list: true
+    fields:
+    - name: q
+      label: Question
+      type: string
+    - name: a
+      label: Answer
+      type: text
+  - name: body
+    label: Article
+    type: rich-text
+- name: news
+  label: News & events
+  type: collection
+  path: src/content/news
+  format: json
+  view:
+    fields:
+    - slug
+    - date
+    - kind
+    primary: slug
+  fields:
+  - name: slug
+    type: string
+    required: true
+  - name: date
+    type: date
+    required: true
+  - name: kind
+    type: select
+    options:
+      values:
+      - news
+      - event
+  - name: eventDate
+    label: Event date
+    type: date
+  - name: published
+    type: boolean
+    default: true
+  - name: image
+    type: image
+  - name: title
+    type: object
+    fields:
+    - name: en
+      type: string
+    - name: ar
+      type: string
+  - name: summary
+    type: object
+    fields:
+    - name: en
+      type: text
+    - name: ar
+      type: text
+  - name: body
+    type: object
+    fields:
+    - name: en
+      type: rich-text
+    - name: ar
+      type: rich-text
+  - name: link
+    label: Button link
+    type: string
+  - name: linkLabel
+    type: object
+    fields:
+    - name: en
+      type: string
+    - name: ar
+      type: string
+- name: stories
+  label: Alumni stories & testimonials
+  description: Only publish quotes and photos with written consent.
+  type: collection
+  path: src/content/stories
+  format: json
+  view:
+    fields:
+    - slug
+    - audience
+    - published
+    primary: slug
+  fields:
+  - name: slug
+    type: string
+    required: true
+  - name: published
+    label: Published (consent confirmed)
+    type: boolean
+  - name: order
+    type: number
+  - name: audience
+    type: select
+    options:
+      values:
+      - kids
+      - youth
+      - educators
+  - name: program
+    label: Program slug
+    type: string
+  - name: name
+    type: object
+    fields:
+    - name: en
+      type: string
+    - name: ar
+      type: string
+  - name: role
+    type: object
+    fields:
+    - name: en
+      type: string
+    - name: ar
+      type: string
+  - name: quote
+    type: object
+    fields:
+    - name: en
+      type: text
+    - name: ar
+      type: text
+  - name: story
+    type: object
+    fields:
+    - name: en
+      type: text
+    - name: ar
+      type: text
+- name: page-home
+  label: 'Page: Home'
+  type: file
+  path: src/content/pages/home.json
+  format: json
+- name: page-audiences
+  label: 'Pages: Kids / Youth / Educators'
+  type: file
+  path: src/content/pages/audiences.json
+  format: json
+- name: page-about
+  label: 'Page: About'
+  type: file
+  path: src/content/pages/about.json
+  format: json
+- name: page-impact
+  label: 'Page: Impact'
+  type: file
+  path: src/content/pages/impact.json
+  format: json
+- name: page-partners
+  label: 'Page: Partner with us'
+  type: file
+  path: src/content/pages/partners.json
+  format: json
+- name: live-snapshot
+  label: Live stats snapshot (auto-updated hourly — edit only if the API is down)
+  type: file
+  path: public/live/snapshot.json
+  format: json

@@ -1,0 +1,36 @@
+{
+  "slug": "esp32-for-beginners",
+  "order": 3,
+  "published": true,
+  "featured": true,
+  "audience": "youth",
+  "type": "course",
+  "format": "hybrid",
+  "status": "open",
+  "commercial": true,
+  "liveKey": "esp32-for-beginners",
+  "image": "/images/photos/youth-robot.jpg",
+  "tally": { "form": "bootcamps", "product": "تعلم اساسيات بوردة ESP32 واصنع جهازك الذكي في ١٠ اسابيع (ESP32 for Beginners)" },
+  "en": {
+    "title": "ESP32 for Beginners",
+    "short": "Learn the ESP32 board and build your own smart device in 10 weeks.",
+    "tagline": "From your first blinking LED to a connected smart device.",
+    "summary": "A hands-on hybrid course for beginners. You learn electronics and microcontroller programming on the ESP32 and finish with a smart device you designed and built yourself.",
+    "duration": "10 weeks",
+    "level": "Beginner — no experience needed",
+    "location": "Fab Lab Egypt, Maadi, Cairo + online",
+    "learn": ["Read and build simple electronic circuits", "Program the ESP32 microcontroller", "Connect sensors and actuators", "Send data over Wi-Fi to your phone or the cloud"],
+    "skills": ["ESP32", "Arduino IDE", "C/C++ basics", "Sensors", "Wi-Fi", "Prototyping"]
+  },
+  "ar": {
+    "title": "أساسيات ESP32",
+    "short": "اتعلم أساسيات بوردة ESP32 واصنع جهازك الذكي في ١٠ أسابيع.",
+    "tagline": "من أول لمبة بتنور لحد جهاز ذكي متوصل بالإنترنت.",
+    "summary": "كورس عملي هجين للمبتدئين. هتتعلم الإلكترونيات وبرمجة الميكروكنترولر على بوردة ESP32 وهتخلص بجهاز ذكي صممته وبنيته بإيدك.",
+    "duration": "١٠ أسابيع",
+    "level": "مبتدئ — مش محتاج خبرة",
+    "location": "فاب لاب إيچيبت، المعادي + أونلاين",
+    "learn": ["تقرا وتبني دوائر إلكترونية بسيطة", "تبرمج الميكروكنترولر ESP32", "توصّل حساسات ومحركات", "تبعت بيانات على الواي فاي لموبايلك أو للسحابة"],
+    "skills": ["ESP32", "Arduino IDE", "أساسيات C/C++", "الحساسات", "Wi-Fi", "النماذج الأولية"]
+  }
+}

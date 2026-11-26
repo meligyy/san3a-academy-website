@@ -1,0 +1,68 @@
+{
+  "hero": {
+    "eyebrow": { "en": "San3a Academy · صنعة أكاديمي", "ar": "صنعة أكاديمي · San3a Academy" },
+    "titleA": { "en": "Learn by", "ar": "اتعلّم" },
+    "titleB": { "en": "making.", "ar": "بإيدك." },
+    "lead": {
+      "en": "Hands-on programs in digital fabrication, electronics, code and design thinking — for kids, youth and educators. Real tools, real projects, from idea to working prototype.",
+      "ar": "برامج عملية في التصنيع الرقمي والإلكترونيات والبرمجة والتفكير التصميمي — للأطفال والشباب والمدرسين. أدوات حقيقية ومشاريع حقيقية، من الفكرة لحد نموذج شغّال."
+    },
+    "ctaPrimary": { "en": "Explore programs", "ar": "استكشف البرامج" },
+    "ctaSecondary": { "en": "Apply to the Maker Diploma", "ar": "قدّم في دبلومة الميكر" },
+    "image": "/images/photos/showcase-day.jpg",
+    "imageAlt": { "en": "Young makers showing their projects at a San3a Academy showcase", "ar": "شباب بيعرضوا مشاريعهم في معرض صنعة أكاديمي" },
+    "boxTitle": { "en": "Maker Diploma", "ar": "دبلومة الميكر" },
+    "boxLine": { "en": "Winter 2027 cohort · starts December 2026", "ar": "دفعة شتاء ٢٠٢٧ · تبدأ ديسمبر ٢٠٢٦" }
+  },
+  "paths": {
+    "eyebrow": { "en": "Choose your path", "ar": "اختار طريقك" },
+    "title": { "en": "One academy. Three ways to make.", "ar": "أكاديمية واحدة. ٣ طرق للتصنيع." },
+    "lead": { "en": "Every audience has its own programs, its own colour and the same promise: you learn by building something real.", "ar": "لكل فئة برامجها ولونها، وكلهم ليهم نفس الوعد: هتتعلم وانت بتبني حاجة حقيقية." },
+    "items": [
+      { "key": "kids", "image": "/images/photos/studios-group.jpg",
+        "en": "Kids learn robotics, coding and making by building with their own hands.",
+        "ar": "الأطفال بيتعلموا الروبوتات والبرمجة والتصنيع وهم بيبنوا بإيديهم." },
+      { "key": "youth", "image": "/images/photos/youth-robot.jpg",
+        "en": "Students and fresh graduates building real projects — and the skills to get hired.",
+        "ar": "طلبة وخريجين جداد بيبنوا مشاريع حقيقية — والمهارات اللي بتفتح لهم سوق الشغل." },
+      { "key": "educators", "image": "/images/photos/educators.jpg",
+        "en": "Teachers bringing making and design thinking into their classrooms.",
+        "ar": "مدرسين بيدخّلوا التصنيع والتفكير التصميمي في فصولهم." }
+    ]
+  },
+  "featured": {
+    "eyebrow": { "en": "Featured programs", "ar": "برامج مختارة" },
+    "title": { "en": "Start building this season", "ar": "ابدأ تبني الموسم ده" }
+  },
+  "how": {
+    "eyebrow": { "en": "How we teach", "ar": "إزاي بنعلّم" },
+    "title": { "en": "We don't just teach technology. We build people who can make with it.", "ar": "إحنا مش بس بنعلّم تكنولوجيا. إحنا بنبني ناس تقدر تصنع بيها." },
+    "lead": { "en": "Every program is designed — not assembled — around three ideas.", "ar": "كل برنامج متصمم — مش متجمّع — حوالين ٣ أفكار." },
+    "items": [
+      { "k": "01", "en": "Purposeful application", "ar": "تطبيق له هدف", "den": "Learners solve real problems from their own lives, schools and communities — not textbook exercises.", "dar": "المتعلمين بيحلّوا مشاكل حقيقية من حياتهم ومدارسهم ومجتمعاتهم — مش تمارين كتب." },
+      { "k": "02", "en": "Maker technology", "ar": "تكنولوجيا التصنيع", "den": "3D printers, laser cutters, microcontrollers and code — the same tools used in industry.", "dar": "طابعات ثلاثية الأبعاد، ليزر كاتر، ميكروكنترولر وبرمجة — نفس أدوات الصناعة." },
+      { "k": "03", "en": "Constructionist learning", "ar": "التعلّم بالبناء", "den": "You learn best when you build something you care about, then share it with others.", "dar": "أحسن تعلّم بيحصل لما تبني حاجة تهمّك وتشاركها مع غيرك." },
+      { "k": "04", "en": "A community that stays", "ar": "مجتمع بيفضل معاك", "den": "Showcases, alumni and our sister brands Fab Lab Egypt and Maker Faire Cairo keep you making after graduation.", "dar": "المعارض والخريجين وأخواتنا فاب لاب إيچيبت وميكر فير القاهرة بيخلّوك تكمّل بعد التخرج." }
+    ]
+  },
+  "proof": {
+    "eyebrow": { "en": "Outcomes", "ar": "النتائج" },
+    "title": { "en": "What learners built — and where they went next", "ar": "المتعلمين بنوا إيه — وراحوا فين بعدها" },
+    "stats": [
+      { "n": "91%", "en": "gained new technical skills", "ar": "اكتسبوا مهارات تقنية جديدة" },
+      { "n": "42%", "en": "found a better job", "ar": "لقوا شغل أفضل" },
+      { "n": "32%", "en": "earned extra income or a promotion", "ar": "زاد دخلهم أو اترقّوا" },
+      { "n": "13%", "en": "started a business or personal project", "ar": "بدأوا مشروع أو بيزنس خاص" }
+    ],
+    "source": { "en": "Maker Diploma graduate survey · San3a Academy Profile, July 2026", "ar": "استبيان خريجي دبلومة الميكر · ملف صنعة أكاديمي، يوليو ٢٠٢٦" }
+  },
+  "partners": {
+    "eyebrow": { "en": "Partners & funders", "ar": "شركاء وداعمين" },
+    "title": { "en": "Built with partners who believe in making", "ar": "بنشتغل مع شركاء مؤمنين بالتصنيع" }
+  },
+  "business": {
+    "title": { "en": "Bring hands-on learning to your school or organisation", "ar": "خلّي التعلّم بالممارسة يوصل لمدرستك أو مؤسستك" },
+    "text": { "en": "Custom programs, teacher training, makerspace set-up and curricula & kits — designed with you and delivered by our team.", "ar": "برامج مخصوصة، وتدريب مدرسين، وتجهيز معامل تصنيع، ومناهج وأدوات — بنصممها معاك وفريقنا بينفّذها." },
+    "cta": { "en": "Partner with us", "ar": "شاركنا" }
+  }
+}

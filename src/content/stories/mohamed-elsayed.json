@@ -1,0 +1,19 @@
+{
+  "slug": "mohamed-elsayed",
+  "published": true,
+  "order": 18,
+  "audience": "youth",
+  "program": "maker-diploma",
+  "name": {
+    "en": "Mohamed Elsayed",
+    "ar": "محمد السيد"
+  },
+  "role": {
+    "en": "Fab Lab Technician, The Knowledge Hub",
+    "ar": "فني فاب لاب، The Knowledge Hub"
+  },
+  "story": {
+    "en": "Coming from a business background, Mohamed joined the Maker Diploma to explore a passion — and made a full career shift into digital fabrication.",
+    "ar": "محمد جه من خلفية في البيزنس، وانضم لدبلومة الميكر علشان يستكشف شغفه — وغيّر مساره المهني بالكامل للتصنيع الرقمي."
+  }
+}

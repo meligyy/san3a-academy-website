@@ -1,0 +1,100 @@
+---
+import Icon from './Icon.astro';
+import Shapes from './Shapes.astro';
+import { url, lp, t } from '../lib/url.js';
+import { s } from '../i18n/ui.js';
+import { programsFor, getProgram } from '../lib/content.js';
+import { site } from '../data/site.js';
+
+interface Props { lang: 'en' | 'ar'; path: string; altPath?: string | null }
+const { lang, path, altPath } = Astro.props;
+const L = s(lang);
+const other = lang === 'en' ? 'ar' : 'en';
+const switchPath = altPath === null ? (path.startsWith('/blog/') ? '/blog/' : '/') : (altPath ?? path);
+const switchHref = lp(other, switchPath);
+const cols = [
+  { key: 'kids', title: L.audience_kids, ar: 'أطفال', href: lp(lang, '/kids/'), items: programsFor('kids') },
+  { key: 'youth', title: L.audience_youth, ar: 'شباب', href: lp(lang, '/youth/'), items: programsFor('youth') },
+  { key: 'educators', title: L.audience_educators, ar: 'مدرسين', href: lp(lang, '/educators/'), items: programsFor('educators') },
+];
+const feature = getProgram('maker-diploma');
+const isActive = (p) => path === p || (p !== '/' && path.startsWith(p));
+const links = [
+  { href: '/kids/', label: L.nav_kids },
+  { href: '/youth/', label: L.nav_youth },
+  { href: '/educators/', label: L.nav_educators },
+  { href: '/partners/', label: L.nav_partners },
+  { href: '/blog/', label: L.nav_blog },
+  { href: '/about/', label: L.nav_about },
+];
+---
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href={lp(lang, '/')} aria-label={lang === 'ar' ? 'صنعة أكاديمي — الرئيسية' : 'San3a Academy — home'}>
+      <img src={url('/images/brand/logo-full-colour.png')} alt="San3a Academy صنعة" width="180" height="101" />
+    </a>
+    <nav class="nav" aria-label={lang === 'ar' ? 'التنقل الرئيسي' : 'Main'}>
+      <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="mega" data-mega-toggle>
+        {L.nav_programs}<Icon name="chevron" />
+      </button>
+      {links.map((l) => (
+        <a href={lp(lang, l.href)} aria-current={isActive(l.href) ? 'page' : undefined}>{l.label}</a>
+      ))}
+    </nav>
+    <div class="header-actions">
+      <a class="lang-switch" href={switchHref} lang={other} hreflang={other} title={L.lang_switch_label}>{L.lang_switch}</a>
+      {site.lmsUrl && <a class="btn btn-outline btn-sm btn-apply" href={site.lmsUrl}>{lang === 'ar' ? 'تسجيل الدخول' : 'Log in'}</a>}
+      <a class="btn btn-primary btn-sm btn-apply" href={lp(lang, '/programs/')}>{L.apply_now}</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="drawer" data-drawer-toggle>
+        <span class="sr-only">{L.menu}</span><Icon name="menu" class="i-open" />
+      </button>
+    </div>
+  </div>
+
+  <div class="mega" id="mega" data-mega>
+    <div class="container mega-inner">
+      {cols.map((c) => (
+        <div class="mega-col" data-audience={c.key}>
+          <h3><span class="sw"></span>{c.title}{lang === 'en' && <span lang="ar" style="font-family:var(--f-ar);letter-spacing:0;text-transform:none">· {c.ar}</span>}</h3>
+          <ul>
+            {c.items.map((p) => (
+              <li><a href={lp(lang, `/programs/${p.slug}/`)}><strong>{t(p[lang]?.title ?? p.en.title, lang)}</strong><span>{p[lang]?.short ?? p.en.short}</span></a></li>
+            ))}
+            <li><a href={c.href}><strong class="red">{lang === 'ar' ? `كل برامج ${c.title}` : `All ${c.title.toLowerCase()} programs`} →</strong></a></li>
+          </ul>
+        </div>
+      ))}
+      {feature && (
+        <a class="mega-feature" href={lp(lang, '/programs/maker-diploma/')} style="text-decoration:none">
+          <Shapes variant="cluster" style="font-size:20px;color:#fff;margin-bottom:14px" />
+          <h3 class="h-md" style="margin-bottom:6px">{feature[lang]?.title ?? feature.en.title}</h3>
+          <p>{feature[lang]?.short ?? feature.en.short}</p>
+          <span class="btn btn-white btn-sm">{L.see_program} <Icon name="arrow" class="arrow" /></span>
+        </a>
+      )}
+    </div>
+    <div class="container mega-all">
+      <a class="link-arrow" href={lp(lang, '/programs/')}>{L.view_all_programs} <Icon name="arrow" class="arrow" /></a>
+    </div>
+  </div>
+
+  <div class="drawer" id="drawer" data-drawer>
+    <a href={lp(lang, '/programs/')}>{L.nav_programs}</a>
+    {cols.map((c) => (
+      <>
+        <h3>{c.title}</h3>
+        {c.items.map((p) => <a href={lp(lang, `/programs/${p.slug}/`)}>{p[lang]?.title ?? p.en.title}</a>)}
+      </>
+    ))}
+    <h3>San3a Academy</h3>
+    <a href={lp(lang, '/impact/')}>{L.nav_impact}</a>
+    <a href={lp(lang, '/stories/')}>{L.nav_stories}</a>
+    <a href={lp(lang, '/partners/')}>{L.nav_partners}</a>
+    <a href={lp(lang, '/blog/')}>{L.nav_blog}</a>
+    <a href={lp(lang, '/news/')}>{L.nav_news}</a>
+    <a href={lp(lang, '/about/')}>{L.nav_about}</a>
+    <a href={lp(lang, '/contact/')}>{L.nav_contact}</a>
+    <a href={switchHref} lang={other}>{L.lang_switch}</a>
+    <a class="btn btn-primary btn-lg" href={lp(lang, '/programs/')}>{L.apply_now}</a>
+  </div>
+</header>

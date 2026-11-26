@@ -1,0 +1,90 @@
+name: Build & deploy (GitHub Pages)
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 * * * *' # hourly: refresh the live-stats snapshot and redeploy
+  workflow_dispatch:
+
+permissions:
+  contents: write # only used to publish the build log to the ci-logs branch when a build fails
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Configure GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Install
+        run: npm ci --no-audit --no-fund
+
+      - name: Refresh live snapshot (aggregate counts only)
+        if: ${{ vars.LIVE_API_URL != '' }}
+        env:
+          LIVE_API_URL: ${{ vars.LIVE_API_URL }}
+        run: |
+          if curl -fsSL --max-time 60 "$LIVE_API_URL" -o /tmp/live.json \
+             && node -e "const j=require('/tmp/live.json'); if(!j.ok||!j.products) process.exit(1)"; then
+            cp /tmp/live.json public/live/snapshot.json
+            echo "Live snapshot refreshed."
+          else
+            echo "::warning::Live API unavailable — keeping the committed snapshot."
+          fi
+
+      - name: Build
+        env:
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          SITE_ORIGIN: ${{ steps.pages.outputs.origin }}
+        run: npm run build 2>&1 | tee build.log
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Publish build log to the ci-logs branch (on failure)
+        if: failure()
+        env:
+          TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/ci-log
+          {
+            echo "run: ${{ github.run_id }}  sha: ${{ github.sha }}  event: ${{ github.event_name }}"
+            echo "configure-pages: ${{ steps.pages.outcome }}"
+            if [ "${{ steps.pages.outcome }}" = "failure" ]; then
+              echo "HINT: enable GitHub Pages — repo Settings > Pages > Build and deployment > Source: GitHub Actions (the repo must be public on the free plan)."
+            fi
+            echo "----- build.log -----"
+            cat build.log 2>/dev/null || echo "(no build.log)"
+          } > /tmp/ci-log/build.log
+          cd /tmp/ci-log
+          git init -q && git checkout -q -b ci-logs && git add build.log
+          git -c user.name="github-actions" -c user.email="github-actions@users.noreply.github.com" commit -qm "CI log for run ${{ github.run_id }}"
+          git push -qf "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" ci-logs || true
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

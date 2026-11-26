@@ -1,0 +1,152 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import Shapes from '../components/Shapes.astro';
+import StatsBand from '../components/StatsBand.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { url, lp, t } from '../lib/url.js';
+import { s } from '../i18n/ui.js';
+import { site } from '../data/site.js';
+import A from '../content/pages/about.json';
+
+interface Props { lang: 'en' | 'ar' }
+const { lang } = Astro.props;
+const L = s(lang);
+const ar = lang === 'ar';
+---
+<Base lang={lang} title={t(A.hero.eyebrow, lang)} description={t(A.hero.lead, lang)} path="/about/" image="/images/photos/cohort-group.jpg">
+  <section class="page-hero" style={`--hero-img:url(${url('/images/photos/cohort-group.jpg')})`}>
+    <div class="container">
+      <span class="eyebrow">{t(A.hero.eyebrow, lang)}</span>
+      <h1 class="display" style="max-width:17ch">{t(A.hero.title, lang)}</h1>
+      <p class="lead">{t(A.hero.lead, lang)}</p>
+    </div>
+    <div class="stripe-edge" aria-hidden="true"></div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid-2">
+      <div class="card card-pad" style="border-top:5px solid var(--red)">
+        <span class="eyebrow">{ar ? 'رؤيتنا' : 'Vision'}</span>
+        <p class="h-md" style="margin:0">{t(A.vision, lang)}</p>
+      </div>
+      <div class="card card-pad" style="border-top:5px solid var(--night)">
+        <span class="eyebrow">{ar ? 'رسالتنا' : 'Mission'}</span>
+        <p class="h-md" style="margin:0">{t(A.mission, lang)}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head"><div>
+        <span class="eyebrow"><span class="diamond"></span>{ar ? 'مبادئنا' : 'Our principles'}</span>
+        <h2 class="h-xl">{ar ? 'إزاي بنفكّر في التعليم' : 'How we think about learning'}</h2>
+      </div></div>
+      <div class="grid grid-3">
+        {A.principles.map((p, i) => (
+          <div class="proj reveal">
+            <span class="k ltr">{String(i + 1).padStart(2, '0')}</span>
+            <h3>{ar ? p.ar : p.en}</h3>
+            <p>{ar ? p.dar : p.den}</p>
+          </div>
+        ))}
+      </div>
+      <figure class="quote mt-4" style="margin-inline:0">
+        <span class="bar-mark" aria-hidden="true"></span>
+        <blockquote>“{t(A.manifestoQuote, lang)}”</blockquote>
+        <figcaption class="who-q"><b>{ar ? 'بيان صنعة أكاديمي' : 'San3a Academy Manifesto'}</b></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><div>
+        <span class="eyebrow"><span class="diamond"></span>{ar ? 'حكايتنا' : 'Our story'}</span>
+        <h2 class="h-xl">{ar ? 'من مساحة تصنيع لأكاديمية' : 'From a makerspace to an academy'}</h2>
+      </div></div>
+      <ol class="timeline">
+        {A.timeline.map((e) => (
+          <li class="reveal"><span class="y ltr">{e.y}</span><p>{ar ? e.ar : e.en}</p></li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <StatsBand lang={lang} />
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><div>
+        <span class="eyebrow"><span class="diamond"></span>{ar ? 'جزء من صنعة' : 'Part of San3a'}</span>
+        <h2 class="h-xl">{ar ? 'منظومة واحدة للتصنيع والتعلّم' : 'One ecosystem for making and learning'}</h2>
+        <p class="lead">{ar ? 'صنعة أكاديمي هي الذراع التعليمي لصنعة تك، المؤسسة الاجتماعية اللي بدأت سنة ٢٠١٢ ومعاها فاب لاب إيچيبت وميكر فير القاهرة.' : 'San3a Academy is the education arm of San3a Tech, the social enterprise founded in 2012 that also runs Fab Lab Egypt and Maker Faire Cairo.'}</p>
+      </div></div>
+      <div class="grid grid-3">
+        {A.ecosystem.map((e) => (
+          <div class="card card-pad" style={e.self ? 'border-top:5px solid var(--red)' : 'border-top:5px solid var(--night)'}>
+            <h3 class="h-md" style="margin-bottom:2px">{e.name}</h3>
+            <p class="muted" lang="ar" style="font-family:var(--f-ar);margin-bottom:10px">{e.ar}</p>
+            <p class="mb-0">{ar ? e.dar : e.en}</p>
+            {e.url && <a class="link-arrow mt-2" href={e.url} target="_blank" rel="noopener">{e.url.replace('https://', '')} <Icon name="arrow" class="arrow" /></a>}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head"><div>
+        <span class="eyebrow"><span class="diamond"></span>{ar ? 'الفريق' : 'Team'}</span>
+        <h2 class="h-xl">{ar ? 'الناس اللي ورا صنعة أكاديمي' : 'The people behind San3a Academy'}</h2>
+        <p class="lead">{t(A.teamNote, lang)}</p>
+      </div></div>
+      <div class="grid grid-4">
+        {A.team.map((m) => (
+          <div class="card card-pad">
+            <span class="avatar" aria-hidden="true">{m.name.split(' ').map((w) => w[0]).slice(0, 2).join('')}</span>
+            <h3 class="h-sm mt-2" style="margin-bottom:4px" lang="en">{m.name}</h3>
+            <p class="muted mb-0" style="font-size:.95rem">{t(m.role, lang)}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <span class="eyebrow"><span class="diamond"></span>{ar ? 'زورنا' : 'Visit us'}</span>
+        <h2 class="h-xl">{ar ? 'في قلب المعادي' : 'In the heart of Maadi'}</h2>
+        <p class="lead">{ar ? 'برامجنا بتتعمل في مقر صنعة في المعادي، جنب ماكينات فاب لاب إيچيبت: طابعات ثلاثية الأبعاد، ليزر كاتر، فينيل، CNC، إلكترونيات وخياطة وتطريز.' : 'Our programs run at San3a HQ in Maadi, next to the machines of Fab Lab Egypt: 3D printers, laser cutters, vinyl, CNC milling, an electronics bench, and sewing & embroidery.'}</p>
+        <ul class="info-list mt-3">
+          <li class="info-item"><Icon name="pin" diamond /><div><b>{L.location}</b><a href={site.mapUrl} target="_blank" rel="noopener">{site.address[lang]}</a></div></li>
+          <li class="info-item"><Icon name="mail" diamond /><div><b>{L.email_us}</b><a class="ltr" href={`mailto:${site.email}`}>{site.email}</a></div></li>
+        </ul>
+      </div>
+      <img class="rounded" style="width:100%;aspect-ratio:4/3;object-fit:cover" src={url('/images/photos/instructor-learner.jpg')} alt={ar ? 'مدرب ومتعلمة في ستوديو صنعة أكاديمي' : 'An instructor and a learner at a San3a Academy studio'} loading="lazy" />
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <CtaBand title={ar ? 'المستقبل مش حاجة نستعد لها وبس. ده حاجة لازم نتعلّم نصنعها.' : 'The future is not something to prepare for. It is something to learn to make.'}>
+        <a class="btn btn-white btn-lg" href={lp(lang, '/programs/')}>{L.explore_programs} <Icon name="arrow" class="arrow" /></a>
+        <a class="btn btn-outline btn-lg" style="color:#fff" href={lp(lang, '/partners/')}>{L.nav_partners}</a>
+      </CtaBand>
+    </div>
+  </section>
+</Base>
+<style>
+  .timeline { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border-top: 3px solid var(--night); }
+  .timeline li { position: relative; padding: 22px 18px 6px 0; }
+  :global(html[dir="rtl"]) .timeline li { padding: 22px 0 6px 18px; }
+  .timeline li::before { content: ""; position: absolute; top: -9px; inset-inline-start: 0; width: 14px; height: 14px; background: var(--red); transform: rotate(45deg); }
+  .timeline .y { font-family: Montserrat, var(--f-display); font-weight: 800; font-size: 1.6rem; color: var(--red); }
+  .timeline p { margin: 6px 0 0; color: var(--ink-2); font-size: .97rem; }
+  @media (max-width: 900px) { .timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 520px) { .timeline { grid-template-columns: minmax(0, 1fr); } }
+  .avatar { width: 52px; height: 52px; display: grid; place-items: center; border-radius: 50%; background: var(--blush); color: var(--wine); font-family: Montserrat, sans-serif; font-weight: 800; }
+</style>

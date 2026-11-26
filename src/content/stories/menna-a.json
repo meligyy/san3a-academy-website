@@ -1,0 +1,19 @@
+{
+  "slug": "menna-a",
+  "published": true,
+  "order": 11,
+  "audience": "youth",
+  "program": "girls-make",
+  "name": {
+    "en": "Menna A.",
+    "ar": "منة أ."
+  },
+  "role": {
+    "en": "Girls Make 2025 participant",
+    "ar": "مشاركة في Girls Make ٢٠٢٥"
+  },
+  "quote": {
+    "en": "When I first joined, I thought it would just be about coding and tools. But each project challenged how I think, how I work with others, and how I see problems. What started as a tech journey slowly became a journey of growth and curiosity.",
+    "ar": "لما انضميت في الأول، كنت فاكرة إنها هتبقى برمجة وأدوات وبس. لكن كل مشروع غيّر طريقة تفكيري وشغلي مع غيري ونظرتي للمشاكل. اللي بدأ كرحلة تكنولوجيا بقى رحلة نمو وفضول."
+  }
+}

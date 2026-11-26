@@ -1,0 +1,99 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { url, lp, t } from '../lib/url.js';
+import { s } from '../i18n/ui.js';
+import { site } from '../data/site.js';
+import P from '../content/pages/partners.json';
+
+interface Props { lang: 'en' | 'ar' }
+const { lang } = Astro.props;
+const L = s(lang);
+const ar = lang === 'ar';
+const mail = `mailto:${site.email}?subject=${encodeURIComponent(ar ? 'شراكة مع صنعة أكاديمي' : 'Partnership with San3a Academy')}`;
+---
+<Base lang={lang} title={t(P.hero.title, lang)} description={t(P.hero.lead, lang)} path="/partners/" image="/images/photos/educators-celebrating.jpg">
+  <section class="page-hero" style={`--hero-img:url(${url('/images/photos/educators-celebrating.jpg')})`}>
+    <div class="container">
+      <span class="eyebrow">{t(P.hero.eyebrow, lang)}</span>
+      <h1 class="display" style="max-width:16ch">{t(P.hero.title, lang)}</h1>
+      <p class="lead">{t(P.hero.lead, lang)}</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary btn-lg" href={mail}>{ar ? 'كلّم فريق الشراكات' : 'Talk to our partnerships team'} <Icon name="arrow" class="arrow" /></a>
+        <a class="btn btn-outline btn-lg" href="#cases">{ar ? 'شوف شغلنا' : 'See our work'}</a>
+      </div>
+    </div>
+    <div class="stripe-edge" aria-hidden="true"></div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><div>
+        <span class="eyebrow"><span class="diamond"></span>{ar ? 'بنقدّم إيه' : 'What we offer'}</span>
+        <h2 class="h-xl">{ar ? '٤ طرق نشتغل بيها معاك' : 'Four ways to work with us'}</h2>
+      </div></div>
+      <div class="grid grid-4">
+        {P.offers.map((o) => (
+          <div class="card card-pad reveal">
+            <Icon name={o.icon} diamond style="width:48px;height:48px" />
+            <h3 class="h-sm mt-2">{ar ? o.ar : o.en}</h3>
+            <p class="muted mb-0">{ar ? o.dar : o.den}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="cases" class="section section--alt">
+    <div class="container">
+      <div class="section-head"><div>
+        <span class="eyebrow"><span class="diamond"></span>{ar ? 'قصص شراكة' : 'Case studies'}</span>
+        <h2 class="h-xl">{ar ? 'برامج بنيناها مع شركائنا' : 'Programs we built with partners'}</h2>
+      </div></div>
+      <div class="grid grid-3">
+        {P.cases.map((c) => (
+          <article class="ncard reveal">
+            <img src={url(c.image)} alt="" loading="lazy" width="640" height="360" />
+            <div class="nb">
+              <span class="pcard-kicker" style="color:var(--red)">{t(c.tag, lang)}</span>
+              <h3>{t(c.title, lang)}</h3>
+              <p>{t(c.body, lang)}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><div>
+        <span class="eyebrow"><span class="diamond"></span>{ar ? 'إزاي بنشتغل' : 'How it works'}</span>
+        <h2 class="h-xl">{ar ? 'من أول مكالمة لحد يوم العرض' : 'From the first call to showcase day'}</h2>
+      </div></div>
+      <div class="steps">
+        {P.steps.map((st, i) => (
+          <div class="step reveal"><div class="k"><span class="ltr">{i + 1}</span></div><h3>{ar ? st.ar : st.en}</h3><p>{ar ? st.dar : st.den}</p></div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {P.list.length > 0 && (
+    <section class="section section--alt section--tight">
+      <div class="container">
+        <h2 class="h-lg">{ar ? 'شركاء وداعمين' : 'Partners, funders & clients'}</h2>
+        <div class="logo-wall mt-2">{P.list.map((p) => <span class="partner">{p.name}<small>{t(p.role, lang)}</small></span>)}</div>
+      </div>
+    </section>
+  )}
+
+  <section class="section section--tight">
+    <div class="container">
+      <CtaBand title={ar ? 'يلا نصمم برنامجك' : 'Let’s design your program'} text={ar ? 'ابعتلنا نبذة عن مؤسستك ومتعلمينك وهنرجعلك خلال يومين عمل.' : 'Send us a short note about your organisation and learners — we reply within two working days.'}>
+        <a class="btn btn-white btn-lg" href={mail}><Icon name="mail" style="width:20px;height:20px" />{site.email}</a>
+      </CtaBand>
+    </div>
+  </section>
+</Base>

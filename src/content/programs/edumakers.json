@@ -1,0 +1,122 @@
+{
+  "slug": "edumakers",
+  "order": 10,
+  "published": true,
+  "featured": true,
+  "audience": "educators",
+  "type": "diploma",
+  "format": "hybrid",
+  "status": "open",
+  "funded": true,
+  "commercial": false,
+  "liveKey": "edumakers",
+  "image": "/images/photos/educators-celebrating.jpg",
+  "tally": { "form": "eduMakers" },
+  "related": ["design-thinking-bootcamp", "maker-diploma", "learning-studios"],
+  "en": {
+    "title": "EduMakers Diploma",
+    "short": "A funded diploma for teachers and science facilitators in Cairo and Aswan: bring making, experiments and design thinking into your classroom.",
+    "seoTitle": "EduMakers — teacher training in making, STEAM & design thinking (Cairo & Aswan)",
+    "seoDescription": "EduMakers is a funded 13-week diploma for teachers in Cairo and Aswan: hands-on STEAM labs, classroom experiments and design thinking. Certificate included.",
+    "tagline": "Training teachers to bring making and design thinking into their classrooms.",
+    "summary": "A hands-on diploma that helps educators turn science lessons into experiences students can touch, build and question. Teachers learn by doing — through interactive labs, classroom experiments and integrated projects they take straight back to school.",
+    "imageAlt": "Teachers celebrating at the EduMakers graduation",
+    "duration": "About 13 weeks",
+    "level": "Teachers & science facilitators",
+    "location": "Cairo & Aswan",
+    "nextStart": "New round · applications open",
+    "price": "Fully funded",
+    "priceNote": "Funded for selected teachers through the Nur Tech program, supported by the Drosos Foundation.",
+    "ctaLabel": "Apply to EduMakers",
+    "overviewTitle": "Make your classroom a place where students make",
+    "overview": "<p>EduMakers respects your expertise and your constraints. You work with low-cost materials and lesson designs that fit real class sizes and timetables, and you practise every activity yourself before you teach it.</p><p>The program is part of Nur Tech, a multi-year initiative with the Drosos Foundation to grow a community of maker educators in Cairo and Aswan.</p>",
+    "learn": [
+      "Design hands-on STEAM lessons around real questions",
+      "Run safe, low-cost science experiments in class",
+      "Use design thinking to turn student ideas into projects",
+      "Facilitate teamwork, inquiry and reflection",
+      "Assess learning through what students make",
+      "Lead integrated projects with your school community"
+    ],
+    "skills": ["STEAM pedagogy", "Classroom experiments", "Design thinking", "Project-based learning", "Low-cost prototyping", "Facilitation"],
+    "outcomes": [
+      { "n": "51", "label": "teachers graduated in the first cohort" },
+      { "n": "166+", "label": "learning hours" },
+      { "n": "32", "label": "interactive labs" },
+      { "n": "130+", "label": "classroom experiments" }
+    ],
+    "outcomesSource": "EduMakers first cohort, Cairo & Aswan, October 2026",
+    "whoFor": [
+      "Science and STEM teachers in public, private and community schools",
+      "Science facilitators and educators in NGOs and learning centres",
+      "Educators in Cairo and Aswan (each round announces its target areas)"
+    ],
+    "requirements": [
+      "Currently teaching or facilitating learners",
+      "Commitment to attend the full program",
+      "Willingness to try new activities with your students"
+    ],
+    "fees": { "title": "Funded by the Drosos Foundation", "body": "Selected teachers join EduMakers free of charge through the Nur Tech program.", "items": ["No tuition fees", "Lab materials included", "Certificate of completion", "Ready-to-use activities for your classroom"] },
+    "applyTitle": "Apply to EduMakers",
+    "applyLead": "Fill in the application (in Arabic). Our team reviews applications and contacts selected teachers with the schedule.",
+    "faq": [
+      { "q": "Who can apply to EduMakers?", "a": "Teachers and science facilitators, especially in Cairo and Aswan. Each round announces its target governorates and eligibility in the application form." },
+      { "q": "Is it free?", "a": "Yes. EduMakers is funded for selected teachers through Nur Tech, supported by the Drosos Foundation." },
+      { "q": "Will I get a certificate?", "a": "Yes. Teachers who complete the program receive an EduMakers certificate at the graduation ceremony." },
+      { "q": "Can you train teachers at our school?", "a": "Yes — we design custom teacher training and makerspace programs for schools and organisations. See Partner with us." }
+    ]
+  },
+  "ar": {
+    "title": "دبلومة EduMakers للمدرسين",
+    "short": "دبلومة ممولة للمدرسين وميسّري العلوم في القاهرة وأسوان: دخّل التصنيع والتجارب والتفكير التصميمي في فصلك.",
+    "seoTitle": "EduMakers — تدريب المدرسين على التصنيع وSTEAM والتفكير التصميمي (القاهرة وأسوان)",
+    "seoDescription": "EduMakers دبلومة ممولة ١٣ أسبوع للمدرسين في القاهرة وأسوان: معامل STEAM عملية، وتجارب في الفصول، وتفكير تصميمي، وشهادة في الآخر.",
+    "tagline": "بندرّب المدرسين يدخّلوا التصنيع والتفكير التصميمي في فصولهم.",
+    "summary": "دبلومة عملية بتساعد المعلمين يحوّلوا دروس العلوم لتجارب الطلاب يلمسوها ويبنوها ويسألوا عنها. المدرسين بيتعلموا بالممارسة — من خلال معامل تفاعلية وتجارب في الفصول ومشاريع متكاملة بيرجعوا بيها على طول للمدرسة.",
+    "imageAlt": "مدرسات بيحتفلوا في تخرج EduMakers",
+    "duration": "حوالي ١٣ أسبوع",
+    "level": "المدرسين وميسّري العلوم",
+    "location": "القاهرة وأسوان",
+    "nextStart": "دورة جديدة · التقديم مفتوح",
+    "price": "ممول بالكامل",
+    "priceNote": "ممول للمدرسين المختارين من خلال برنامج نور تك، بدعم من مؤسسة دروسوس.",
+    "ctaLabel": "قدّم في EduMakers",
+    "overviewTitle": "خلّي فصلك مكان الطلاب بيصنعوا فيه",
+    "overview": "<p>EduMakers بيحترم خبرتك وظروفك. هتشتغل بخامات قليلة التكلفة ودروس مناسبة لأعداد الفصول والجداول الحقيقية، وهتجرّب كل نشاط بنفسك قبل ما تدرّسه.</p><p>البرنامج جزء من نور تك، مبادرة متعددة السنوات مع مؤسسة دروسوس لبناء مجتمع من المعلمين الصُّنّاع في القاهرة وأسوان.</p>",
+    "learn": [
+      "تصمم دروس STEAM عملية حوالين أسئلة حقيقية",
+      "تعمل تجارب علمية آمنة وقليلة التكلفة في الفصل",
+      "تستخدم التفكير التصميمي علشان تحوّل أفكار الطلاب لمشاريع",
+      "تيسّر العمل الجماعي والاستقصاء والتأمل",
+      "تقيّم التعلّم من خلال اللي الطلاب بيصنعوه",
+      "تقود مشاريع متكاملة مع مجتمع مدرستك"
+    ],
+    "skills": ["طرق تدريس STEAM", "تجارب الفصل", "التفكير التصميمي", "التعلم بالمشاريع", "نماذج قليلة التكلفة", "التيسير"],
+    "outcomes": [
+      { "n": "51", "label": "مدرس ومدرسة اتخرجوا في أول دفعة" },
+      { "n": "166+", "label": "ساعة تعلّم" },
+      { "n": "32", "label": "معمل تفاعلي" },
+      { "n": "130+", "label": "تجربة في الفصول" }
+    ],
+    "outcomesSource": "أول دفعة EduMakers، القاهرة وأسوان، أكتوبر ٢٠٢٦",
+    "whoFor": [
+      "مدرسين العلوم وSTEM في المدارس الحكومية والخاصة والمجتمعية",
+      "ميسّري العلوم والمعلمين في الجمعيات ومراكز التعلّم",
+      "معلمين في القاهرة وأسوان (كل دورة بتعلن المناطق المستهدفة)"
+    ],
+    "requirements": [
+      "إنك بتدرّس أو بتيسّر لمتعلمين حاليًا",
+      "التزام بحضور البرنامج كامل",
+      "استعداد تجرّب أنشطة جديدة مع طلابك"
+    ],
+    "fees": { "title": "ممول من مؤسسة دروسوس", "body": "المدرسين المختارين بينضموا لـEduMakers مجانًا من خلال برنامج نور تك.", "items": ["من غير مصاريف دراسية", "خامات المعامل مشمولة", "شهادة إتمام", "أنشطة جاهزة تطبقها في فصلك"] },
+    "applyTitle": "قدّم في EduMakers",
+    "applyLead": "املأ استمارة التقديم. فريقنا بيراجع الطلبات وبيتواصل مع المدرسين المختارين بالمواعيد.",
+    "faq": [
+      { "q": "مين يقدر يقدّم في EduMakers؟", "a": "المدرسين وميسّري العلوم، خصوصًا في القاهرة وأسوان. كل دورة بتعلن المحافظات المستهدفة وشروط التقديم في الاستمارة." },
+      { "q": "البرنامج مجاني؟", "a": "أيوه. EduMakers ممول للمدرسين المختارين من خلال نور تك، بدعم من مؤسسة دروسوس." },
+      { "q": "هاخد شهادة؟", "a": "أيوه. المدرسين اللي بيكمّلوا البرنامج بياخدوا شهادة EduMakers في حفل التخرج." },
+      { "q": "ممكن تدرّبوا مدرسين مدرستنا؟", "a": "أيوه — بنصمم تدريب مدرسين وبرامج معامل تصنيع مخصوصة للمدارس والمؤسسات. شوف صفحة «شاركنا»." }
+    ]
+  }
+}

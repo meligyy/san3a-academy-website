@@ -1,0 +1,19 @@
+---
+import { url, lp } from '../lib/url.js';
+import { s } from '../i18n/ui.js';
+import { BLOG_CATEGORIES, readingTime } from '../lib/content.js';
+interface Props { post: any; lang: 'en' | 'ar'; large?: boolean }
+const { post, lang, large = false } = Astro.props;
+const L = s(lang);
+const cat = BLOG_CATEGORIES[post.category];
+const date = post.date ? new Date(post.date).toLocaleDateString(lang === 'ar' ? 'ar-EG' : 'en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '';
+---
+<a class={`ncard ${large ? 'ncard--large' : ''}`} href={lp(lang, `/blog/${post.slug}/`)} data-cat={post.category}>
+  <img src={url(post.cover || '/images/og-default.jpg')} alt={post.coverAlt || ''} loading="lazy" width="800" height="450" />
+  <div class="nb">
+    <span class="pcard-kicker" style="color:var(--red)">{cat ? cat[lang] : post.category}</span>
+    <h3 style={large ? 'font-size:1.5rem' : ''}>{post.title}</h3>
+    <p>{post.description}</p>
+    <time datetime={post.date}>{date} · {readingTime(post)} {L.min_read}</time>
+  </div>
+</a>

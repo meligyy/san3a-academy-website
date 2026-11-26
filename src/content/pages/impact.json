@@ -1,0 +1,18 @@
+{
+  "hero": {
+    "eyebrow": { "en": "Our impact", "ar": "أثرنا" },
+    "title": { "en": "Proof from our own programs", "ar": "الدليل من برامجنا" },
+    "lead": { "en": "We lead with what learners built and where they went next: real numbers and real stories.", "ar": "بنبدأ باللي المتعلمين بنوه والمكان اللي راحوا له بعدها: أرقام حقيقية وقصص حقيقية." }
+  },
+  "programs": [
+    { "slug": "maker-diploma", "title": { "en": "Maker Diploma", "ar": "دبلومة الميكر" }, "line": { "en": "509 graduates out of 628 participants since 2015 · 44% women", "ar": "٥٠٩ خريج من ٦٢٨ مشارك منذ ٢٠١٥ · ٤٤٪ سيدات" },
+      "stats": [ { "n": "91%", "en": "gained new technical skills", "ar": "اكتسبوا مهارات تقنية جديدة" }, { "n": "87%", "en": "developed a maker mindset", "ar": "اكتسبوا عقلية الصانع" }, { "n": "42%", "en": "found a better job", "ar": "لقوا شغل أفضل" }, { "n": "51%", "en": "became active in the maker ecosystem", "ar": "بقوا فاعلين في مجتمع التصنيع" }, { "n": "14%", "en": "shifted career", "ar": "غيّروا مسارهم المهني" }, { "n": "13%", "en": "started a business or personal project", "ar": "بدأوا مشروع أو بيزنس خاص" } ] },
+    { "slug": "girls-make", "title": { "en": "Girls Make", "ar": "Girls Make" }, "line": { "en": "289 graduates out of 300 participants in seven cities · 96% completion", "ar": "٢٨٩ خريجة من ٣٠٠ مشاركة في ٧ مدن · نسبة إتمام ٩٦٪" },
+      "stats": [ { "n": "89%", "en": "more confident with CAD and 3D printing", "ar": "بقوا أكثر ثقة في الـCAD والطباعة ثلاثية الأبعاد" }, { "n": "90%", "en": "built teamwork and communication skills", "ar": "طوّروا مهارات العمل الجماعي والتواصل" }, { "n": "70%", "en": "more interested in STEM careers", "ar": "زاد اهتمامهم بمجالات STEM" }, { "n": "927", "en": "applications for the 2026 round", "ar": "طلب تقديم لدورة ٢٠٢٦" } ] },
+    { "slug": "edumakers", "title": { "en": "EduMakers", "ar": "EduMakers" }, "line": { "en": "First cohort of teachers from Cairo and Aswan, 2026", "ar": "أول دفعة مدرسين من القاهرة وأسوان، ٢٠٢٦" },
+      "stats": [ { "n": "51", "en": "teachers trained", "ar": "مدرس ومدرسة اتدرّبوا" }, { "n": "166+", "en": "learning hours", "ar": "ساعة تعلّم" }, { "n": "32", "en": "interactive labs", "ar": "معمل تفاعلي" }, { "n": "130+", "en": "classroom experiments", "ar": "تجربة في الفصول" } ] },
+    { "slug": "community", "title": { "en": "Community programs", "ar": "برامج مجتمعية" }, "line": { "en": "Manshia Nasser, Cairo — youth and kids innovation programs", "ar": "منشية ناصر، القاهرة — برامج ابتكار للشباب والأطفال" },
+      "stats": [ { "n": "500+", "en": "youth and kids reached in Manshia", "ar": "شاب وطفل في المنشية" }, { "n": "230+", "en": "children in the summer 2026 Youth Innovation Program", "ar": "طفل في برنامج ابتكار الشباب صيف ٢٠٢٦" }, { "n": "100+", "en": "job opportunities created for learners and alumni", "ar": "فرصة عمل اتخلقت للمتعلمين والخريجين" } ] }
+  ],
+  "source": { "en": "Sources: San3a Academy Profile, July 2026; EduMakers graduation report, October 2026.", "ar": "المصادر: ملف صنعة أكاديمي، يوليو ٢٠٢٦؛ تقرير تخرج EduMakers، أكتوبر ٢٠٢٦." }
+}

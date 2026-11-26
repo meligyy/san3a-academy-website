@@ -1,0 +1,9 @@
+---
+import ProgramView from '../../../views/ProgramView.astro';
+import { programs } from '../../../lib/content.js';
+export function getStaticPaths() {
+  return programs.map((program) => ({ params: { slug: program.slug }, props: { program } }));
+}
+const { program } = Astro.props;
+---
+<ProgramView lang="ar" program={program} />

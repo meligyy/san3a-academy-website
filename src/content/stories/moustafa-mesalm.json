@@ -1,0 +1,19 @@
+{
+  "slug": "moustafa-mesalm",
+  "published": true,
+  "order": 7,
+  "audience": "youth",
+  "program": "maker-diploma",
+  "name": {
+    "en": "Moustafa Mesalm",
+    "ar": "مصطفى مسلم"
+  },
+  "role": {
+    "en": "Engineer, STEM educator & content creator",
+    "ar": "مهندس ومعلم STEM وصانع محتوى"
+  },
+  "quote": {
+    "en": "I learned that it’s okay to fail and learn, and that there are people who listen to you. I graduated having confidence in myself.",
+    "ar": "اتعلمت إن عادي أفشل وأتعلم، وإن فيه ناس بتسمعك. اتخرجت وأنا واثق في نفسي."
+  }
+}

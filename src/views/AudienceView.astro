@@ -1,0 +1,116 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import Shapes from '../components/Shapes.astro';
+import ProgramCard from '../components/ProgramCard.astro';
+import LiveBadge from '../components/LiveBadge.astro';
+import Faq from '../components/Faq.astro';
+import Lockup from '../components/Lockup.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { url, lp, t } from '../lib/url.js';
+import { s } from '../i18n/ui.js';
+import { programsFor, stories } from '../lib/content.js';
+import audiences from '../content/pages/audiences.json';
+
+interface Props { lang: 'en' | 'ar'; audience: 'kids' | 'youth' | 'educators' }
+const { lang, audience } = Astro.props;
+const L = s(lang);
+const A = audiences[audience];
+const c = A[lang] || A.en;
+const list = programsFor(audience);
+const st = stories.filter((x) => x.audience === audience && x.quote).slice(0, 3);
+---
+<Base lang={lang} title={c.seoTitle || c.title} description={c.lead} path={`/${audience}/`} image={A.image} audience={audience}>
+  <section class="page-hero" data-audience={audience} style={`--hero-img:url(${url(A.image)})`}>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href={lp(lang, '/')}>{L.home}</a><span aria-hidden="true">/</span><span>{L[`audience_${audience}`]}</span></nav>
+      <div class="mb-0" style="margin-bottom:18px"><Lockup audience={audience} dark /></div>
+      <h1 class="display" style="max-width:18ch">{c.title}</h1>
+      <p class="lead">{c.lead}</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary btn-lg" href="#programs">{c.cta || L.explore_programs} <Icon name="arrow" class="arrow" /></a>
+        {A.liveKey && <span class="live-strip on-dark" style="padding:10px 14px"><LiveBadge slug={A.liveKey} lang={lang} /></span>}
+      </div>
+    </div>
+    <div style="position:absolute;bottom:0;left:0;right:0;height:8px;background:var(--accent);z-index:1"></div>
+  </section>
+
+  {c.why && (
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><div>
+          <span class="eyebrow"><span class="diamond"></span>{c.whyEyebrow || (lang === 'ar' ? 'ليه صنعة' : 'Why San3a')}</span>
+          <h2 class="h-xl">{c.whyTitle}</h2>
+          {c.whyLead && <p class="lead">{c.whyLead}</p>}
+        </div></div>
+        <div class="grid grid-4">
+          {c.why.map((w, i) => (
+            <div class="step reveal">
+              <div class="k" style={`background:var(--accent);color:var(--accent-ink)`}><span class="ltr">{i + 1}</span></div>
+              <h3>{w.t}</h3>
+              <p>{w.d}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section id="programs" class="section section--alt">
+    <div class="container">
+      <div class="section-head"><div>
+        <span class="eyebrow"><span class="diamond"></span>{L.nav_programs}</span>
+        <h2 class="h-xl">{c.programsTitle || L.nav_programs}</h2>
+      </div>
+        <a class="link-arrow" href={lp(lang, `/programs/?audience=${audience}`)}>{L.view_all_programs} <Icon name="arrow" class="arrow" /></a>
+      </div>
+      <div class="grid grid-3">{list.map((p) => <div class="reveal"><ProgramCard program={p} lang={lang} /></div>)}</div>
+    </div>
+  </section>
+
+  {A.gallery && A.gallery.length > 0 && (
+    <section class="section section--tight">
+      <div class="container">
+        <div class="grid grid-3">
+          {A.gallery.map((g) => <img class="rounded img-cover reveal" style="aspect-ratio:4/3" src={url(g)} alt="" loading="lazy" />)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {st.length > 0 && (
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow"><span class="diamond"></span>{L.nav_stories}</span><h2 class="h-lg">{lang === 'ar' ? 'من مجتمعنا' : 'From our community'}</h2></div>
+          <a class="link-arrow" href={lp(lang, '/stories/')}>{L.all_stories} <Icon name="arrow" class="arrow" /></a></div>
+        <div class="grid grid-3">
+          {st.map((x) => (
+            <figure class="quote" style="margin:0">
+              <span class="bar-mark" aria-hidden="true"></span>
+              <blockquote style="font-size:1.12rem">“{t(x.quote, lang)}”</blockquote>
+              <figcaption class="who-q"><div><b>{t(x.name, lang)}</b><small>{t(x.role, lang)}</small></div></figcaption>
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {c.faq && c.faq.length > 0 && (
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow"><span class="diamond"></span>{L.faq}</span><h2 class="h-xl">{L.faq_title}</h2></div></div>
+        <Faq items={c.faq} />
+      </div>
+    </section>
+  )}
+
+  <section class="section section--tight">
+    <div class="container">
+      <CtaBand title={c.ctaTitle || L.blog_cta_title} text={c.ctaText}>
+        <a class="btn btn-white btn-lg" href={lp(lang, `/programs/?audience=${audience}`)}>{L.explore_programs} <Icon name="arrow" class="arrow" /></a>
+        <a class="btn btn-outline btn-lg" style="color:#fff" href={lp(lang, '/contact/')}>{L.contact_us}</a>
+      </CtaBand>
+    </div>
+  </section>
+</Base>

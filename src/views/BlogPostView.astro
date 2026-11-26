@@ -1,0 +1,134 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import Shapes from '../components/Shapes.astro';
+import PostCard from '../components/PostCard.astro';
+import LiveBadge from '../components/LiveBadge.astro';
+import Faq from '../components/Faq.astro';
+import { url, lp } from '../lib/url.js';
+import { s } from '../i18n/ui.js';
+import { posts, getProgram, BLOG_CATEGORIES, readingTime } from '../lib/content.js';
+
+interface Props { lang: 'en' | 'ar'; post: any }
+const { lang, post } = Astro.props;
+const L = s(lang);
+const { Content } = post;
+const headings = (post.raw.getHeadings ? post.raw.getHeadings() : []).filter((h) => h.depth === 2);
+const program = post.program ? getProgram(post.program) : null;
+const pc = program ? (program[lang] || program.en) : null;
+const otherLang = lang === 'en' ? 'ar' : 'en';
+const hasTranslation = posts(otherLang).some((p) => p.slug === post.slug);
+const all = posts(lang);
+const related = (post.related || []).map((sl) => all.find((p) => p.slug === sl)).filter(Boolean)
+  .concat(all.filter((p) => p.slug !== post.slug && p.category === post.category))
+  .filter((p, i, arr) => p.slug !== post.slug && arr.findIndex((x) => x.slug === p.slug) === i).slice(0, 3);
+const fmt = (d) => d ? new Date(d).toLocaleDateString(lang === 'ar' ? 'ar-EG' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
+const origin = Astro.site ? Astro.site.origin : '';
+const articleSchema = {
+  '@context': 'https://schema.org', '@type': 'BlogPosting',
+  headline: post.title, description: post.description, inLanguage: lang,
+  image: origin + url(post.cover), datePublished: post.date, dateModified: post.updated || post.date,
+  author: { '@type': 'Organization', name: post.author || 'San3a Academy' },
+  publisher: { '@type': 'Organization', name: 'San3a Academy', logo: { '@type': 'ImageObject', url: origin + url('/images/brand/logo-full-colour.png') } },
+  mainEntityOfPage: origin + lp(lang, `/blog/${post.slug}/`),
+  keywords: (post.keywords || []).join(', '),
+};
+const cat = BLOG_CATEGORIES[post.category];
+---
+<Base lang={lang} title={post.seoTitle || post.title} description={post.description} path={`/blog/${post.slug}/`} image={post.cover} type="article" schema={articleSchema} altPath={hasTranslation ? `/blog/${post.slug}/` : null}>
+  <article>
+    <header class="section" style="padding-bottom:28px">
+      <div class="container" style="max-width:980px">
+        <nav class="breadcrumb" style="color:var(--ink-3)" aria-label="Breadcrumb">
+          <a style="color:var(--ink-2)" href={lp(lang, '/blog/')}>{L.nav_blog}</a><span aria-hidden="true">/</span>
+          <a style="color:var(--ink-2)" href={lp(lang, `/blog/?topic=${post.category}`)}>{cat?.[lang]}</a>
+        </nav>
+        <h1 class="h-xl" style="font-size:clamp(1.9rem,4.2vw,3.1rem);max-width:24ch">{post.title}</h1>
+        <p class="lead">{post.description}</p>
+        <p class="muted" style="font-size:.95rem;display:flex;gap:14px;flex-wrap:wrap;align-items:center">
+          <span><Icon name="users" style="width:16px;height:16px;display:inline;vertical-align:-3px" /> {L.by} {post.author || (lang === 'ar' ? 'فريق صنعة أكاديمي' : 'San3a Academy team')}</span>
+          <span>{L.published} {fmt(post.date)}</span>
+          <span>{readingTime(post)} {L.min_read}</span>
+        </p>
+      </div>
+      <div class="container mt-3" style="max-width:1160px">
+        <img class="rounded" style="width:100%;aspect-ratio:16/9;object-fit:cover;box-shadow:var(--shadow)" src={url(post.cover)} alt={post.coverAlt || ''} width="1600" height="900" fetchpriority="high" />
+      </div>
+    </header>
+
+    <div class="container post-layout">
+      <div class="prose post-body">
+        <Content />
+        {post.faq && post.faq.length > 0 && (
+          <section class="mt-4">
+            <h2>{L.faq_title}</h2>
+            <Faq items={post.faq} />
+          </section>
+        )}
+      </div>
+      <aside class="post-aside">
+        {headings.length > 2 && (
+          <nav class="card card-pad toc" aria-label={L.blog_toc}>
+            <h2 class="h-sm">{L.blog_toc}</h2>
+            <ol>{headings.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol>
+          </nav>
+        )}
+        {program && (
+          <div class="card post-cta" data-audience={program.audience}>
+            <img src={url(program.image)} alt="" loading="lazy" width="600" height="340" />
+            <div class="card-pad">
+              <span class="pcard-kicker">{L[`audience_${program.audience}`]} · {L[`type_${program.type}`]}</span>
+              <h2 class="h-sm" style="margin:6px 0">{pc.title}</h2>
+              <p class="muted" style="font-size:.95rem">{pc.short}</p>
+              {program.commercial && <LiveBadge slug={program.liveKey || program.slug} lang={lang} />}
+              <a class="btn btn-primary mt-2" style="width:100%" href={lp(lang, `/programs/${program.slug}/`)}>{L.see_program} <Icon name="arrow" class="arrow" /></a>
+            </div>
+          </div>
+        )}
+      </aside>
+    </div>
+  </article>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-band">
+        <Shapes variant="cluster" />
+        <h2 class="h-xl" style="max-width:22ch">{post.ctaTitle || L.blog_cta_title}</h2>
+        <p class="lead">{post.ctaText || (lang === 'ar' ? 'برامج صنعة أكاديمي عملية ١٠٠٪ — هتتعلم وانت بتبني مشروع حقيقي بإيدك.' : 'San3a Academy programs are 100% hands-on — you learn by building a real project with your own hands.')}</p>
+        <div class="actions">
+          <a class="btn btn-white btn-lg" href={program ? lp(lang, `/programs/${program.slug}/`) : lp(lang, '/programs/')}>{program ? pc.title : L.explore_programs} <Icon name="arrow" class="arrow" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {related.length > 0 && (
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head"><div><h2 class="h-lg">{L.blog_related}</h2></div>
+          <a class="link-arrow" href={lp(lang, '/blog/')}>{L.nav_blog} <Icon name="arrow" class="arrow" /></a></div>
+        <div class="grid grid-3">{related.map((p) => <div><PostCard post={p} lang={lang} /></div>)}</div>
+      </div>
+    </section>
+  )}
+</Base>
+<style>
+  .post-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: clamp(28px, 5vw, 72px); align-items: start; max-width: 1160px; padding-bottom: 40px; }
+  .post-body { font-size: 1.08rem; }
+  .post-body :global(h2) { font-family: var(--f-sub); font-size: 1.6rem; margin-top: 1.8em; scroll-margin-top: 100px; }
+  .post-body :global(h3) { font-family: var(--f-sub); font-size: 1.22rem; margin-top: 1.4em; }
+  .post-body :global(blockquote) { margin: 1.4em 0; padding: 4px 0 4px 20px; border-inline-start: 4px solid var(--red); font-family: var(--f-sub); font-weight: 700; color: var(--night); }
+  :global(html[dir="rtl"]) .post-body :global(blockquote) { padding: 4px 20px 4px 0; }
+  .post-body :global(table) { width: 100%; border-collapse: collapse; margin: 1.4em 0; font-size: .97rem; }
+  .post-body :global(th), .post-body :global(td) { border: 1px solid var(--line); padding: 10px 12px; text-align: start; vertical-align: top; }
+  .post-body :global(th) { background: var(--paper-3); }
+  .post-body :global(a) { color: var(--red); font-weight: 600; }
+  .post-body :global(strong) { color: var(--night); }
+  .post-aside { position: sticky; top: calc(var(--header-h) + 20px); display: grid; gap: 18px; }
+  .toc ol { margin: 10px 0 0; padding-inline-start: 1.1em; font-size: .95rem; display: grid; gap: 6px; }
+  .toc a { text-decoration: none; color: var(--ink-2); }
+  .toc a:hover { color: var(--red); }
+  .post-cta { overflow: hidden; border-top: 5px solid var(--accent); }
+  .post-cta img { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+  @media (max-width: 960px) { .post-layout { grid-template-columns: minmax(0, 1fr); } .post-aside { position: static; } }
+</style>

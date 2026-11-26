@@ -1,0 +1,101 @@
+{
+  "slug": "learning-studios",
+  "order": 20,
+  "published": true,
+  "featured": true,
+  "audience": "kids",
+  "type": "studio",
+  "format": "inperson",
+  "status": "open",
+  "commercial": true,
+  "liveKey": "learning-studios",
+  "image": "/images/photos/studios-group.jpg",
+  "tally": { "form": "studios" },
+  "related": ["girls-make", "maker-diploma"],
+  "en": {
+    "title": "Learning Studios",
+    "short": "Project-based studios for kids in Grades 1–6: coding, electronics and digital fabrication — every child builds something real.",
+    "seoTitle": "Learning Studios — coding, robotics & making for kids (Grades 1–6) in Maadi, Cairo",
+    "seoDescription": "Hands-on studios for kids in Grades 1–6 in Maadi, Cairo: coding, electronics and digital fabrication in groups of up to 6. No experience needed.",
+    "tagline": "We don’t hand kids the answer. We hand them the tools to figure it out.",
+    "summary": "In our studios, children don’t follow memorised steps. A child says “I want to build a flood alarm — what do I need to learn to make it happen?” and the studio helps them learn exactly that. Small groups, real tools and a project every child is proud to show.",
+    "imageAlt": "Kids holding the interactive projects they built, with their facilitators",
+    "duration": "9 in-person sessions",
+    "level": "Grades 1–6 (studios by age group)",
+    "location": "San3a HQ, Maadi, Cairo",
+    "price": "From 2,500 EGP",
+    "priceNote": "Our team shares the schedule and the studio that fits your child after you register.",
+    "ctaLabel": "Book a place for your child",
+    "overviewTitle": "Success is a child saying “I built something that works.”",
+    "overview": "<p>Each studio is a small group of up to six learners, so every child gets the space to create. Children explore coding, electronics and digital fabrication through projects they choose — and develop problem-solving, critical thinking and creativity along the way.</p><p>No experience is needed. Our team recommends the right studio for your child’s age and interests, from first projects for Grades 1–3 to the Inventing with Electronics studio for ages 10–12.</p>",
+    "learn": [
+      "Turn their own ideas into working projects",
+      "Block-based coding and interactive games",
+      "Simple circuits, sensors and electronics",
+      "Designing and making with digital fabrication tools",
+      "Presenting their project to family and friends"
+    ],
+    "skills": ["Coding", "Electronics", "Makey Makey", "micro:bit", "Design", "Problem-solving", "Creativity", "Confidence"],
+    "whoFor": [
+      "Children from Grade 1 to Grade 6",
+      "Curious kids who love to take things apart and build",
+      "Parents who want screen time to become making time"
+    ],
+    "requirements": [
+      "No experience needed",
+      "Attendance at our studio in Maadi"
+    ],
+    "fees": { "title": "Fees", "body": "Studios start from 2,500 EGP. Places are limited to six learners per studio.", "items": ["Small groups of up to 6 children", "All materials and tools included", "A final exhibition for families"] },
+    "applyTitle": "Book a place for your child",
+    "applyLead": "Register in two minutes. Our team will call you within hours to recommend the right studio and share the schedule and fees.",
+    "faq": [
+      { "q": "What ages are the studios for?", "a": "Grades 1 to 6, grouped by age — for example Grades 1–3 and Grades 4–6, plus the Inventing with Electronics studio for ages 10–12." },
+      { "q": "Does my child need experience?", "a": "No. Studios start from zero and adapt to each child." },
+      { "q": "How many children are in a studio?", "a": "Up to six learners, so every child gets attention and space to create." },
+      { "q": "Are there summer studios?", "a": "Yes — Summer Studios are coming. Register now and we’ll let you know when places open." }
+    ]
+  },
+  "ar": {
+    "title": "ستوديوهات التعلّم",
+    "short": "ستوديوهات قائمة على المشاريع للأطفال من أولى لستة ابتدائي: برمجة وإلكترونيات وتصنيع رقمي — كل طفل بيبني حاجة حقيقية.",
+    "seoTitle": "ستوديوهات صنعة أكاديمي — برمجة وروبوتات وتصنيع للأطفال في المعادي",
+    "seoDescription": "ستوديوهات عملية للأطفال من أولى لستة ابتدائي في المعادي: برمجة وإلكترونيات وتصنيع رقمي في مجموعات لحد ٦ أطفال. مش محتاج خبرة.",
+    "tagline": "إحنا مش بنادّي الطفل الإجابة. بندّيه الأدوات اللي يوصل بيها لوحده.",
+    "summary": "في ستوديوهاتنا الأطفال مش بيمشوا على خطوات محفوظة. الطفل بيقول «عايز أعمل جهاز إنذار للفيضان — محتاج أتعلم إيه علشان أعمله؟» والستوديو بيساعده يتعلم ده بالظبط. مجموعات صغيرة، وأدوات حقيقية، ومشروع كل طفل بيفتخر يعرضه.",
+    "imageAlt": "أطفال ماسكين مشاريعهم التفاعلية مع الميسّرين",
+    "duration": "٩ سيشنز حضوري",
+    "level": "من أولى لستة ابتدائي (حسب السن)",
+    "location": "مقر صنعة، المعادي، القاهرة",
+    "price": "تبدأ من ٢٬٥٠٠ جنيه",
+    "priceNote": "فريقنا بيبعتلك المواعيد والستوديو المناسب لطفلك بعد التسجيل.",
+    "ctaLabel": "احجز مكان لطفلك",
+    "overviewTitle": "النجاح هو إن طفل يقول «أنا بنيت حاجة بتشتغل».",
+    "overview": "<p>كل ستوديو مجموعة صغيرة لحد ٦ أطفال، علشان كل طفل ياخد مساحته في الإبداع. الأطفال بيستكشفوا البرمجة والإلكترونيات والتصنيع الرقمي من خلال مشاريع بيختاروها — وبيطوّروا حل المشكلات والتفكير النقدي والإبداع في الطريق.</p><p>مش محتاج خبرة. فريقنا بيرشّح الستوديو المناسب لسن طفلك واهتماماته، من أول المشاريع لأطفال أولى لتالتة لحد ستوديو الابتكار بالإلكترونيات من ١٠ لـ ١٢ سنة.</p>",
+    "learn": [
+      "يحوّلوا أفكارهم لمشاريع شغّالة",
+      "البرمجة بالبلوكات والألعاب التفاعلية",
+      "دوائر بسيطة وحساسات وإلكترونيات",
+      "التصميم والتصنيع بأدوات التصنيع الرقمي",
+      "يعرضوا مشروعهم للأهل والأصحاب"
+    ],
+    "skills": ["البرمجة", "الإلكترونيات", "Makey Makey", "micro:bit", "التصميم", "حل المشكلات", "الإبداع", "الثقة بالنفس"],
+    "whoFor": [
+      "الأطفال من أولى لستة ابتدائي",
+      "الأطفال اللي عندهم فضول وبيحبوا يفكّوا ويركّبوا",
+      "أولياء الأمور اللي عايزين وقت الشاشة يبقى وقت صناعة"
+    ],
+    "requirements": [
+      "مش محتاج خبرة",
+      "الحضور في ستوديو المعادي"
+    ],
+    "fees": { "title": "الرسوم", "body": "الستوديوهات تبدأ من ٢٬٥٠٠ جنيه. الأماكن محدودة بـ٦ أطفال في كل ستوديو.", "items": ["مجموعات صغيرة لحد ٦ أطفال", "كل الخامات والأدوات مشمولة", "معرض نهائي للأهالي"] },
+    "applyTitle": "احجز مكان لطفلك",
+    "applyLead": "سجّل في دقيقتين. فريقنا هيكلّمك خلال ساعات علشان يرشّح الستوديو المناسب ويبعتلك المواعيد والأسعار.",
+    "faq": [
+      { "q": "الستوديوهات لأي سن؟", "a": "من أولى لستة ابتدائي، مقسّمة حسب السن — مثلًا أولى لتالتة ورابعة لستة، وكمان ستوديو الابتكار بالإلكترونيات من ١٠ لـ ١٢ سنة." },
+      { "q": "طفلي محتاج خبرة؟", "a": "لأ. الستوديوهات بتبدأ من الصفر وبتتكيّف مع كل طفل." },
+      { "q": "عدد الأطفال في الستوديو كام؟", "a": "لحد ٦ أطفال، علشان كل طفل ياخد اهتمام ومساحة للإبداع." },
+      { "q": "فيه ستوديوهات صيفية؟", "a": "أيوه — الستوديوهات الصيفية جاية. سجّل دلوقتي وهنبلغك أول ما الأماكن تفتح." }
+    ]
+  }
+}

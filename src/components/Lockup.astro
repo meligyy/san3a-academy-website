@@ -1,0 +1,11 @@
+---
+import { url } from '../lib/url.js';
+interface Props { audience: 'kids' | 'youth' | 'educators'; dark?: boolean }
+const { audience, dark = false } = Astro.props;
+const label = { kids: ['أطفال', 'KIDS'], youth: ['شباب', 'YOUTH'], educators: ['مدرسين', 'EDUCATORS'] }[audience];
+---
+<span class="lockup" data-audience={audience} style={dark ? 'color:#fff' : ''}>
+  <img src={url(dark ? '/images/brand/logo-white.png' : '/images/brand/logo-full-colour.png')} alt="San3a Academy" width="120" height="67" loading="lazy" />
+  <span class="bar" aria-hidden="true"></span>
+  <span class="lbl"><span class="ar" lang="ar">{label[0]}</span><span class="en" lang="en">{label[1]}</span></span>
+</span>

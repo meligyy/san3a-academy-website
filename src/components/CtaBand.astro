@@ -1,0 +1,11 @@
+---
+import Shapes from './Shapes.astro';
+interface Props { title: string; text?: string }
+const { title, text } = Astro.props;
+---
+<div class="cta-band">
+  <Shapes variant="cluster" />
+  <h2 class="h-xl" style="max-width:20ch">{title}</h2>
+  {text && <p class="lead">{text}</p>}
+  <div class="actions"><slot /></div>
+</div>

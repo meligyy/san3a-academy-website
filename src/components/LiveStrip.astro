@@ -1,0 +1,18 @@
+---
+// Live stats for a commercial product. Values come from the public Live API (aggregates only);
+// each item stays hidden until it has data, and the whole strip stays hidden if nothing loads.
+import { s } from '../i18n/ui.js';
+interface Props { slug: string; lang: 'en' | 'ar'; dark?: boolean; nextRound?: any; compact?: boolean }
+const { slug, lang, dark = false, nextRound, compact = false } = Astro.props;
+const L = s(lang);
+---
+<div class={`live-strip ${dark ? 'on-dark' : ''}`} data-live-strip data-live-key={slug} data-next={nextRound ? JSON.stringify(nextRound) : undefined} hidden aria-live="polite">
+  <span class="live-tag"><span class="live-dot" aria-hidden="true"></span>{L.live}</span>
+  <span class="li" data-f="d7" hidden><b data-v></b> {L.live_week}</span>
+  {!compact && <span class="li" data-f="d30" hidden><b data-v></b> {L.live_month}</span>}
+  {!compact && <svg class="spark" data-f="spark" viewBox="0 0 96 28" preserveAspectRatio="none" hidden aria-hidden="true"></svg>}
+  <span class="li" data-f="last" hidden>{L.live_last} <b data-v></b></span>
+  {!compact && <span class="li" data-f="govs" hidden><b data-v></b> {L.live_govs}</span>}
+  <span class="li seats" data-f="seats" hidden>{L.live_next} <b data-v-date></b> · <b data-v></b> {L.live_seats}</span>
+  <span class="li seats" data-f="full" hidden><b>{L.live_full}</b></span>
+</div>

@@ -1,0 +1,19 @@
+{
+  "slug": "hassan-khaled",
+  "published": true,
+  "order": 3,
+  "audience": "youth",
+  "program": "maker-diploma",
+  "name": {
+    "en": "Hassan Khaled",
+    "ar": "حسن خالد"
+  },
+  "role": {
+    "en": "Artisan, founder of Khashaba wooden artworks · Esna revitalization (Aga Khan Award 2025)",
+    "ar": "حرفي ومؤسس «خشبة» للأعمال الخشبية · مشروع إحياء إسنا (جائزة الآغا خان ٢٠٢٥)"
+  },
+  "quote": {
+    "en": "The diploma played a significant role in my career development — it helped me design a practical plan for mass production that respected the traditional craft while integrating modern digital tools.",
+    "ar": "الدبلومة كان ليها دور كبير في تطوري المهني — ساعدتني أعمل خطة عملية للإنتاج الكمي بتحترم الحرفة التقليدية وفي نفس الوقت بتدخّل الأدوات الرقمية الحديثة."
+  }
+}

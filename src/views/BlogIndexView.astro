@@ -1,0 +1,66 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import PostCard from '../components/PostCard.astro';
+import { url, lp } from '../lib/url.js';
+import { s } from '../i18n/ui.js';
+import { posts, BLOG_CATEGORIES, readingTime } from '../lib/content.js';
+
+interface Props { lang: 'en' | 'ar' }
+const { lang } = Astro.props;
+const L = s(lang);
+const all = posts(lang);
+const featured = all.find((p) => p.featured) || all[0];
+const rest = all.filter((p) => p !== featured);
+const cats = Object.entries(BLOG_CATEGORIES).filter(([k]) => all.some((p) => p.category === k));
+const blogSchema = { '@context': 'https://schema.org', '@type': 'Blog', name: L.blog_title, inLanguage: lang };
+---
+<Base lang={lang} title={L.blog_title} description={L.blog_lead} path="/blog/" image={featured ? featured.cover : undefined} schema={blogSchema}>
+  <section class="section" style="padding-bottom:24px">
+    <div class="container">
+      <span class="eyebrow"><span class="diamond"></span>{L.nav_blog}</span>
+      <h1 class="display" style="font-size:clamp(2.2rem,5vw,3.8rem);max-width:18ch">{L.blog_title}</h1>
+      <p class="lead">{L.blog_lead}</p>
+    </div>
+  </section>
+
+  {featured && (
+    <section class="section--tight" style="padding-top:0">
+      <div class="container">
+        <a class="blog-feature" href={lp(lang, `/blog/${featured.slug}/`)}>
+          <img src={url(featured.cover)} alt={featured.coverAlt || ''} width="1200" height="675" fetchpriority="high" />
+          <div class="bf-body">
+            <span class="badge badge--red">{L.blog_featured}</span>
+            <span class="pcard-kicker" style="color:var(--red)">{BLOG_CATEGORIES[featured.category]?.[lang]}</span>
+            <h2 class="h-lg" style="margin:0">{featured.title}</h2>
+            <p class="muted mb-0">{featured.description}</p>
+            <span class="muted" style="font-size:.9rem">{readingTime(featured)} {L.min_read}</span>
+            <span class="link-arrow">{L.read_article} <Icon name="arrow" class="arrow" /></span>
+          </div>
+        </a>
+      </div>
+    </section>
+  )}
+
+  <section class="section section--alt">
+    <div class="container" data-blog>
+      <div class="filters" style="align-items:center">
+        <div class="seg" role="group" aria-label={lang === 'ar' ? 'المواضيع' : 'Topics'}>
+          <button type="button" data-topic="all" aria-pressed="true">{L.blog_all}</button>
+          {cats.map(([k, v]) => <button type="button" data-topic={k} aria-pressed="false">{v[lang]}</button>)}
+        </div>
+      </div>
+      <h2 class="h-lg">{L.blog_latest}</h2>
+      <div class="grid grid-3">
+        {rest.map((p) => <div data-cat={p.category}><PostCard post={p} lang={lang} /></div>)}
+      </div>
+    </div>
+  </section>
+</Base>
+<style>
+  .blog-feature { display: grid; grid-template-columns: 1.3fr 1fr; gap: 0; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--line); text-decoration: none; color: inherit; background: #fff; box-shadow: var(--shadow); transition: box-shadow .2s; }
+  .blog-feature:hover { box-shadow: var(--shadow-lg); }
+  .blog-feature img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 16/9; }
+  .bf-body { padding: clamp(20px, 3vw, 40px); display: flex; flex-direction: column; gap: 12px; justify-content: center; align-items: flex-start; }
+  @media (max-width: 860px) { .blog-feature { grid-template-columns: 1fr; } }
+</style>

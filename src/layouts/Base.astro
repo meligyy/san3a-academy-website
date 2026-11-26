@@ -1,0 +1,107 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { url, lp, dir } from '../lib/url.js';
+import { site } from '../data/site.js';
+import { s } from '../i18n/ui.js';
+
+interface Props {
+  lang: 'en' | 'ar';
+  title: string;
+  description?: string;
+  path: string;            // language-neutral path, e.g. '/programs/maker-diploma/'
+  image?: string;          // site-relative image path, e.g. '/images/photos/x.jpg'
+  audience?: string;
+  noindex?: boolean;
+  type?: 'website' | 'article';
+  schema?: object | object[];
+  altPath?: string | null; // override alternate-language path (null = no alternate)
+  program?: string;        // program slug (for analytics events)
+}
+const { lang, title, description, path, image, audience, noindex = false, type = 'website', schema, altPath, program } = Astro.props;
+const L = s(lang);
+const other = lang === 'en' ? 'ar' : 'en';
+const siteName = site.name[lang];
+const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
+const desc = description || L.footer_tag;
+const origin = (Astro.site ? Astro.site.origin : 'https://meligyy.github.io');
+const abs = (p) => origin + p;
+const canonical = abs(lp(lang, path));
+const enUrl = abs(lp('en', path));
+const arUrl = abs(lp('ar', path));
+const ogImage = abs(url(image || '/images/og-default.jpg'));
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOrganization',
+  name: 'San3a Academy',
+  alternateName: 'صنعة أكاديمي',
+  url: abs(url('/')),
+  logo: abs(url('/images/brand/logo-full-colour.png')),
+  email: site.email,
+  address: { '@type': 'PostalAddress', addressLocality: 'Maadi, Cairo', addressCountry: 'EG' },
+  parentOrganization: { '@type': 'Organization', name: 'San3a Tech' },
+  sameAs: Object.values(site.socials).filter(Boolean),
+};
+const schemas = [orgSchema, ...(schema ? (Array.isArray(schema) ? schema : [schema]) : [])];
+const liveConfig = {
+  api: site.liveApi,
+  snapshot: url('/live/snapshot.json'),
+  refresh: site.liveRefreshSeconds,
+  min: site.liveMinCount,
+  lang,
+};
+---
+<!doctype html>
+<html lang={lang} dir={dir(lang)} class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={desc} />
+    <link rel="canonical" href={canonical} />
+    {altPath !== null && <link rel="alternate" hreflang="en" href={altPath ? abs(lp('en', altPath)) : enUrl} />}
+    {altPath !== null && <link rel="alternate" hreflang="ar" href={altPath ? abs(lp('ar', altPath)) : arUrl} />}
+    {altPath !== null && <link rel="alternate" hreflang="x-default" href={altPath ? abs(lp('en', altPath)) : enUrl} />}
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta name="theme-color" content="#CF2027" />
+    <link rel="icon" href={url('/favicon.ico')} sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href={url('/favicon-32.png')} />
+    <link rel="icon" type="image/png" sizes="64x64" href={url('/favicon-64.png')} />
+    <link rel="apple-touch-icon" href={url('/apple-touch-icon.png')} />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content={lang === 'ar' ? 'ar_EG' : 'en_US'} />
+    <meta property="og:locale:alternate" content={lang === 'ar' ? 'en_US' : 'ar_EG'} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={desc} />
+    <meta name="twitter:image" content={ogImage} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=Arvo:wght@400;700&family=Montserrat:wght@700;800;900&family=Source+Sans+3:wght@400;600;700&display=swap"
+    />
+    <script is:inline>document.documentElement.classList.remove('no-js');</script>
+    <script is:inline define:vars={{ liveConfig }}>window.SAN3A_LIVE = liveConfig;</script>
+    {schemas.map((sc) => <script type="application/ld+json" set:html={JSON.stringify(sc)} />)}
+    {site.ga4Id && <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${site.ga4Id}`}></script>}
+    {site.ga4Id && <script is:inline define:vars={{ id: site.ga4Id }}>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config',id);</script>}
+    {site.metaPixelId && <script is:inline define:vars={{ px: site.metaPixelId }}>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init',px);fbq('track','PageView');</script>}
+  </head>
+  <body data-audience={audience} data-program={program}>
+    <a class="skip-link" href="#main">{L.skip}</a>
+    <Header lang={lang} path={path} altPath={altPath} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer lang={lang} />
+    <script is:inline src={url('/js/site.js')} defer></script>
+    <script is:inline src={url('/js/live.js')} defer></script>
+  </body>
+</html>

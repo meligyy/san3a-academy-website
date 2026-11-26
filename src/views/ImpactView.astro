@@ -1,0 +1,89 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import StatsBand from '../components/StatsBand.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { url, lp, t } from '../lib/url.js';
+import { s } from '../i18n/ui.js';
+import { site } from '../data/site.js';
+import { stories } from '../lib/content.js';
+import I from '../content/pages/impact.json';
+
+interface Props { lang: 'en' | 'ar' }
+const { lang } = Astro.props;
+const L = s(lang);
+const ar = lang === 'ar';
+const quotes = stories.filter((x) => x.quote).slice(0, 3);
+---
+<Base lang={lang} title={t(I.hero.title, lang)} description={t(I.hero.lead, lang)} path="/impact/" image="/images/photos/cohort-group.jpg">
+  <section class="page-hero" style={`--hero-img:url(${url('/images/photos/cohort-group.jpg')})`}>
+    <div class="container">
+      <span class="eyebrow">{t(I.hero.eyebrow, lang)}</span>
+      <h1 class="display" style="max-width:16ch">{t(I.hero.title, lang)}</h1>
+      <p class="lead">{t(I.hero.lead, lang)}</p>
+    </div>
+  </section>
+  <StatsBand lang={lang} />
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><div>
+        <span class="eyebrow"><span class="diamond"></span>{ar ? 'اللي بنقف عشانه' : 'What we stand for'}</span>
+        <h2 class="h-xl">{ar ? '٥ ركائز' : 'Five pillars'}</h2>
+        <p class="lead">{ar ? 'كل حاجة بتقولها الأكاديمية أو بتعرضها بترجع لواحدة من دول.' : 'Everything the academy says and shows points back to one of these.'}</p>
+      </div></div>
+      <div class="pillars">
+        {site.pillars.map((p, i) => (
+          <div class="pillar"><span class="k ltr">{String(i + 1).padStart(2, '0')}</span><h3>{ar ? p.ar : p.en}</h3><p>{ar ? p.dar : p.den}</p></div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {I.programs.map((pr, idx) => (
+    <section class={`section ${idx % 2 === 0 ? 'section--alt' : ''}`}>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow"><span class="diamond"></span>{t(pr.line, lang)}</span>
+            <h2 class="h-xl">{t(pr.title, lang)}</h2>
+          </div>
+          {pr.slug && !['community', 'edumakers'].includes(pr.slug) && <a class="link-arrow" href={lp(lang, `/programs/${pr.slug}/`)}>{L.see_program} <Icon name="arrow" class="arrow" /></a>}
+        </div>
+        <div class={`grid ${pr.stats.length > 4 ? 'grid-3' : 'grid-4'}`}>
+          {pr.stats.map((st) => (
+            <div class="card card-pad reveal" style="border-top:4px solid var(--red)">
+              <div class="price ltr" style="color:var(--red)">{st.n}</div>
+              <p class="mb-0 muted">{ar ? st.ar : st.en}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  {quotes.length > 0 && (
+    <section class="section section--night">
+      <div class="container">
+        <h2 class="h-xl">{ar ? 'بكلامهم' : 'In their words'}</h2>
+        <div class="grid grid-3 mt-3">
+          {quotes.map((q) => (
+            <figure style="margin:0;border-top:3px solid var(--red);padding-top:18px">
+              <blockquote style="margin:0 0 14px;font-family:var(--f-sub);font-weight:700;font-size:1.12rem;color:#fff">“{t(q.quote, lang)}”</blockquote>
+              <figcaption style="color:#D9C6CB"><b style="color:#fff">{t(q.name, lang)}</b><br />{t(q.role, lang)}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="section section--tight">
+    <div class="container">
+      <p class="muted" style="font-size:.9rem">{t(I.source, lang)}</p>
+      <CtaBand title={ar ? 'ساعدنا نوصل لناس أكتر' : 'Help us reach more makers'} text={ar ? 'شارك كجهة مانحة أو شريك تنفيذ أو جهة توظيف لخريجينا.' : 'Join us as a funder, delivery partner or hiring partner for our graduates.'}>
+        <a class="btn btn-white btn-lg" href={lp(lang, '/partners/')}>{L.nav_partners} <Icon name="arrow" class="arrow" /></a>
+      </CtaBand>
+    </div>
+  </section>
+</Base>
